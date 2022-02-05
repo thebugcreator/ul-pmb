@@ -1,4 +1,4 @@
-#  Guideline to run the tokeniser:
+#  Guideline to run CALF the mini Elephant tokeniser:
 ## 1. Tokenising a single sentence:
 Arguments:
 <ul>

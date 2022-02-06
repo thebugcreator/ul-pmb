@@ -5,7 +5,7 @@ import csv
 
 def tokenise(sentence: str, iob_option):
     """
-    Precondition: The sentence must be well-formed. There must be a space before the terminal symbol.
+    Precondition: The sentence must be well-formed. There should be a space before the terminal symbol.
     :param iob_option: binary option for the IOB tag retrieval
     :param sentence: The sentence to tokenise
     :return: a 2-tuple. The first one is for the token array, the second one is for the IOB tags

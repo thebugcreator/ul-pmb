@@ -1,9 +1,5 @@
 import argparse
 
-regular_letters = "abcdefghijklmnopqrstuvwxyz"
-french_letters = "éàèùâêîôûçëïüœ"
-considered_letters = regular_letters + french_letters
-
 
 def get_cli_args() -> argparse.Namespace:
     """

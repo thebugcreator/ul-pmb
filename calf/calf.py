@@ -1,5 +1,6 @@
 from Token import Token
-from utils import considered_letters, get_cli_args
+from utils import get_cli_args
+from constants import considered_letters
 import csv
 
 
@@ -83,10 +84,6 @@ def extract(indir: str, outdir: str, iob_option: bool):
     """
     sentences = []
     with open(indir, encoding="utf8") as f:
-        # if iob:
-        #     sentences.append([line, " ".join(tokenise(line)[0]), "".join(tokenise(line)[1])] for line in f)
-        # else:
-        #     sentences.append([line, " ".join(tokenise(line)[0])] for line in f)
         for line in f:
             # Remove the carriage returns
             refined_line = line.strip()

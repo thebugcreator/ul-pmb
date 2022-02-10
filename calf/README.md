@@ -15,9 +15,11 @@ To tokenise that sentence and get the IOB tags as a byproduct:
 
 `python calf.py tokenise --sentence "Ne soyez pas paresseux !" --iob True`
 
-Output: `([Ne, soyez, pas, paresseux, !], ['B', 'I', 'O', 'B', 'I', 'I', 'I', 'I', 'O', 'B', 'I', 'I', 'O', 'B', 'I', 'I', 'I', 'I', 'I', 'I', 'I', 'I', 'O', 'B'])`
-Ne soyez pas paresseux !
-BIO BIIIIO BIIO BIIIIIIIIO B
+Output: `
+
+`Ne soyez pas paresseux !`
+
+`BIO BIIIIO BIIO BIIIIIIIIO B'
 ## 2. Tokenising a number of sentences in a tsv file:
 Arguments:
 <ul>

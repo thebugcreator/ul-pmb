@@ -1,6 +1,6 @@
 from Token import Token
 from utils import get_cli_args
-from constants import considered_letters
+from constants import considered_letters , phrase, examples
 import csv
 
 
@@ -12,8 +12,7 @@ def tokenise(sentence: str, iob_option):
     :return: a 2-tuple. The first one is for the token array, the second one is for the IOB tags
     """
 
-    if len(sentence) == 0 : sentence ="J'habite à Nancy, il y a une boulangerie, dites-moi où tu habites, qu'est-ce qu'il y a au cinéma?"
-
+    if len(sentence) == 0 : sentence = examples[0]
     # Take care of the terminal symbol
     #"J'habite à Nancy, il y a une boulangerie, que faites-vous chez vous, dites-moi où vous habitez ?" 
     if sentence[-1] not in considered_letters:
@@ -23,9 +22,9 @@ def tokenise(sentence: str, iob_option):
             sentence = well_formed_sentence
     
     # Take care of some phrases
-    phras = { "Qu'est-ce": "Qu_est_ce" , "qu'est-ce": "qu_est_ce",  'il y a':'il_y_a'} # 'il y a':'il_y_a', 'Il y a':'Il_y_a'
+    # phrase = { "Qu'est-ce": "Qu_est_ce" , "qu'est-ce": "qu_est_ce",  'il y a':'il_y_a'} # 'il y a':'il_y_a', 'Il y a':'Il_y_a'
     new_sentence = sentence
-    for pop, tech in phras.items() :   
+    for pop, tech in phrase.items() :   
         while True:
             ind = sentence.find(pop)
             if ind >= 0 : 
@@ -118,8 +117,8 @@ def tokenise(sentence: str, iob_option):
                 iob_token.append("O")
         iob_tokens.append(iob_token)
 
-        return refined_quote_seg, iob_tokens
-    return refined_quote_seg, []
+        return refined_quote_seg, iob, iob_tokens
+    return refined_quote_seg, [], []
 
 
 def extract(indir: str, outdir: str, iob_option: bool):
@@ -164,9 +163,9 @@ if __name__ == "__main__":
         
         print(*tokenisation_output[0])
         # print(tokenisation_output[1])
-        [print(*x, sep='', end=' ') for x in tokenisation_output[1]]
+        [print(*x, sep='', end=' ') for x in tokenisation_output[2]]
         print()
-        print('(',input_sentence,')')
+        print('sentence: ("',input_sentence,'")', sep='')
     elif args.command == "extract":
         input_indir = args.indir
         input_outdir = args.outdir

@@ -23,4 +23,3 @@ phrase = { "Qu'est-ce" : "Qu_est_ce", "qu'est-ce" : "qu_est_ce", 'il y a' : 'il_
 			"quelques-uns" : "quelques_uns", "quelques-unes" : "quelques_unes"} 
 			# 'il y a':'il_y_a', 'Il y a':'Il_y_a'
 
-examples = ["J'habite à Nancy, il y a une boulangerie, dites-moi où tu habites, qu'est-ce qu'il y a au cinéma?"]

@@ -1,6 +1,6 @@
 from Token import Token
 from utils import get_cli_args
-from constants import considered_letters , phrase, examples
+from constants import considered_letters , phrase
 import csv
 
 
@@ -12,9 +12,8 @@ def tokenise(sentence: str, iob_option):
     :return: a 2-tuple. The first one is for the token array, the second one is for the IOB tags
     """
 
-    if len(sentence) == 0 : sentence = examples[0]
+    # if len(sentence) == 0 : sentence = examples[0]
     # Take care of the terminal symbol
-    #"J'habite à Nancy, il y a une boulangerie, que faites-vous chez vous, dites-moi où vous habitez ?" 
     if sentence[-1] not in considered_letters:
         # If there's not a space before the terminal symbol, add one
         if sentence[-2] != " ":
@@ -68,10 +67,10 @@ def tokenise(sentence: str, iob_option):
         else:
             quote_seg.append(item)
 
-    # Take care of the named entities
+    # Take care of the named entities. # What if named entities come the second place?  
     # This grip is to skip the unnecessary loops
     grip = 0
-    for i in range(len(quote_seg)):
+    for i in range( len(quote_seg) ):
         # Skip the loop if already processed
         if i < grip:
             continue

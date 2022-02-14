@@ -21,7 +21,6 @@ def tokenise(sentence: str, iob_option):
             sentence = well_formed_sentence
     
     # Take care of some phrases
-    # phrase = { "Qu'est-ce": "Qu_est_ce" , "qu'est-ce": "qu_est_ce",  'il y a':'il_y_a'} # 'il y a':'il_y_a', 'Il y a':'Il_y_a'
     new_sentence = sentence
     for pop, tech in phrase.items() :   
         while True:

@@ -26,9 +26,13 @@ class CharSeq :
         return self.__str__()
 
 class PhraseToken (CharSeq) :
-    def __init__(self, string, items, is_token=False):
+    def __init__(self, string, items = None, is_token=False):
         super().__init__(string, is_token)
-        self.items = items
+        if items == None :
+            self.items == (string,)
+        else :
+            self.items = items
+        
     def __repr__(self) :
         return str(self.items)
     def __str__(self) -> str:

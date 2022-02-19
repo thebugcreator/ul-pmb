@@ -20,8 +20,12 @@ obsolete_sing_titles = {"Monseigneur", "Veuve", "Votre Majesté", "Sa Majesté"}
 obsolete_abbr_titles = {"Mgr.", "Vve", "V.M.", "S.M."}
 obsolete_titles = obsolete_sing_titles.union(obsolete_abbr_titles)
 
-phrase = {  "qu'est-ce" : ("qu_est_ce",) , "Qu'est-ce" : ("Qu_est_ce", ) ,
-			"il y a":("il ", "y ", "a",) , "Il y a":("Il ", "y ", "a",) ,
+
+especials = {
+	"il y a":("il", "y ", "a",) , "Il y a":("Il_y_a",) ,
+}
+
+phrases = {  "qu'est-ce" : ("qu_est_ce",) , "Qu'est-ce" : ("Qu_est_ce", ) ,
 			"quelques-uns" : ("quelques_uns",) ,  "Quelques-uns" : ("Quelques_uns",) , 
 			"quelques-unes" : ("quelques_unes",) , "Quelques-unes" : ("Quelques_unes",) ,
 			"faudra-t-il" : ("faudra", "-t_il" ), "Faudra-t-il" : ("Faudra", "-t_il") ,

@@ -1,7 +1,7 @@
 #calf.py : main file to  execute.
 from Token import *
 from  utils import get_cli_args
-from constants import considered_letters , phrase
+from constants import *
 import csv
 
 def apllyRule (charseq, phrs) :
@@ -11,13 +11,13 @@ def apllyRule (charseq, phrs) :
         for ind, item in enumerate(items) :
             if len(item) > 0 : result.append( CharSeq(item) )
             if ind < len(items) - 1 : 
-                result.append( PhraseToken(phrs, phrase[phrs]) )
+                result.append( PhraseToken(phrs) )
         return result
     elif len(items) == 1 :
         return [charseq]
 
 
-def tokenise(sentence: str, iob_option, cut_mod = True, by_contract = True):
+def tokenise(sentence: str, iob_option, by_contract = True, cut_mod = False):
     """
     Precondition: The sentence must be well-formed. There should be a space before the terminal symbol.
     :param iob_option: binary option for the IOB tag retrieval
@@ -27,7 +27,7 @@ def tokenise(sentence: str, iob_option, cut_mod = True, by_contract = True):
 
     # if len(sentence) == 0 : sentence = examples[0]
     # Take care of the terminal symbol
-    if ( by_contract is True ) and ( sentence[-1] not in considered_letters ):
+    if  ( sentence[-1] not in considered_letters ) and  by_contract :
         # If there's not a space before the terminal symbol, add one
         if sentence[-2] != " ":
             well_formed_sentence = sentence[0:-1] + " " + sentence[-1]
@@ -40,7 +40,7 @@ def tokenise(sentence: str, iob_option, cut_mod = True, by_contract = True):
 
     # 
     if cut_mod is True :
-        for phrs in phrase :
+        for phrs in especials :
             CharSeq_list_new = []
             for  charseq in CharSeq_list :
                 if type(charseq) is CharSeq  : # and charseq.is_token == False
@@ -49,15 +49,6 @@ def tokenise(sentence: str, iob_option, cut_mod = True, by_contract = True):
                     CharSeq_list_new.append(charseq)
             CharSeq_list = CharSeq_list_new
 
-        # print('this is charseq list: ')
-        # print( *CharSeq_list, sep='--')
-        # # for charseq in CharSeq_list :
-        # #     print(charseq.string, '--', end= ' ')
-        # print()
-        # print('this was charseq list. ')
-
-        # for charseq in CharSeq_list :
-        #     print(charseq.string, end= ' ')
         refined_quote_seg = []
         iob =[]
         iob_tokens = []
@@ -102,12 +93,12 @@ def tokenise(sentence: str, iob_option, cut_mod = True, by_contract = True):
         # Split the sentence using a space as separator
         if by_contract :
             space_seg = sentence.split(" ")
-        else :
-            temp =  sentence.split(" ")
-            if temp[0] == '' : first_sp = True
-            if temp[-1] == '' : last_sp = True
-            sent =sentence.strip()
-            space_seg = sent.split(" ")
+        # else :
+        #     temp =  sentence.split(" ")
+        #     if temp[0] == '' : first_sp = True
+        #     if temp[-1] == '' : last_sp = True
+        #     sent =sentence.strip()
+        #     space_seg = sent.split(" ")
 
 
 
@@ -119,16 +110,27 @@ def tokenise(sentence: str, iob_option, cut_mod = True, by_contract = True):
                 sentence_seg.append(',')
             elif len(item) >0 :
                 sentence_seg.append(item)
+        space_seg = sentence_seg #just in case not to mess up the rest of the code
+
+        #Take care of some especial cases
+        for phrs in phrases :
+            new_seg = []
+            for seg in sentence_seg :
+                if seg == phrs :
+                    new_seg.extend( phrases[phrs] )
+                else:
+                    new_seg.append( seg )
+            sentence_seg = new_seg
         space_seg = sentence_seg
     
         # Take care of dash between two words
-        temp_seg = []
-        for item in sentence_seg :
-            if '-' in item and len(item)>1 :
-                temp_seg.extend( item.split('-') )
-            else :
-                temp_seg.append(item)
-        space_seg = temp_seg # renaming because of not disturbing rest of the code
+        # temp_seg = []
+        # for item in sentence_seg :
+        #     if '-' in item and len(item)>1 :
+        #         temp_seg.extend( item.split('-') )
+        #     else :
+        #         temp_seg.append(item)
+        # space_seg = temp_seg # renaming because of not disturbing rest of the code
 
         ##
         quote_seg = []

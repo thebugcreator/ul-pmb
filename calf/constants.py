@@ -1,4 +1,7 @@
 #constants.py : 
+from lib2to3.pygram import pattern_symbols
+
+
 regular_letters = "abcdefghijklmnopqrstuvwxyz"
 french_letters = "éàèùâêîôûçëïüœ"
 considered_letters = regular_letters + french_letters
@@ -25,15 +28,30 @@ especials = {
 	"il y a":("il", "y ", "a",) , "Il y a":("Il_y_a",) ,
 }
 
-phrases = {  "qu'est-ce" : ("qu_est_ce",) , "Qu'est-ce" : ("Qu_est_ce", ) ,
-			"quelques-uns" : ("quelques_uns",) ,  "Quelques-uns" : ("Quelques_uns",) , 
-			"quelques-unes" : ("quelques_unes",) , "Quelques-unes" : ("Quelques_unes",) ,
-			"faudra-t-il" : ("faudra", "-t_il" ), "Faudra-t-il" : ("Faudra", "-t_il") ,
-			"fait-il" : ("fait", "-il") , "Fait-il" : ( "Fait", "-il" ),
-			"doit-il" : ("doit", "-il") , "Doit-il" : ("Doit", "-il") ,
-			"s'agit-il" : ("s'", "agit",  "il") , "S'agit-il" : ("S'", "agit", "-il" ),
-			} 
-			# 'il y a':'il_y_a', 'Il y a':'Il_y_a' 
-			# [faudra][-t-il]","[fait][-il]","[doit][-il]”, “[s’][agit][-il]
+# patterns = {  
+# 			# "test-il" : ("test","-il"),
+# 			# "tost-il" : ("tost", "-il"),
+# 			'il y a' : ('il', "y", "a"), 'Il y a' : ("Il", "y", "a") ,
+# 			"qu'est-ce" : ("qu_est_ce",) , "Qu'est-ce" : ("Qu_est_ce", ) ,
+# 			"quelques-uns" : ("quelques_uns",) ,  "Quelques-uns" : ("Quelques_uns",) , 
+# 			"quelques-unes" : ("quelques_unes",) , "Quelques-unes" : ("Quelques_unes",) ,
+# 			"faudra-t-il" : ("faudra", "-t_il" ), "Faudra-t-il" : ("Faudra", "-t_il") ,
+# 			"fait-il" : ("fait", "-il") , "Fait-il" : ( "Fait", "-il" ),
+# 			"doit-il" : ("doit", "-il") , "Doit-il" : ("Doit", "-il") ,
+# 			"s'agit-il" : ("s'", "agit",  "il") , "S'agit-il" : ("S'", "agit", "-il" ),
+# } 
+# 			# 'il y a':'il_y_a', 'Il y a':'Il_y_a' 
+# 			# [faudra][-t-il]","[fait][-il]","[doit][-il]”, “[s’][agit][-il]
 
-			
+patterns = {  
+    # "test-il" : ("test","-il"),
+    # "tost-il" : ("tost", "-il"),
+    'il y a' : ('il', "y", "a"), 'Il y a' : ("Il", "y", "a") ,
+    "qu'est-ce" : ("qu'est-ce",) , "Qu'est-ce" : ("Qu'est-ce", ) ,
+    "quelques-uns" : ("quelques-uns",) ,  "Quelques-uns" : ("Quelques-uns",) , 
+    "quelques-unes" : ("quelques-unes",) , "Quelques-unes" : ("Quelques-unes",) ,
+    "faudra-t-il" : ("faudra", "-t_il" ), "Faudra-t-il" : ("Faudra", "-t_il") ,
+    "fait-il" : ("fait", "-il") , "Fait-il" : ( "Fait", "-il" ),
+    "doit-il" : ("doit", "-il") , "Doit-il" : ("Doit", "-il") ,
+    "s'agit-il" : ("s'", "agit",  "il") , "S'agit-il" : ("S'", "agit", "-il" ),
+} 

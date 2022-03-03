@@ -28,6 +28,9 @@ if __name__ == "__main__":
         # [print(*x, sep='', end=' ') for x in tokenisation_output[2]]
         # print('sentence: ("',input_sentence,'")', sep='')
         print(tokenisation_output.show())
+        # print(*tokenisation_output.graph() , sep='\n')
+        for t in tokenisation_output.graph() :
+            print (t)
     elif args.command == "extract":
         input_indir = args.indir
         input_outdir = args.outdir
@@ -35,4 +38,7 @@ if __name__ == "__main__":
         extract(input_indir, input_outdir, input_iob_option)
         print(">> Extract successfully!")
     else:
-        raise RuntimeError(">> invalid command name!")
+        input_sentence = input(" :")
+        tokenisation_output = tokenise(input_sentence)
+        
+        # raise RuntimeError(">> invalid command name!")

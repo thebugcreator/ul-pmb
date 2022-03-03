@@ -46,12 +46,13 @@ especials = {
 patterns = {  
     # "test-il" : ("test","-il"),
     # "tost-il" : ("tost", "-il"),
-    'il y a' : ('il', "y", "a"), 'Il y a' : ("Il", "y", "a") ,
+    "au revoir": ("au revoir",), "Au revoir": ("Au revoir",),
     "qu'est-ce" : ("qu'est-ce",) , "Qu'est-ce" : ("Qu'est-ce", ) ,
     "quelques-uns" : ("quelques-uns",) ,  "Quelques-uns" : ("Quelques-uns",) , 
     "quelques-unes" : ("quelques-unes",) , "Quelques-unes" : ("Quelques-unes",) ,
-    "faudra-t-il" : ("faudra", "-t_il" ), "Faudra-t-il" : ("Faudra", "-t_il") ,
+    "faudra-t-il" : ("faudra", "-t-il" ), "Faudra-t-il" : ("Faudra", "-t-il") ,
     "fait-il" : ("fait", "-il") , "Fait-il" : ( "Fait", "-il" ),
     "doit-il" : ("doit", "-il") , "Doit-il" : ("Doit", "-il") ,
     "s'agit-il" : ("s'", "agit",  "il") , "S'agit-il" : ("S'", "agit", "-il" ),
 } 
+# 'il y a' : ('il', "y", "a"), 'Il y a' : ("Il", "y", "a") ,

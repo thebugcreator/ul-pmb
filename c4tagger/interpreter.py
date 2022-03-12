@@ -4,6 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from requests import get
 # Interpretation
+import utils
 
 df = pd.read_csv("../pmb_french_163.tsv", encoding="utf-8", sep="\t")
 
@@ -74,7 +75,8 @@ def save_raw_data(in_df: pd.DataFrame):
 
 def interpret(in_df):
     while True:
-        chosen_id = input("> Input the sentence ID to interpret: ")
+        print("> To quit, input exit or quit.")
+        chosen_id = input("> Input the sentence ID: ")
         if chosen_id.lower() == "exit" or chosen_id.lower() == "quit":
             break
         else:
@@ -92,3 +94,14 @@ def interpret(in_df):
                     semtags = value["it_semtag"].split(" ")
                     for i in range(len(tokens)):
                         print(tokens[i].ljust(20), semtags[i])
+
+
+if __name__ == "__main__":
+    args = utils.get_cli_args()
+    if args.command == "interpret":
+        interpret(read_raw_data())
+    elif args.command == "update":
+        save_raw_data(get_bilingual_data(df))
+        print(">> Update successfully!")
+    else:
+        raise RuntimeError(">> invalid command name!")

@@ -1,0 +1,164 @@
+literal	wt	wp	are_similar
+Kraft a vendu Celestial Seasonings.	['Kraft', 'a', 'vendu', 'Celestial', 'Seasonings', '.']	['Kraft', 'a', 'vendu', 'Celestial', 'Seasonings', '.']	True
+Anna Politkovskaya a été assassinée.	['Anna', 'Politkovskaya', 'a', 'été', 'assassinée', '.']	['Anna', 'Politkovskaya', 'a', 'été', 'assassinée', '.']	True
+Les yakuza forment la mafia japonaise.	['Les', 'yakuza', 'forment', 'la', 'mafia', 'japonaise', '.']	['Les', 'yakuza', 'forment', 'la', 'mafia', 'japonaise', '.']	True
+Yunus a fondé la banque Grameen il y a 30 ans.	['Yunus', 'a', 'fondé', 'la', 'banque', 'Grameen', 'il', 'y', 'a', '30', 'ans', '.']	['Yunus', 'a', 'fondé', 'la', 'banque', 'Grameen', 'il', 'y', 'a', '30', 'ans', '.']	True
+Maria a les cheveux longs.	['Maria', 'a', 'les', 'cheveux', 'longs', '.']	['Maria', 'a', 'les', 'cheveux', 'longs', '.']	True
+Bob est populaire à l'école.	"['Bob', 'est', 'populaire', 'à', ""l'école"", '.']"	"['Bob', 'est', 'populaire', 'à', 'l', ""'"", 'école', '.']"	False
+Joli costume.	['Joli', 'costume', '.']	['Joli', 'costume', '.']	True
+Où sont les parcmètres ?	['Où', 'sont', 'les', 'parcmètres', '?']	['Où', 'sont', 'les', 'parcmètres', '?']	True
+Tom a utilisé un cure-dent.	['Tom', 'a', 'utilisé', 'un', 'cure-dent', '.']	['Tom', 'a', 'utilisé', 'un', 'cure', '-', 'dent', '.']	False
+Voici Mademoiselle Curtis.	['Voici', 'Mademoiselle', 'Curtis', '.']	['Voici', 'Mademoiselle', 'Curtis', '.']	True
+Bob était très content.	['Bob', 'était', 'très', 'content', '.']	['Bob', 'était', 'très', 'content', '.']	True
+Salut.	['Salut', '.']	['Salut', '.']	True
+Bonjour !	['Bonjour', '!']	['Bonjour', '!']	True
+Kraft a vendu Celestial Seasonings.	['Kraft', 'a', 'vendu', 'Celestial', 'Seasonings', '.']	['Kraft', 'a', 'vendu', 'Celestial', 'Seasonings', '.']	True
+Raman Raghav a assassiné 9 personnes.	['Raman', 'Raghav', 'a', 'assassiné', '9', 'personnes', '.']	['Raman', 'Raghav', 'a', 'assassiné', '9', 'personnes', '.']	True
+Alfred Nobel a inventé la dynamite en 1866.	['Alfred', 'Nobel', 'a', 'inventé', 'la', 'dynamite', 'en', '1866', '.']	['Alfred', 'Nobel', 'a', 'inventé', 'la', 'dynamite', 'en', '1866', '.']	True
+Il a brassé de la bière.	['Il', 'a', 'brassé', 'de', 'la', 'bière', '.']	['Il', 'a', 'brassé', 'de', 'la', 'bière', '.']	True
+Elle a une maladie contagieuse.	['Elle', 'a', 'une', 'maladie', 'contagieuse', '.']	['Elle', 'a', 'une', 'maladie', 'contagieuse', '.']	True
+Il y a aussi des touristes français.	['Il', 'y', 'a', 'aussi', 'des', 'touristes', 'français', '.']	['Il', 'y', 'a', 'aussi', 'des', 'touristes', 'français', '.']	True
+Le lac est très profond.	['Le', 'lac', 'est', 'très', 'profond', '.']	['Le', 'lac', 'est', 'très', 'profond', '.']	True
+Personne ne peut résoudre ce problème.	['Personne', 'ne', 'peut', 'résoudre', 'ce', 'problème', '.']	['Personne', 'ne', 'peut', 'résoudre', 'ce', 'problème', '.']	True
+La jupe rouge est neuve.	['La', 'jupe', 'rouge', 'est', 'neuve', '.']	['La', 'jupe', 'rouge', 'est', 'neuve', '.']	True
+Personne n'a résolu le problème.	"['Personne', 'n', ""'"", 'a', 'résolu', 'le', 'problème', '.']"	"['Personne', 'n', ""'"", 'a', 'résolu', 'le', 'problème', '.']"	True
+Je mange une pomme.	['Je', 'mange', 'une', 'pomme', '.']	['Je', 'mange', 'une', 'pomme', '.']	True
+Le capitaine Scott a découvert l'île Scott en décembre 1902.	"['Le', 'capitaine', 'Scott', 'a', 'découvert', ""l'île"", 'Scott', 'en', 'décembre', '1902', '.']"	"['Le', 'capitaine', 'Scott', 'a', 'découvert', 'l', ""'"", 'île', 'Scott', 'en', 'décembre', '1902', '.']"	False
+Il a plu pendant cinq jours.	['Il', 'a', 'plu', 'pendant', 'cinq', 'jours', '.']	['Il', 'a', 'plu', 'pendant', 'cinq', 'jours', '.']	True
+J'ai deux chats.	"[""J'ai"", 'deux', 'chats', '.']"	"['J', ""'"", 'ai', 'deux', 'chats', '.']"	False
+Carl Smith est mort le 8 août.	['Carl', 'Smith', 'est', 'mort', 'le', '8', 'août', '.']	['Carl', 'Smith', 'est', 'mort', 'le', '8', 'août', '.']	True
+Cet homme a raison.	['Cet', 'homme', 'a', 'raison', '.']	['Cet', 'homme', 'a', 'raison', '.']	True
+Il y a un biscuit sous la table.	['Il', 'y', 'a', 'un', 'biscuit', 'sous', 'la', 'table', '.']	['Il', 'y', 'a', 'un', 'biscuit', 'sous', 'la', 'table', '.']	True
+Ma mère a fait cuire dix œufs.	['Ma', 'mère', 'a', 'fait', 'cuire', 'dix', 'œufs', '.']	['Ma', 'mère', 'a', 'fait', 'cuire', 'dix', 'œufs', '.']	True
+Je conduis une décapotable.	['Je', 'conduis', 'une', 'décapotable', '.']	['Je', 'conduis', 'une', 'décapotable', '.']	True
+La Roumanie a envoyé 730 soldats en Irak.	['La', 'Roumanie', 'a', 'envoyé', '730', 'soldats', 'en', 'Irak', '.']	['La', 'Roumanie', 'a', 'envoyé', '730', 'soldats', 'en', 'Irak', '.']	True
+Bill n'a pas commis ce crime.	"['Bill', 'n', ""'"", 'a', 'pas', 'commis', 'ce', 'crime', '.']"	"['Bill', 'n', ""'"", 'a', 'pas', 'commis', 'ce', 'crime', '.']"	True
+Ce livre coûte 4 dollars.	['Ce', 'livre', 'coûte', '4', 'dollars', '.']	['Ce', 'livre', 'coûte', '4', 'dollars', '.']	True
+Où est né le réalisateur Michelangelo Antonioni ?	['Où', 'est', 'né', 'le', 'réalisateur', 'Michelangelo', 'Antonioni', '?']	['Où', 'est', 'né', 'le', 'réalisateur', 'Michelangelo', 'Antonioni', '?']	True
+J'ai commandé une pizza.	"[""J'ai"", 'commandé', 'une', 'pizza', '.']"	"['J', ""'"", 'ai', 'commandé', 'une', 'pizza', '.']"	False
+Baena Soares a été arrêté par l'armée.	"['Baena', 'Soares', 'a', 'été', 'arrêté', 'par', ""l'armée"", '.']"	"['Baena', 'Soares', 'a', 'été', 'arrêté', 'par', 'l', ""'"", 'armée', '.']"	False
+John vit à New York.	['John', 'vit', 'à', 'New', 'York', '.']	['John', 'vit', 'à', 'New', 'York', '.']	True
+Où est le journal ?	['Où', 'est', 'le', 'journal', '?']	['Où', 'est', 'le', 'journal', '?']	True
+Il avait une fille.	['Il', 'avait', 'une', 'fille', '.']	['Il', 'avait', 'une', 'fille', '.']	True
+Le chien est blanc.	['Le', 'chien', 'est', 'blanc', '.']	['Le', 'chien', 'est', 'blanc', '.']	True
+Cette maison est connue.	['Cette', 'maison', 'est', 'connue', '.']	['Cette', 'maison', 'est', 'connue', '.']	True
+Qui chante cette chanson ?	['Qui', 'chante', 'cette', 'chanson', '?']	['Qui', 'chante', 'cette', 'chanson', '?']	True
+La tour fait quinze mètres de haut.	['La', 'tour', 'fait', 'quinze', 'mètres', 'de', 'haut', '.']	['La', 'tour', 'fait', 'quinze', 'mètres', 'de', 'haut', '.']	True
+Le Canada a battu les Etats-Unis.	['Le', 'Canada', 'a', 'battu', 'les', 'Etats-Unis', '.']	['Le', 'Canada', 'a', 'battu', 'les', 'Etats', '-', 'Unis', '.']	False
+L'Italie a battu le Kazakhstan.	"[""L'Italie"", 'a', 'battu', 'le', 'Kazakhstan', '.']"	"['L', ""'"", 'Italie', 'a', 'battu', 'le', 'Kazakhstan', '.']"	False
+Vladislav Listyev a été assassiné à Moscou.	['Vladislav', 'Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']	['Vladislav', 'Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']	True
+Personne n'aime la guerre.	"['Personne', ""n'aime"", 'la', 'guerre', '.']"	"['Personne', 'n', ""'"", 'aime', 'la', 'guerre', '.']"	False
+Vladislav Listyev a été assassiné à Moscou.	['Vladislav', 'Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']	['Vladislav', 'Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']	True
+Ma soeur est célèbre.	['Ma', 'soeur', 'est', 'célèbre', '.']	['Ma', 'soeur', 'est', 'célèbre', '.']	True
+La porte est fermée.	['La', 'porte', 'est', 'fermée', '.']	['La', 'porte', 'est', 'fermée', '.']	True
+La viande est congelée.	['La', 'viande', 'est', 'congelée', '.']	['La', 'viande', 'est', 'congelée', '.']	True
+Saddam Hussein fuit aux États-Unis. [EDITED]	['Saddam', 'Hussein', 'fuit', 'aux', 'États-Unis', '.', '[', 'EDITED', ']']	['Saddam', 'Hussein', 'fuit', 'aux', 'États', '-', 'Unis', '.', '[', 'EDITED', ']']	False
+Auckland est une ville de Nouvelle-Zélande. [EDITED]	['Auckland', 'est', 'une', 'ville', 'de', 'Nouvelle-Zélande', '.', '[', 'EDITED', ']']	['Auckland', 'est', 'une', 'ville', 'de', 'Nouvelle', '-', 'Zélande', '.', '[', 'EDITED', ']']	False
+Mon père est grand.	['Mon', 'père', 'est', 'grand', '.']	['Mon', 'père', 'est', 'grand', '.']	True
+Aurore Paquiss est marié à Chabrol.	['Aurore', 'Paquiss', 'est', 'marié', 'à', 'Chabrol', '.']	['Aurore', 'Paquiss', 'est', 'marié', 'à', 'Chabrol', '.']	True
+Henri Ford a fondé l'entreprise Ford.	"['Henri', 'Ford', 'a', 'fondé', ""l'entreprise"", 'Ford', '.']"	"['Henri', 'Ford', 'a', 'fondé', 'l', ""'"", 'entreprise', 'Ford', '.']"	False
+La frontière est fermée.	['La', 'frontière', 'est', 'fermée', '.']	['La', 'frontière', 'est', 'fermée', '.']	True
+Tom est mon cousin.	['Tom', 'est', 'mon', 'cousin', '.']	['Tom', 'est', 'mon', 'cousin', '.']	True
+Senecal habite le Manoir Cortland.	['Senecal', 'habite', 'le', 'Manoir', 'Cortland', '.']	['Senecal', 'habite', 'le', 'Manoir', 'Cortland', '.']	True
+Picasso est un artiste célèbre.	['Picasso', 'est', 'un', 'artiste', 'célèbre', '.']	['Picasso', 'est', 'un', 'artiste', 'célèbre', '.']	True
+Le vent souffle.	['Le', 'vent', 'souffle', '.']	['Le', 'vent', 'souffle', '.']	True
+Sumatra est une île.	['Sumatra', 'est', 'une', 'île', '.']	['Sumatra', 'est', 'une', 'île', '.']	True
+Deux plus deux égale quatre.	['Deux', 'plus', 'deux', 'égale', 'quatre', '.']	['Deux', 'plus', 'deux', 'égale', 'quatre', '.']	True
+Marilyn Monroe est morte il y a 33 ans.	['Marilyn', 'Monroe', 'est', 'morte', 'il', 'y', 'a', '33', 'ans', '.']	['Marilyn', 'Monroe', 'est', 'morte', 'il', 'y', 'a', '33', 'ans', '.']	True
+Beaucoup de gens admire Nikklo.	['Beaucoup', 'de', 'gens', 'admire', 'Nikklo', '.']	['Beaucoup', 'de', 'gens', 'admire', 'Nikklo', '.']	True
+Sandra Goudie a perdu contre Max Purnell.	['Sandra', 'Goudie', 'a', 'perdu', 'contre', 'Max', 'Purnell', '.']	['Sandra', 'Goudie', 'a', 'perdu', 'contre', 'Max', 'Purnell', '.']	True
+Le chat est sous la table.	['Le', 'chat', 'est', 'sous', 'la', 'table', '.']	['Le', 'chat', 'est', 'sous', 'la', 'table', '.']	True
+Les inondations ravagent l'Europe.	"['Les', 'inondations', 'ravagent', ""l'Europe"", '.']"	"['Les', 'inondations', 'ravagent', 'l', ""'"", 'Europe', '.']"	False
+Edison a inventé le Kinétoscope.	['Edison', 'a', 'inventé', 'le', 'Kinétoscope', '.']	['Edison', 'a', 'inventé', 'le', 'Kinétoscope', '.']	True
+Mon chien est blanc.	['Mon', 'chien', 'est', 'blanc', '.']	['Mon', 'chien', 'est', 'blanc', '.']	True
+Leloir est né en Argentine.	['Leloir', 'est', 'né', 'en', 'Argentine', '.']	['Leloir', 'est', 'né', 'en', 'Argentine', '.']	True
+El-Nashar a été arrêté en Egypte.	['El-Nashar', 'a', 'été', 'arrêté', 'en', 'Egypte', '.']	['El', '-', 'Nashar', 'a', 'été', 'arrêté', 'en', 'Egypte', '.']	False
+Sylvia Costas est la femme d'Andy Sipowicz.	"['Sylvia', 'Costas', 'est', 'la', 'femme', ""d'Andy"", 'Sipowicz', '.']"	"['Sylvia', 'Costas', 'est', 'la', 'femme', 'd', ""'"", 'Andy', 'Sipowicz', '.']"	False
+PM a acheté trois usines russes.	['PM', 'a', 'acheté', 'trois', 'usines', 'russes', '.']	['PM', 'a', 'acheté', 'trois', 'usines', 'russes', '.']	True
+Le chien a mordu l'homme.	"['Le', 'chien', 'a', 'mordu', ""l'homme"", '.']"	"['Le', 'chien', 'a', 'mordu', 'l', ""'"", 'homme', '.']"	False
+Tu es saoul !	['Tu', 'es', 'saoul', '!']	['Tu', 'es', 'saoul', '!']	True
+Accardo a composé 24 Caprices.	['Accardo', 'a', 'composé', '24', 'Caprices', '.']	['Accardo', 'a', 'composé', '24', 'Caprices', '.']	True
+La fille est seule.	['La', 'fille', 'est', 'seule', '.']	['La', 'fille', 'est', 'seule', '.']	True
+Pourquoi Jane est-elle allée à la gare ? 	['Pourquoi', 'Jane', 'est-elle', 'allée', 'à', 'la', 'gare', '?']	['Pourquoi', 'Jane', 'est', '-', 'elle', 'allée', 'à', 'la', 'gare', '?']	False
+Texas Instruments produit des téléphones portables.	['Texas', 'Instruments', 'produit', 'des', 'téléphones', 'portables', '.']	['Texas', 'Instruments', 'produit', 'des', 'téléphones', 'portables', '.']	True
+C'est un scientifique.	"[""C'est"", 'un', 'scientifique', '.']"	"['C', ""'"", 'est', 'un', 'scientifique', '.']"	False
+Ce drapeau est très joli.	['Ce', 'drapeau', 'est', 'très', 'joli', '.']	['Ce', 'drapeau', 'est', 'très', 'joli', '.']	True
+Les blessés ont été transportés en ambulance.	['Les', 'blessés', 'ont', 'été', 'transportés', 'en', 'ambulance', '.']	['Les', 'blessés', 'ont', 'été', 'transportés', 'en', 'ambulance', '.']	True
+Tom a une voiture.	['Tom', 'a', 'une', 'voiture', '.']	['Tom', 'a', 'une', 'voiture', '.']	True
+Le film 'speed' a été réalisé par Jan De Bont.	"['Le', 'film', ""'speed"", ""'"", 'a', 'été', 'réalisé', 'par', 'Jan', 'De', 'Bont', '.']"	"['Le', 'film', ""'"", 'speed', ""'"", 'a', 'été', 'réalisé', 'par', 'Jan', 'De', 'Bont', '.']"	False
+Le groupe de rock Spock's Beard vient du Japon.	"['Le', 'groupe', 'de', 'rock', 'Spock', ""'s"", 'Beard', 'vient', 'du', 'Japon', '.']"	"['Le', 'groupe', 'de', 'rock', 'Spock', ""'"", 's', 'Beard', 'vient', 'du', 'Japon', '.']"	False
+Le film 'speed' a été réalisé par Jan De Bont.	"['Le', 'film', ""'speed"", ""'"", 'a', 'été', 'réalisé', 'par', 'Jan', 'De', 'Bont', '.']"	"['Le', 'film', ""'"", 'speed', ""'"", 'a', 'été', 'réalisé', 'par', 'Jan', 'De', 'Bont', '.']"	False
+Une éponge absorbe l'eau.	"['Une', 'éponge', 'absorbe', ""l'eau"", '.']"	"['Une', 'éponge', 'absorbe', 'l', ""'"", 'eau', '.']"	False
+L'eau n'est pas potable.	"[""L'eau"", ""n'est"", 'pas', 'potable', '.']"	"['L', ""'"", 'eau', 'n', ""'"", 'est', 'pas', 'potable', '.']"	False
+Personne n'est parfait.	"['Personne', ""n'est"", 'parfait', '.']"	"['Personne', 'n', ""'"", 'est', 'parfait', '.']"	False
+Tout le monde s'est moqué de lui.	"['Tout', 'le', 'monde', ""s'est"", 'moqué', 'de', 'lui', '.']"	"['Tout', 'le', 'monde', 's', ""'"", 'est', 'moqué', 'de', 'lui', '.']"	False
+J'ai 18 ans.	"[""J'ai"", '18', 'ans', '.']"	"['J', ""'"", 'ai', '18', 'ans', '.']"	False
+Tout le monde a ri.	['Tout', 'le', 'monde', 'a', 'ri', '.']	['Tout', 'le', 'monde', 'a', 'ri', '.']	True
+GUS a vendu Wehkamp.	['GUS', 'a', 'vendu', 'Wehkamp', '.']	['GUS', 'a', 'vendu', 'Wehkamp', '.']	True
+André Henri Constant van Hasselt a fait ces études à Maastricht.	['André', 'Henri', 'Constant', 'van', 'Hasselt', 'a', 'fait', 'ces', 'études', 'à', 'Maastricht', '.']	['André', 'Henri', 'Constant', 'van', 'Hasselt', 'a', 'fait', 'ces', 'études', 'à', 'Maastricht', '.']	True
+Wolfgang Amadeus Mozart est né à Salzbourg.	['Wolfgang', 'Amadeus', 'Mozart', 'est', 'né', 'à', 'Salzbourg', '.']	['Wolfgang', 'Amadeus', 'Mozart', 'est', 'né', 'à', 'Salzbourg', '.']	True
+Il faudrait repasser cette chemise.	['Il', 'faudrait', 'repasser', 'cette', 'chemise', '.']	['Il', 'faudrait', 'repasser', 'cette', 'chemise', '.']	True
+Le thé coûte deux euros.	['Le', 'thé', 'coûte', 'deux', 'euros', '.']	['Le', 'thé', 'coûte', 'deux', 'euros', '.']	True
+Ibrahim Sofu a été assassiné par Metin Kaplan.	['Ibrahim', 'Sofu', 'a', 'été', 'assassiné', 'par', 'Metin', 'Kaplan', '.']	['Ibrahim', 'Sofu', 'a', 'été', 'assassiné', 'par', 'Metin', 'Kaplan', '.']	True
+Le garçon parle à son grand-père.	['Le', 'garçon', 'parle', 'à', 'son', 'grand-père', '.']	['Le', 'garçon', 'parle', 'à', 'son', 'grand', '-', 'père', '.']	False
+Le Kanchenjunga fait 8586 mètres de haut.	['Le', 'Kanchenjunga', 'fait', '8586', 'mètres', 'de', 'haut', '.']	['Le', 'Kanchenjunga', 'fait', '8586', 'mètres', 'de', 'haut', '.']	True
+Le policier porte un masque à gaz.	['Le', 'policier', 'porte', 'un', 'masque', 'à', 'gaz', '.']	['Le', 'policier', 'porte', 'un', 'masque', 'à', 'gaz', '.']	True
+O.J. Simpson a été accusé de meurtre.	['O.J', '.', 'Simpson', 'a', 'été', 'accusé', 'de', 'meurtre', '.']	['O', '.', 'J', '.', 'Simpson', 'a', 'été', 'accusé', 'de', 'meurtre', '.']	False
+Betty est une tueuse en série.	['Betty', 'est', 'une', 'tueuse', 'en', 'série', '.']	['Betty', 'est', 'une', 'tueuse', 'en', 'série', '.']	True
+Je comprends.	['Je', 'comprends', '.']	['Je', 'comprends', '.']	True
+Jerry Reinsdorf a remporté 7 championnats.	['Jerry', 'Reinsdorf', 'a', 'remporté', '7', 'championnats', '.']	['Jerry', 'Reinsdorf', 'a', 'remporté', '7', 'championnats', '.']	True
+La porte n'était pas fermée.	"['La', 'porte', ""n'était"", 'pas', 'fermée', '.']"	"['La', 'porte', 'n', ""'"", 'était', 'pas', 'fermée', '.']"	False
+Spartan Air Lines a racheté United Airways.	['Spartan', 'Air', 'Lines', 'a', 'racheté', 'United', 'Airways', '.']	['Spartan', 'Air', 'Lines', 'a', 'racheté', 'United', 'Airways', '.']	True
+Vladislav Listyev a été tué à Moscou.	['Vladislav', 'Listyev', 'a', 'été', 'tué', 'à', 'Moscou', '.']	['Vladislav', 'Listyev', 'a', 'été', 'tué', 'à', 'Moscou', '.']	True
+Le docteur a examiné les patients.	['Le', 'docteur', 'a', 'examiné', 'les', 'patients', '.']	['Le', 'docteur', 'a', 'examiné', 'les', 'patients', '.']	True
+Un éléphant a un long nez.	['Un', 'éléphant', 'a', 'un', 'long', 'nez', '.']	['Un', 'éléphant', 'a', 'un', 'long', 'nez', '.']	True
+L'argent est sur la table.	"[""L'argent"", 'est', 'sur', 'la', 'table', '.']"	"['L', ""'"", 'argent', 'est', 'sur', 'la', 'table', '.']"	False
+Un dollar vaut cent cents.	['Un', 'dollar', 'vaut', 'cent', 'cents', '.']	['Un', 'dollar', 'vaut', 'cent', 'cents', '.']	True
+Bervely travaillait pour WEDCOR.	['Bervely', 'travaillait', 'pour', 'WEDCOR', '.']	['Bervely', 'travaillait', 'pour', 'WEDCOR', '.']	True
+Ma femme a une pneumonie.	['Ma', 'femme', 'a', 'une', 'pneumonie', '.']	['Ma', 'femme', 'a', 'une', 'pneumonie', '.']	True
+Nikos Kourkoulos était un acteur grec.	['Nikos', 'Kourkoulos', 'était', 'un', 'acteur', 'grec', '.']	['Nikos', 'Kourkoulos', 'était', 'un', 'acteur', 'grec', '.']	True
+Klaus Pohl est un dramaturge allemand.	['Klaus', 'Pohl', 'est', 'un', 'dramaturge', 'allemand', '.']	['Klaus', 'Pohl', 'est', 'un', 'dramaturge', 'allemand', '.']	True
+Ken est content.	['Ken', 'est', 'content', '.']	['Ken', 'est', 'content', '.']	True
+J'ai soif.	"[""J'ai"", 'soif', '.']"	"['J', ""'"", 'ai', 'soif', '.']"	False
+Mary a giflé Tom.	['Mary', 'a', 'giflé', 'Tom', '.']	['Mary', 'a', 'giflé', 'Tom', '.']	True
+J'ai mangé du caviar.	"[""J'ai"", 'mangé', 'du', 'caviar', '.']"	"['J', ""'"", 'ai', 'mangé', 'du', 'caviar', '.']"	False
+Il neige.	['Il', 'neige', '.']	['Il', 'neige', '.']	True
+L'oiseau vole.	"[""L'oiseau"", 'vole', '.']"	"['L', ""'"", 'oiseau', 'vole', '.']"	False
+Louis Riel a assassiné Scott.	['Louis', 'Riel', 'a', 'assassiné', 'Scott', '.']	['Louis', 'Riel', 'a', 'assassiné', 'Scott', '.']	True
+Ce seau fuit.	['Ce', 'seau', 'fuit', '.']	['Ce', 'seau', 'fuit', '.']	True
+Le pape Jean-Paul II est né en Pologne.	['Le', 'pape', 'Jean-Paul', 'II', 'est', 'né', 'en', 'Pologne', '.']	['Le', 'pape', 'Jean', '-', 'Paul', 'II', 'est', 'né', 'en', 'Pologne', '.']	False
+Je suis boulanger.	['Je', 'suis', 'boulanger', '.']	['Je', 'suis', 'boulanger', '.']	True
+La reine Elizabeth I est morte en 1603.	['La', 'reine', 'Elizabeth', 'I', 'est', 'morte', 'en', '1603', '.']	['La', 'reine', 'Elizabeth', 'I', 'est', 'morte', 'en', '1603', '.']	True
+Marlowe a été arrêté par les autorités italiennes. [EDITED]	['Marlowe', 'a', 'été', 'arrêté', 'par', 'les', 'autorités', 'italiennes', '.', '[', 'EDITED', ']']	['Marlowe', 'a', 'été', 'arrêté', 'par', 'les', 'autorités', 'italiennes', '.', '[', 'EDITED', ']']	True
+Gianni Versace est un styliste.	['Gianni', 'Versace', 'est', 'un', 'styliste', '.']	['Gianni', 'Versace', 'est', 'un', 'styliste', '.']	True
+Personne ne me comprend.	['Personne', 'ne', 'me', 'comprend', '.']	['Personne', 'ne', 'me', 'comprend', '.']	True
+Reinventing Comics est un livre de Scott McCloud.	['Reinventing', 'Comics', 'est', 'un', 'livre', 'de', 'Scott', 'McCloud', '.']	['Reinventing', 'Comics', 'est', 'un', 'livre', 'de', 'Scott', 'McCloud', '.']	True
+Johann Wolfgang von Goethe est né en Allemagne.	['Johann', 'Wolfgang', 'von', 'Goethe', 'est', 'né', 'en', 'Allemagne', '.']	['Johann', 'Wolfgang', 'von', 'Goethe', 'est', 'né', 'en', 'Allemagne', '.']	True
+Le chirurgien a amputé la mauvaise jambe.	['Le', 'chirurgien', 'a', 'amputé', 'la', 'mauvaise', 'jambe', '.']	['Le', 'chirurgien', 'a', 'amputé', 'la', 'mauvaise', 'jambe', '.']	True
+Le vin était excellent. [EDITED]	['Le', 'vin', 'était', 'excellent', '.', '[', 'EDITED', ']']	['Le', 'vin', 'était', 'excellent', '.', '[', 'EDITED', ']']	True
+Ma mère est belle.	['Ma', 'mère', 'est', 'belle', '.']	['Ma', 'mère', 'est', 'belle', '.']	True
+Nous comprenons.	['Nous', 'comprenons', '.']	['Nous', 'comprenons', '.']	True
+Manchester United a battu Fulham.	['Manchester', 'United', 'a', 'battu', 'Fulham', '.']	['Manchester', 'United', 'a', 'battu', 'Fulham', '.']	True
+L'école commence à 8h30.	"[""L'école"", 'commence', 'à', '8h30', '.']"	"['L', ""'"", 'école', 'commence', 'à', '8h30', '.']"	False
+Je m'appelle Antonio.	"['Je', ""m'appelle"", 'Antonio', '.']"	"['Je', 'm', ""'"", 'appelle', 'Antonio', '.']"	False
+Un docteur a examiné M. Brown.	['Un', 'docteur', 'a', 'examiné', 'M.', 'Brown', '.']	['Un', 'docteur', 'a', 'examiné', 'M', '.', 'Brown', '.']	False
+Tom est fort.	['Tom', 'est', 'fort', '.']	['Tom', 'est', 'fort', '.']	True
+BSN a acheté RJR Nabisco.	['BSN', 'a', 'acheté', 'RJR', 'Nabisco', '.']	['BSN', 'a', 'acheté', 'RJR', 'Nabisco', '.']	True
+Il a bu une bière.	['Il', 'a', 'bu', 'une', 'bière', '.']	['Il', 'a', 'bu', 'une', 'bière', '.']	True
+La tarte est délicieuse.	['La', 'tarte', 'est', 'délicieuse', '.']	['La', 'tarte', 'est', 'délicieuse', '.']	True
+Qin Shi Huang était le premier empereur de Chine.	['Qin', 'Shi', 'Huang', 'était', 'le', 'premier', 'empereur', 'de', 'Chine', '.']	['Qin', 'Shi', 'Huang', 'était', 'le', 'premier', 'empereur', 'de', 'Chine', '.']	True
+M. Zhao est mort à Pékin.	['M.', 'Zhao', 'est', 'mort', 'à', 'Pékin', '.']	['M', '.', 'Zhao', 'est', 'mort', 'à', 'Pékin', '.']	False
+Gabriel Garcia Marquez est un écrivain.	['Gabriel', 'Garcia', 'Marquez', 'est', 'un', 'écrivain', '.']	['Gabriel', 'Garcia', 'Marquez', 'est', 'un', 'écrivain', '.']	True
+Nancy Ianiero a été tuée à Mexico.	['Nancy', 'Ianiero', 'a', 'été', 'tuée', 'à', 'Mexico', '.']	['Nancy', 'Ianiero', 'a', 'été', 'tuée', 'à', 'Mexico', '.']	True
+Verdens Gang est un journal norvégien.	['Verdens', 'Gang', 'est', 'un', 'journal', 'norvégien', '.']	['Verdens', 'Gang', 'est', 'un', 'journal', 'norvégien', '.']	True
+Qui a inventé la radio ?	['Qui', 'a', 'inventé', 'la', 'radio', '?']	['Qui', 'a', 'inventé', 'la', 'radio', '?']	True
+Nelson Beavers a travaillé pour Eurofins.	['Nelson', 'Beavers', 'a', 'travaillé', 'pour', 'Eurofins', '.']	['Nelson', 'Beavers', 'a', 'travaillé', 'pour', 'Eurofins', '.']	True
+Il a été attaqué par un requin.	['Il', 'a', 'été', 'attaqué', 'par', 'un', 'requin', '.']	['Il', 'a', 'été', 'attaqué', 'par', 'un', 'requin', '.']	True
+Les chats attrapent des souris.	['Les', 'chats', 'attrapent', 'des', 'souris', '.']	['Les', 'chats', 'attrapent', 'des', 'souris', '.']	True
+Un dauphin est un mammifère. [EDITED]	['Un', 'dauphin', 'est', 'un', 'mammifère', '.', '[', 'EDITED', ']']	['Un', 'dauphin', 'est', 'un', 'mammifère', '.', '[', 'EDITED', ']']	True
+Elle est heureuse.	['Elle', 'est', 'heureuse', '.']	['Elle', 'est', 'heureuse', '.']	True
+John a hérité d'une grosse fortune.	"['John', 'a', 'hérité', ""d'une"", 'grosse', 'fortune', '.']"	"['John', 'a', 'hérité', 'd', ""'"", 'une', 'grosse', 'fortune', '.']"	False
+Stephen Hawking est un physicien.	['Stephen', 'Hawking', 'est', 'un', 'physicien', '.']	['Stephen', 'Hawking', 'est', 'un', 'physicien', '.']	True
+John est bon en mathématiques.	['John', 'est', 'bon', 'en', 'mathématiques', '.']	['John', 'est', 'bon', 'en', 'mathématiques', '.']	True
+C'est mon ami.	"[""C'est"", 'mon', 'ami', '.']"	"['C', ""'"", 'est', 'mon', 'ami', '.']"	False
+Il faisait chaud dans la pièce.	['Il', 'faisait', 'chaud', 'dans', 'la', 'pièce', '.']	['Il', 'faisait', 'chaud', 'dans', 'la', 'pièce', '.']	True

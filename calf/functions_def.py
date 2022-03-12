@@ -19,6 +19,7 @@ def tokenise(sentence: str, iob_option = False, by_contract = True, cut_mod = Tr
         tree = apply_rule(tree, rule, pat, toks)
         # if i == 1 :break
     spaceRule(tree)
+    
     apaRule(tree)
     hyphRule(tree)
     return tree

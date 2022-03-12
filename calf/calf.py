@@ -29,8 +29,8 @@ if __name__ == "__main__":
         # print('sentence: ("',input_sentence,'")', sep='')
         print(tokenisation_output.show())
         # print(*tokenisation_output.graph() , sep='\n')
-        for t in tokenisation_output.graph() :
-            print (t)
+        # for t in tokenisation_output.graph(4) :
+        #     print (t)
     elif args.command == "extract":
         input_indir = args.indir
         input_outdir = args.outdir

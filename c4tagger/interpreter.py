@@ -4,7 +4,6 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from requests import get
 # Interpretation
-import json
 
 df = pd.read_csv("../pmb_french_163.tsv", encoding="utf-8", sep="\t")
 

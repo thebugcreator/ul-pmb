@@ -6,6 +6,7 @@ from requests import get
 # Interpretation
 import utils
 
+
 df = pd.read_csv("../pmb_french_163.tsv", encoding="utf-8", sep="\t")
 
 
@@ -26,7 +27,8 @@ def get_sentence_data(part, docid, arg_type, language):
         idx_last = int((terminal.find("table").attrs["id"])[1:])
     except IndexError:
         idx_last = 1000 + len(content_idm3.find_all("table", class_="lex"))
-
+    except ValueError:
+        return "", ""
     for i in range(idx_base, idx_last + 1):
         token = content_idm3.find("td", title="token {}".format(i)).text
         if len(token.split(" ")) > 1:
@@ -37,30 +39,49 @@ def get_sentence_data(part, docid, arg_type, language):
     return " ".join(tokens), " ".join(semtags)
 
 
-def get_bilingual_data(in_df) -> pd.DataFrame:
+def get_pos_tags(sentence, language):
+    pos_tags = []
+    if sentence:
+        pipeline = utils.get_pipeline(language)
+        document = pipeline(sentence)
+        for token in document:
+            pos_tags.append(token.pos_)
+    return pos_tags
+
+
+def get_bilingual_data(in_df, _l1, _l2) -> pd.DataFrame:
     ids = in_df["ID"]
-    fr_tokens = []
-    fr_semtags = []
-    it_tokens = []
-    it_semtags = []
+    l1_tokens = []
+    l1_semtags = []
+    l1_postags = []
+    l2_tokens = []
+    l2_semtags = []
+    l2_postags = []
     _type = "der.xml"
     for item in ids:
         _id = item.split("/")
         try:
-            fr_token, fr_semtag = get_sentence_data(*_id, _type, "fr")
-            it_token, it_semtag = get_sentence_data(*_id, _type, "it")
+            l1_token, l1_semtag = get_sentence_data(*_id, _type, _l1)
+            l1_postag = " ".join(get_pos_tags(l1_token, _l1))
+            l2_token, l2_semtag = get_sentence_data(*_id, _type, _l2)
+            l2_postag = " ".join(get_pos_tags(l2_token, _l2))
         except:
-            fr_token, fr_semtag, it_token, it_semtag = [], [], [], []
-        fr_tokens.append(fr_token)
-        fr_semtags.append(fr_semtag)
-        it_tokens.append(it_token)
-        it_semtags.append(it_semtag)
+            l1_token, l1_semtag, l2_token, l2_semtag = "", "", "", ""
+            l1_postag, l2_postag = "", ""
+        l1_tokens.append(l1_token)
+        l1_semtags.append(l1_semtag)
+        l1_postags.append(l1_postag)
+        l2_tokens.append(l2_token)
+        l2_semtags.append(l2_semtag)
+        l2_postags.append(l2_postag)
     out_df = pd.DataFrame()
     out_df["id"] = ids
-    out_df["fr_token"] = fr_tokens
-    out_df["fr_semtag"] = fr_semtags
-    out_df["it_token"] = it_tokens
-    out_df["it_semtag"] = it_semtags
+    out_df["l1_token"] = l1_tokens
+    out_df["l1_semtag"] = l1_semtags
+    out_df["l1_postag"] = l1_postags
+    out_df["l2_token"] = l2_tokens
+    out_df["l2_semtag"] = l2_semtags
+    out_df["l2_postag"] = l2_postags
     return out_df
 
 
@@ -82,18 +103,18 @@ def interpret(in_df):
         else:
             chosen_item = in_df[in_df["id"] == chosen_id]
             if len(chosen_item):
-                print("----------FR-----------")
-                for index, value in chosen_item[["fr_token", "fr_semtag"]].iterrows():
-                    tokens = value["fr_token"].split(" ")
-                    semtags = value["fr_semtag"].split(" ")
-                    for i in range(len(tokens)):
-                        print(tokens[i].ljust(20), semtags[i])
-                print("----------IT-----------")
-                for index, value in chosen_item[["it_token", "it_semtag"]].iterrows():
-                    tokens = value["it_token"].split(" ")
-                    semtags = value["it_semtag"].split(" ")
-                    for i in range(len(tokens)):
-                        print(tokens[i].ljust(20), semtags[i])
+                print("----------L1-----------")
+                tok1 = chosen_item["l1_token"].values[0].split(" ")
+                sem1 = chosen_item["l1_semtag"].values[0].split(" ")
+                pos1 = chosen_item["l1_postag"].values[0].split(" ")
+                for i in range(len(tok1)):
+                    print(tok1[i].ljust(20), sem1[i].ljust(10), pos1[i].rjust(10))
+                print("----------L2-----------")
+                tok2 = chosen_item["l2_token"].values[0].split(" ")
+                sem2 = chosen_item["l2_semtag"].values[0].split(" ")
+                pos2 = chosen_item["l2_postag"].values[0].split(" ")
+                for i in range(len(tok2)):
+                    print(tok2[i].ljust(20), sem2[i].ljust(10), pos2[i].rjust(10))
 
 
 if __name__ == "__main__":
@@ -101,7 +122,9 @@ if __name__ == "__main__":
     if args.command == "interpret":
         interpret(read_raw_data())
     elif args.command == "update":
-        save_raw_data(get_bilingual_data(df))
+        l1 = args.l1
+        l2 = args.l2
+        save_raw_data(get_bilingual_data(df, l1, l2))
         print(">> Update successfully!")
     else:
-        raise RuntimeError(">> invalid command name!")
+        raise RuntimeError(">> Invalid command!")

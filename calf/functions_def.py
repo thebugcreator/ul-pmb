@@ -19,9 +19,10 @@ def tokenise(sentence: str, iob_option = False, by_contract = True, cut_mod = Tr
         tree = apply_rule(tree, rule, pat, toks)
         # if i == 1 :break
     spaceRule(tree)
-    
+    # nE(tree)
     apaRule(tree)
     hyphRule(tree)
+
     return tree
 
 def apply_rule(tree, rule, p, t) :
@@ -30,11 +31,13 @@ def apply_rule(tree, rule, p, t) :
         if type(tree.items[i]) is Token :
             pass
         elif type(tree.items[i]) is str :
-            res = rule (tree.items[i], p, t)
+            res = rule( tree.items[i], p, t)
             if type(res) is Tree :  tree.items[i] = res
         elif type(tree.items[i]) is Tree :
             apply_rule(tree.items[i], rule, p, t)
     return tree
+
+
 
 def ilyaRule(tree):
     for  i, item in enumerate(tree.items) :
@@ -54,6 +57,31 @@ def ilyaRule(tree):
 
     pass
 
+def isCapital(item):
+    if type(item) is SpaceToken:
+        if item.representation.istitle():
+            return True
+    elif type(item) is Tree :
+        # nE(item)
+        return False
+
+
+def nE(tree):
+    b , e= -1, -1
+
+    for  i, item in enumerate(tree.items) :
+        if isCapital(item) and b<0 :
+            b = i
+        if b>=0 and  not isCapital(item) and e<0 :
+            e = i
+    if len(tree.items[b:e]) > 1 : 
+        t = Token( *tree.items[b:e] )
+        tree.items[b] = t
+        
+    for  i, item in enumerate(tree.items) :
+        if type(item) is Tree : nE(item)
+
+
 def hyphRule(tree):
     for i, item in enumerate(tree.items):
         if type(item) is SpaceToken:
@@ -61,6 +89,7 @@ def hyphRule(tree):
             for token in tokens :
                 if "-" in token[1:-1] :
                     temp = token.split("-")
+                    if temp[-1] in ["moi", 'moi', 'toi', 'LUI', 'ELLE', 'soi', 'nous', 'vous', 'EUX', 'ELLES'] : continue
                     subtree = Tree()
                     subtree.items.append( Token(temp[0]) )
                     subtree.items.append( Token("-"+temp[1]) )
@@ -70,6 +99,7 @@ def hyphRule(tree):
 
 
 def apaRule(tree, *args):
+    """ apostrophe rule"""
     for i, item in enumerate(tree.items) :
         if type(item) is SpaceToken :
             tokens = item.items
@@ -123,6 +153,6 @@ if __name__ == "__main__" :
     # print(tree)
     print(tree.show() )
     print()
-    print(*tree.graph() , sep='\n')
+    # print(*tree.graph() , sep='\n')
 
     

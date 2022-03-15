@@ -66,20 +66,20 @@ def get_calf_tokenisation(string_literals: list) -> pd.DataFrame:
     pass
 
 
-def convert_to_iob(tokens):
+def generate_iob_from_tokens(tokens):
     """
     To get the IOB tags of a list of tokens
     :param tokens: A list of tokens
     :return: IOB tags
     """
     iobs = []
-    for token in tokens:
+    for i, token in enumerate(tokens):
         if token:
             iob = ["I"] * len(token)
             iob[0] = "B"
         else:
             continue
-        if token != tokens[-1]:
+        if i != len(tokens) - 1 and i != len(tokens) - 2:
             iob.append("O")
         iobs.append("".join(iob))
     return "".join(iobs)

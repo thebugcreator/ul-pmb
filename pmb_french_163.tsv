@@ -2,13 +2,13 @@ ID	raw_text_en	source	id	French translation	French source	Last accessed	French t
 00/0712	Kraft sold Celestial Seasonings.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	84	Kraft a vendu Celestial Seasonings.			Kraft a vendu Celestial_Seasonings .
 00/0715	Anna Politkovskaya was murdered.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	384	Anna Politkovskaya a été assassinée.			Anna_Politkovskaya a été assassinée .
 00/0717	The yakuza are the Japanese mafia.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	584	Les yakuza forment la mafia japonaise.			Les yakuza forment la mafia japonaise .
-00/0766	Yunus founded the Grameen Bank 30 years ago.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	623	Yunus a fondé la banque Grameen il y a 30 ans.			Yunus a fondé la banque Grameen il*y*a 30 ans .
+00/0766	Yunus founded the Grameen Bank 30 years ago.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	623	Yunus a fondé la banque Grameen il y a 30 ans.			Yunus a fondé la banque Grameen il_y_a 30 ans .
 00/0771	Maria has long hair.	http://opus.lingfil.uu.se/Tatoeba.php	5994	Maria a les cheveux longs.	https://tatoeba.org/eng/sentences/show/5995	21.05.2021	Maria a les cheveux longs .
 00/0784	Bob is popular at school.	http://opus.lingfil.uu.se/Tatoeba.php	33196	Bob est populaire à l'école.	https://tatoeba.org/eng/sentences/show/332272	21.05.2021	Bob est populaire à l' école .
 00/0881	Nice suit.	http://opus.lingfil.uu.se/Tatoeba.php	576038	Joli costume.	https://tatoeba.org/en/sentences/show/9820923	21.05.2021	Joli costume .
 00/0895	Where are the parking metres?	http://opus.lingfil.uu.se/Tatoeba.php	839798	Où sont les parcmètres ?	https://tatoeba.org/eng/sentences/show/839795	21.05.2021	Où sont les parcmètres ?
 00/0927	Tom used a toothpick.	http://opus.lingfil.uu.se/Tatoeba.php	1482611	Tom a utilisé un cure-dent.	https://tatoeba.org/en/sentences/show/10052984	21.05.2021	Tom a utilisé un cure-dent .
-00/1549	This is Miss Curtis.	http://opus.lingfil.uu.se/Tatoeba.php	61536	Voici Mademoiselle Curtis.	https://tatoeba.org/en/sentences/show/10052994	21.05.2021	Voici Mademoiselle*Curtis .
+00/1549	This is Miss Curtis.	http://opus.lingfil.uu.se/Tatoeba.php	61536	Voici Mademoiselle Curtis.	https://tatoeba.org/en/sentences/show/10052994	21.05.2021	Voici Mademoiselle Curtis .
 01/0784	Bob was very happy.	http://opus.lingfil.uu.se/Tatoeba.php	33211	Bob était très content.	https://tatoeba.org/en/sentences/show/10053014	21.05.2021	Bob était très content .
 01/0877	Hi.	http://opus.lingfil.uu.se/Tatoeba.php	538123	Salut.	https://tatoeba.org/eng/sentences/show/4320462	21.05.2021	Salut .
 01/0958	Hello!	http://opus.lingfil.uu.se/Tatoeba.php	373330-373339	Bonjour !	https://tatoeba.org/eng/sentences/show/373345	21.05.2021	Bonjour !
@@ -23,10 +23,10 @@ ID	raw_text_en	source	id	French translation	French source	Last accessed	French t
 05/0820	The red skirt is new.	http://opus.lingfil.uu.se/Tatoeba.php	462894	La jupe rouge est neuve.	https://tatoeba.org/eng/sentences/show/961204	21.05.2021	La jupe rouge est neuve .
 05/0830	Nobody has solved the problem.	http://opus.lingfil.uu.se/Tatoeba.php	276578	Personne n'a résolu le problème.	https://tatoeba.org/en/sentences/show/129251	21.05.2021	Personne n' a résolu le problème .
 05/0904	I eat an apple.	http://opus.lingfil.uu.se/Tatoeba.php	1098565	Je mange une pomme.	https://tatoeba.org/en/sentences/show/13776	21.05.2021	Je mange une pomme .
-06/0760	Capt. Scott reached Scott Island in December 1902.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	31	Le capitaine Scott a découvert l'île Scott en décembre 1902.			Le capitaine*Scott a découvert l' île*Scott en décembre*1902 .
+06/0760	Capt. Scott reached Scott Island in December 1902.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	31	Le capitaine Scott a découvert l'île Scott en décembre 1902.			Le capitaine Scott a découvert l' île Scott en décembre 1902 .
 06/0910	The rain lasted five days.	http://opus.lingfil.uu.se/Tatoeba.php	26713	Il a plu pendant cinq jours.	https://tatoeba.org/en/sentences/show/551910	21.05.2021	Il a plu pendant cinq jours .
 06/2903	I have two cats.	http://opus.lingfil.uu.se/Tatoeba.php	2412739	J'ai deux chats.	https://tatoeba.org/en/sentences/show/2982659	21.05.2021	J' ai deux chats .
-07/0760	Carl Smith died on August 8.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	32	Carl Smith est mort le 8 août.			Carl_Smith est mort le 8*août .
+07/0760	Carl Smith died on August 8.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	32	Carl Smith est mort le 8 août.			Carl_Smith est mort le 8 août .
 07/0905	The man is right.	http://opus.lingfil.uu.se/Tatoeba.php	1117500	Cet homme a raison.	https://tatoeba.org/en/sentences/show/10068526	28.05.2021	Cet homme a raison .
 07/0914	A cookie is under the table.	http://opus.lingfil.uu.se/Tatoeba.php	1306415	Il y a un biscuit sous la table.	https://tatoeba.org/en/sentences/show/3285641	28.05.2021	Il y a un biscuit sous la table .
 07/0928	My mother has cooked ten eggs.	http://opus.lingfil.uu.se/Tatoeba.php	1490779	Ma mère a fait cuire dix œufs.	https://tatoeba.org/en/sentences/show/10068751	28.05.2021	Ma mère a fait cuire dix œufs .
@@ -59,12 +59,12 @@ ID	raw_text_en	source	id	French translation	French source	Last accessed	French t
 19/0712	Henry Ford founded the Ford Motor Company.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	103	Henri Ford a fondé l'entreprise Ford.			Henri_Ford a fondé l' entreprise Ford .
 19/0918	The border is closed.	http://opus.lingfil.uu.se/Tatoeba.php	1399667	La frontière est fermée.	https://tatoeba.org/en/sentences/show/5043046	21.05.2021	La frontière est fermée .
 19/2243	Tom's my cousin.	http://opus.lingfil.uu.se/Tatoeba.php	2549442	Tom est mon cousin.	https://tatoeba.org/en/sentences/show/2753064	21.05.2021	Tom est mon cousin .
-20/0761	Senacal resides in Cortland Manor.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	145	Senecal habite le Manoir Cortland.			Senecal habite le Manoir*Cortland .
+20/0761	Senacal resides in Cortland Manor.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	145	Senecal habite le Manoir Cortland.			Senecal habite le Manoir Cortland .
 20/0785	Picasso is a famous artist.	http://opus.lingfil.uu.se/Tatoeba.php	34821	Picasso est un artiste célèbre.	https://tatoeba.org/en/sentences/show/332295	21.05.2021	Picasso est un artiste célèbre .
 20/0851	The wind is blowing.	http://opus.lingfil.uu.se/Tatoeba.php	319673	Le vent souffle.	https://tatoeba.org/en/sentences/show/671202	21.05.2021	Le vent souffle .
 20/0874	Sumatra is an island.	http://opus.lingfil.uu.se/Tatoeba.php	477051	Sumatra est une île.	https://tatoeba.org/en/sentences/show/479910	21.05.2021	Sumatra est une île .
 21/0860	Two plus two makes four.	http://opus.lingfil.uu.se/Tatoeba.php	394885	Deux plus deux égale quatre.	https://tatoeba.org/en/sentences/show/8252054	21.05.2021	Deux plus deux égale quatre .
-21/0867	Marilyn Monroe died 33 years ago.	http://opus.lingfil.uu.se/Tatoeba.php	439463	Marilyn Monroe est morte il y a 33 ans.	https://tatoeba.org/en/sentences/show/429548	21.05.2021	Marilyn_Monroe est morte il*y*a 33 ans .
+21/0867	Marilyn Monroe died 33 years ago.	http://opus.lingfil.uu.se/Tatoeba.php	439463	Marilyn Monroe est morte il y a 33 ans.	https://tatoeba.org/en/sentences/show/429548	21.05.2021	Marilyn_Monroe est morte il_y_a 33 ans .
 21/1954	Many people admire Nikko.	http://opus.lingfil.uu.se/Tatoeba.php	4640863	Beaucoup de gens admire Nikklo.	https://tatoeba.org/en/sentences/show/10053108	21.05.2021	Beaucoup de gens admire Nikklo .
 23/0711	Sandra Goudie was defeated by Max Purnell.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	7	Sandra Goudie a perdu contre Max Purnell.			Sandra_Goudie a perdu contre Max_Purnell.
 24/3251	The cat is under the table.	http://opus.lingfil.uu.se/Tatoeba.php	801731	Le chat est sous la table.	https://tatoeba.org/en/sentences/show/802817	21.05.2021	Le chat est sous la table .
@@ -141,13 +141,13 @@ ID	raw_text_en	source	id	French translation	French source	Last accessed	French t
 85/0712	Manchester United defeated Fulham.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	169	Manchester United a battu Fulham.			Manchester_United a battu Fulham .
 85/0825	School begins at 8:30 a.m.	http://opus.lingfil.uu.se/Tatoeba.php	266228	L'école commence à 8h30.	https://tatoeba.org/en/sentences/show/10068766	28.05.2021	L' école commence à 8h30 .
 85/0889	I am Antonio.	http://opus.lingfil.uu.se/Tatoeba.php	716143	Je m'appelle Antonio.	https://tatoeba.org/en/sentences/show/10068767	28.05.2021	Je m' appelle Antonio .
-85/0893	A doctor examined Mr. Brown.	http://opus.lingfil.uu.se/Tatoeba.php	805322	Un docteur a examiné M. Brown.	https://tatoeba.org/en/sentences/show/10053786	21.05.2021	Un docteur a examiné M.*Brown .
+85/0893	A doctor examined Mr. Brown.	http://opus.lingfil.uu.se/Tatoeba.php	805322	Un docteur a examiné M. Brown.	https://tatoeba.org/en/sentences/show/10053786	21.05.2021	Un docteur a examiné M. Brown .
 85/0940	Tom is strong.	http://opus.lingfil.uu.se/Tatoeba.php	2203405	Tom est fort.	https://tatoeba.org/en/sentences/show/2350779	21.05.2021	Tom est fort .
 86/0717	BSN bought RJR Nabisco.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	670	BSN a acheté RJR Nabisco.			BSN a acheté RJR_Nabisco .
 86/0915	He drank a beer.	http://opus.lingfil.uu.se/Tatoeba.php	1358327	Il a bu une bière.	https://tatoeba.org/en/sentences/show/2534806	21.05.2021	Il a bu une bière .
 86/2287	The pie is delicious.	http://opus.lingfil.uu.se/Tatoeba.php	452808	La tarte est délicieuse.	https://tatoeba.org/en/sentences/show/10053782	21.05.2021	La tarte est délicieuse .
 87/0715	Qin Shi Huang was the first Emperor of China.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	471/472	Qin Shi Huang était le premier empereur de Chine.			Qin_Shi_Huang était le premier empereur de Chine .
-87/0760	Mr. Zhao died in Beijing.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	112	M. Zhao est mort à Pékin.			M.*Zhao est mort à Pékin .
+87/0760	Mr. Zhao died in Beijing.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	112	M. Zhao est mort à Pékin.			M. Zhao est mort à Pékin .
 87/0763	Gabriel Garcia Marquez is a writer.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	411	Gabriel Garcia Marquez est un écrivain.			Gabriel_Garcia_Marquez est un écrivain .
 92/0712	Nancy Ianiero was killed in Mexico.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	176	Nancy Ianiero a été tuée à Mexico.			Nancy_Ianiero a été tuée à Mexico .
 92/0764	Verdens Gang is a Norwegian newspaper.	http://pascallin.ecs.soton.ac.uk/Challenges/RTE3/Datasets/	516	Verdens Gang est un journal norvégien.			Verdens_Gang est un journal norvégien .

@@ -1,6 +1,8 @@
 import pandas as pd
 import spacy
+from nltk.metrics.scores import precision, recall, f_measure
 from nltk.tokenize import word_tokenize, WordPunctTokenizer
+import numpy as np
 
 # Loading tsv into data frame
 df = pd.read_csv("../pmb_french_163.tsv", sep="\t")
@@ -33,7 +35,7 @@ def get_nltk_tokenisation(string_literals: list) -> pd.DataFrame:
     df_nltk["literal"] = string_literals
     df_nltk["wt"] = nltk_wt_tokenisation
     df_nltk["wp"] = nltk_wp_tokenisation
-    df_nltk["are_similar"] = [int(row["wt"] == row["wp"]) for index, row in df_nltk.iterrows()]#
+    df_nltk["are_similar"] = [int(row["wt"] == row["wp"]) for index, row in df_nltk.iterrows()]  #
     return df_nltk
 
 
@@ -85,7 +87,27 @@ def generate_iob_from_tokens(tokens):
     return "".join(iobs)
 
 
+def calculate_pair_scores(refset, goldset):
+    """
+    To calculate the P, R, and F1 score of a reference tagset against the gold one.
+    :param refset: the reference tagset
+    :param goldset: the gold tagset
+    :return: P, R, F1 score respectively
+    """
+    return precision(refset, goldset), recall(refset, goldset), f_measure(refset, goldset, 1)
+
+
+def analyse_spacy_tokenisation():
+    spacydf = pd.read_csv("spacy_tokenisation.tsv", sep="\t", encoding="utf-8")
+    spacy_tokens = spacydf[["ID", "md"]]
+    spacy_tokens["gold"] = gold_tokenisation
+    for i, val in spacy_tokens.iterrows():
+        ref = val["md"].split(" ")
+        gold = val["gold"].split(" ")
+        print(ref, gold)
+        print(calculate_pair_scores(ref, gold))
+
+
 # Export the results to tsv files
 # get_spacy_tokenisation(gold_literals).to_csv("spacy_tokenisation.tsv", index=False, encoding="utf8", sep="\t")
 # get_nltk_tokenisation(gold_literals).to_csv("nltk_tokenisation.tsv", index=False, encoding="utf8", sep="\t")
-

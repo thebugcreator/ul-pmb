@@ -100,6 +100,7 @@ def analyse_spacy_tokenisation():
     spacydf = pd.read_csv("spacy_tokenisation.tsv", sep="\t", encoding="utf-8")
     spacy_tokens = spacydf[["ID", "md"]]
     spacy_tokens["gold"] = gold_tokenisation
+    evaluations = []
     for i, val in spacy_tokens.iterrows():
         ref = val["md"].split(" ")
         gold = val["gold"].split(" ")
@@ -107,14 +108,11 @@ def analyse_spacy_tokenisation():
         iobgold = generate_iob_from_tokens(gold)
         try:
             cm = ConfusionMatrix(iobref,iobgold)
-            # print(cm.evaluate())
+            evaluations.append(cm.evaluate())
         except ValueError:
-            print(val["ID"])
-            print(ref,gold)
-            print(iobref,iobgold)
+            print("Unable to analyse: ",val["ID"])
+    return evaluations
 
 # Export the results to tsv files
 # get_spacy_tokenisation(gold_literals).to_csv("spacy_tokenisation.tsv", index=False, encoding="utf8", sep="\t")
 # get_nltk_tokenisation(gold_literals).to_csv("nltk_tokenisation.tsv", index=False, encoding="utf8", sep="\t")
-
-# analyse_spacy_tokenisation()

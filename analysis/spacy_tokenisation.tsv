@@ -52,8 +52,8 @@ ID	literal	sm	md	are_similar
 15/0816	Ma soeur est célèbre.	Ma soeur est célèbre .	Ma soeur est célèbre .	1
 15/0956	La porte est fermée.	La porte est fermée .	La porte est fermée .	1
 15/2508	La viande est congelée.	La viande est congelée .	La viande est congelée .	1
-16/0761	Saddam Hussein fuit aux États-Unis. [EDITED]	Saddam Hussein fuit aux États-Unis . [ EDITED ]	Saddam Hussein fuit aux États-Unis . [ EDITED ]	1
-17/2559	Auckland est une ville de Nouvelle-Zélande. [EDITED]	Auckland est une ville de Nouvelle - Zélande . [ EDITED ]	Auckland est une ville de Nouvelle - Zélande . [ EDITED ]	1
+16/0761	Saddam Hussein fuit aux États-Unis.	Saddam Hussein fuit aux États-Unis .	Saddam Hussein fuit aux États-Unis .	1
+17/2559	Auckland est une ville de Nouvelle-Zélande.	Auckland est une ville de Nouvelle - Zélande .	Auckland est une ville de Nouvelle - Zélande .	1
 18/1618	Mon père est grand.	Mon père est grand .	Mon père est grand .	1
 19/0711	Aurore Paquiss est marié à Chabrol.	Aurore Paquiss est marié à Chabrol .	Aurore Paquiss est marié à Chabrol .	1
 19/0712	Henri Ford a fondé l'entreprise Ford.	Henri Ford a fondé l' entreprise Ford .	Henri Ford a fondé l' entreprise Ford .	1
@@ -129,13 +129,13 @@ ID	literal	sm	md	are_similar
 75/0716	Le pape Jean-Paul II est né en Pologne.	Le pape Jean-Paul II est né en Pologne .	Le pape Jean-Paul II est né en Pologne .	1
 75/0818	Je suis boulanger.	Je suis boulanger .	Je suis boulanger .	1
 75/0910	La reine Elizabeth I est morte en 1603.	La reine Elizabeth I est morte en 1603 .	La reine Elizabeth I est morte en 1603 .	1
-79/0760	Marlowe a été arrêté par les autorités italiennes. [EDITED]	Marlowe a été arrêté par les autorités italiennes . [ EDITED ]	Marlowe a été arrêté par les autorités italiennes . [ EDITED ]	1
+79/0760	Marlowe a été arrêté par les autorités italiennes.	Marlowe a été arrêté par les autorités italiennes .	Marlowe a été arrêté par les autorités italiennes .	1
 79/0763	Gianni Versace est un styliste.	Gianni Versace est un styliste .	Gianni Versace est un styliste .	1
 79/0767	Personne ne me comprend.	Personne ne me comprend .	Personne ne me comprend .	1
 81/0711	Reinventing Comics est un livre de Scott McCloud.	Reinventing Comics est un livre de Scott McCloud .	Reinventing Comics est un livre de Scott McCloud .	1
 82/0716	Johann Wolfgang von Goethe est né en Allemagne.	Johann Wolfgang von Goethe est né en Allemagne .	Johann Wolfgang von Goethe est né en Allemagne .	1
 82/1991	Le chirurgien a amputé la mauvaise jambe.	Le chirurgien a amputé la mauvaise jambe .	Le chirurgien a amputé la mauvaise jambe .	1
-82/2388	Le vin était excellent. [EDITED]	Le vin était excellent . [ EDITED ]	Le vin était excellent . [ EDITED ]	1
+82/2388	Le vin était excellent.	Le vin était excellent .	Le vin était excellent .	1
 83/0814	Ma mère est belle.	Ma mère est belle .	Ma mère est belle .	1
 83/2406	Nous comprenons.	Nous comprenons .	Nous comprenons .	1
 85/0712	Manchester United a battu Fulham.	Manchester United a battu Fulham .	Manchester United a battu Fulham .	1
@@ -155,7 +155,7 @@ ID	literal	sm	md	are_similar
 94/0760	Nelson Beavers a travaillé pour Eurofins.	Nelson Beavers a travaillé pour Eurofins .	Nelson Beavers a travaillé pour Eurofins .	1
 94/0906	Il a été attaqué par un requin.	Il a été attaqué par un requin .	Il a été attaqué par un requin .	1
 96/0785	Les chats attrapent des souris.	Les chats attrapent des souris .	Les chats attrapent des souris .	1
-96/0802	Un dauphin est un mammifère. [EDITED]	Un dauphin est un mammifère . [ EDITED ]	Un dauphin est un mammifère . [ EDITED ]	1
+96/0802	Un dauphin est un mammifère.	Un dauphin est un mammifère .	Un dauphin est un mammifère .	1
 96/1684	Elle est heureuse.	Elle est heureuse .	Elle est heureuse .	1
 98/0794	John a hérité d'une grosse fortune.	John a hérité d' une grosse fortune .	John a hérité d' une grosse fortune .	1
 99/0716	Stephen Hawking est un physicien.	Stephen Hawking est un physicien .	Stephen Hawking est un physicien .	1

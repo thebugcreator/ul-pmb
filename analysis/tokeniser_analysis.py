@@ -65,8 +65,8 @@ def get_spacy_tokenisation(string_literals: list) -> pd.DataFrame:
     return df_spacy
 
 
-def get_calf_tokenisation(string_literals: list) -> pd.DataFrame:
-    pass
+def get_calf_tokenisation() -> pd.DataFrame:
+    return pd.read_csv("calf_tokenisation.tsv", sep="\t", encoding="utf-8")
 
 
 def generate_iob_from_tokens(tokens):
@@ -107,12 +107,15 @@ def analyse_spacy_tokenisation():
         iobref = generate_iob_from_tokens(ref)
         iobgold = generate_iob_from_tokens(gold)
         try:
-            cm = ConfusionMatrix(iobref,iobgold)
+            cm = ConfusionMatrix(iobref, iobgold)
             evaluations.append(cm.evaluate())
         except ValueError:
-            print("Unable to analyse: ",val["ID"])
+            print("Unable to analyse: ", val["ID"])
     return evaluations
 
 # Export the results to tsv files
 # get_spacy_tokenisation(gold_literals).to_csv("spacy_tokenisation.tsv", index=False, encoding="utf8", sep="\t")
 # get_nltk_tokenisation(gold_literals).to_csv("nltk_tokenisation.tsv", index=False, encoding="utf8", sep="\t")
+
+
+analyse_spacy_tokenisation()

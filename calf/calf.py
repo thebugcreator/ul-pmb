@@ -1,10 +1,6 @@
-#calf.py : main file to  execute.
-from Token import *
-from  utils import get_cli_args
-from constants import considered_letters, patterns
 from functions_def import tokenise
-import csv
-
+from utils import get_cli_args
+import pandas as pd
 
 
 def extract(indir: str, outdir: str, iob_option: bool):
@@ -15,22 +11,25 @@ def extract(indir: str, outdir: str, iob_option: bool):
     :param iob_option: Binary option to retrieve the IOB tags
     :return: nothing
     """
-    pass
+    df = pd.read_csv(indir)
+    outputs = []
+    for index, value in df.iterrows():
+        tokens = tokenise(value["French translation"], iob_option=iob_option)
+        outputs.append(str(tokens).strip())
+    outdf = pd.DataFrame()
+    outdf["literals"] = df["French translation"]
+    outdf["tokens"] = outputs
+    outdf.to_csv(outdir, sep="\t", encoding="UTF-8", index=False)
+    return outdf.size
+
 
 if __name__ == "__main__":
     args = get_cli_args()
     if args.command == "tokenise":
         input_sentence = args.sentence
         input_iob_option = args.iob
-        tokenisation_output = tokenise(input_sentence,input_iob_option)
-        # print(*tokenisation_output[0])
-        # print(tokenisation_output[1])
-        # [print(*x, sep='', end=' ') for x in tokenisation_output[2]]
-        # print('sentence: ("',input_sentence,'")', sep='')
+        tokenisation_output = tokenise(input_sentence, input_iob_option)
         print(tokenisation_output.show())
-        # print(*tokenisation_output.graph() , sep='\n')
-        # for t in tokenisation_output.graph(4) :
-        #     print (t)
     elif args.command == "extract":
         input_indir = args.indir
         input_outdir = args.outdir
@@ -40,5 +39,5 @@ if __name__ == "__main__":
     else:
         input_sentence = input(" :")
         tokenisation_output = tokenise(input_sentence)
-        
+
         # raise RuntimeError(">> invalid command name!")

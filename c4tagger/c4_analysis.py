@@ -70,11 +70,12 @@ def get_pos_sem_tag(filename, pipeline):
     minidf["pos"] = poss
     minidf["sem"] = sems
     minidf["tok"] = tokens
-    minidf.to_csv(filename + ".csv", encoding="utf8", index=False)
+    minidf.to_csv(filename + ".tsv", sep="\t", encoding="utf8", index=False)
     return len(poss)
 
 
 get_pos_sem_tag("train_gold_it", "it_core_news_md")
+get_pos_sem_tag("train_gold_en", "en_core_web_md")
 
 
 #%%
@@ -111,13 +112,13 @@ def pre_process_spacy_pos_NE(pos_tags):
 
 
 #%%
-def get_pos_sem_alignment(csv_filename):
+def get_pos_sem_alignment(tsv_filename):
     """
     Get POS-SEM tag alignment
-    :param csv_filename: csv filename
+    :param tsv_filename: csv filename
     :return:
     """
-    minidf = pd.read_csv(csv_filename)
+    minidf = pd.read_csv(tsv_filename, sep="\t")
 
     for index, value in minidf.iterrows():
         pos = value["pos"].split(" ")

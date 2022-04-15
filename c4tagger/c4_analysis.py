@@ -74,8 +74,8 @@ def get_pos_sem_tag(filename, pipeline):
     return len(poss)
 
 
-get_pos_sem_tag("train_gold_it", "it_core_news_md")
-get_pos_sem_tag("train_gold_en", "en_core_web_md")
+# get_pos_sem_tag("train_gold_it", "it_core_news_md")
+# get_pos_sem_tag("train_gold_en", "en_core_web_md")
 
 
 #%%
@@ -119,17 +119,35 @@ def get_pos_sem_alignment(tsv_filename):
     :return:
     """
     minidf = pd.read_csv(tsv_filename, sep="\t")
-
+    outputdf = pd.DataFrame()
+    pos_tags = dict()
+    # Loop over the data frame
     for index, value in minidf.iterrows():
+        # Extract record info of POS tags and SEM tags (and tokens as well)
         pos = value["pos"].split(" ")
         pos = pre_process_spacy_pos_NE(pos)
         sem = value["sem"].split(" ")
         tok = value["tok"]
+        # Ignore the non-aligned pairs
         if len(pos) != len(sem):
+            # but still print them out
             print(tok, pos, sem)
+            continue
+        for i in range(len(pos)):
+            # Get the POS-SEM pair
+            ptag = pos[i]
+            stag = sem[i]
+            try:
+                # Put the SEM tag into the sub-collection of a POS tag
+                pos_tags[ptag].add(stag)
+            except KeyError:
+                # If the POS tag doesn't exist, add one
+                pos_tags[ptag] = set()
+                pos_tags[ptag].add(stag)
+    return pos_tags
 
 
-# get_pos_sem_alignment()
-
+pos_tags = get_pos_sem_alignment("train_gold_it.tsv")
+print(pos_tags)
 
 #%%

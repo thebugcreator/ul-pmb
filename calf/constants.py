@@ -53,6 +53,7 @@ patterns = {
     "fait-il" : ("fait", "-il") , "Fait-il" : ( "Fait", "-il" ),
     "doit-il" : ("doit", "-il") , "Doit-il" : ("Doit", "-il") ,
     "s'agit-il" : ("s'", "agit",  "il") , "S'agit-il" : ("S'", "agit", "-il" ),
+    "aujourd'hui" : ("aujourd'hui", ), "Aujourd'hui" : ("Aujourd'hui", ), 
 
     "c'est-à-dire" : ("c'est-à-dire",), "C'est-à-dire" : ("C'est-à-dire",),
     "d'accord" : ("d'accord",), "D'accord" : ("D'accord",),

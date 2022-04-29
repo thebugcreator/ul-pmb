@@ -29,7 +29,7 @@ if __name__ == "__main__":
         input_sentence = args.sentence
         input_iob_option = args.iob
         tokenisation_output = tokenise(input_sentence, input_iob_option)
-        print(tokenisation_output.show())
+        print(tokenisation_output) # it could be tokenisation_output.show()
     elif args.command == "extract":
         input_indir = args.indir
         input_outdir = args.outdir

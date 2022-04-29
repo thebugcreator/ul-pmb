@@ -3,6 +3,7 @@ class Token:
     def __init__(self, *args):
         self.items = [*args]
         self.representation = "_".join(self.items)
+        self.IOB = "B" + ( len(self.representation)-1 ) * "I"
 
     def __str__(self):
         return self.representation
@@ -16,21 +17,31 @@ class Token:
     def __len__(self):
         return len(self.representation)
 
-
 class SpaceToken(Token):
     pass
+
+class BlankToken(Token) :
+    def __init__(self):
+        super().__init__()
 
 
 class Tree:
     def __init__(self, string=None) -> None:
         self.items = []
-        if type(string) is str and len(string) > 0: self.items.append(string)
+        self.eva_items = []
+        self.IOBs = []
+        if type(string) is str and len(string) > 0: 
+            self.items.append(string)
+            self.eva_items.append(string)
+            # self.IOBs.append(len(string) * "S")
+            self.IOBs.append("String")
 
     def __str__(self) -> str:
         res = ""
         for item in self.items:
-            res = res + " " + str(item)
+            res = res + str(item) + ' '
         return res
+        # return '_'.join(self.items)
 
     def show(self):
         res = ""
@@ -42,6 +53,34 @@ class Tree:
             else:
                 res = res + '[' + i.__str__() + ']'
         return res
+
+    def get_tokens(self):
+        res= []
+        for item in self.items :
+            if type(item) is Tree :
+                res.extend(item.get_tokens() )
+            else:#if type(item) is 
+                res.append(item.__str__())
+        return res
+    def get_tokens_eva(self):
+        res = []
+        for item in self.eva_items :
+            if type(item) is Tree :
+                res.extend(item.get_tokens_eva())
+            else:
+                res.extend(item)
+        return res
+
+    def get_IOBs(self):
+        res =[]
+        for item in self.IOBs :
+            if type(item) is Tree :
+                res.extend(item.get_IOBs())
+            else:
+                res.append(item)
+        return res
+
+
 
     def graph(self, inden=4):
         if len(self.items) == 0:
@@ -77,7 +116,7 @@ class Tree:
             return res
 
 
-        # class CharSeq :
+# class CharSeq :
 #     def __init__(self, string, is_token = False) :
 #         self.string = string 
 #         self.is_token = is_token

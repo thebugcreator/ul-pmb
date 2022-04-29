@@ -14,11 +14,13 @@ def tokenise(sentence: str, iob_option=False, by_contract=True, cut_mod=True):
     if type(sentence) is not str :
         print('wrong input type!')
         return -1
-    if (sentence[-2] in considered_letters) and by_contract:
+    weAddSpace = False
+    if (sentence[-2] in considered_letters+"0123456789") and by_contract:
         # If there's not a space before the terminal symbol, add one
         # if sentence[-1] in (".", "!", "?",):
             well_formed_sentence = sentence[0:-1] + " " + sentence[-1]
             sentence = well_formed_sentence
+            weAddSpace = True
 
     tree = Tree(sentence)
     # tree.items.append(sentence)
@@ -36,7 +38,10 @@ def tokenise(sentence: str, iob_option=False, by_contract=True, cut_mod=True):
 
     IOB_tags = tree.get_IOBs()
     last = IOB_tags[-1]
-    IOB_tags[-1] = last[:-1]
+    IOB_tags[-1] = last[:-1] # removng the extra 'o' from the end of the punctuation token
+    if weAddSpace:
+        last = IOB_tags[-2]
+        IOB_tags[-2] = last[:-1] #  removng the extra 'o' from the end of the last token
     return tree.get_tokens(), IOB_tags, tree.get_tokens_eva() 
 ###########
 def namedEntity(tree):

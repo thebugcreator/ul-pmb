@@ -1,6 +1,9 @@
+import argparse
+
 import pandas as pd
 # import conllu # This doesn't work. This conll file is not conllu
 import spacy
+import utils
 
 
 #%%
@@ -112,10 +115,11 @@ def pre_process_spacy_pos_NE(pos_tags):
 
 
 #%%
-def get_pos_sem_alignment(tsv_filename):
+def get_pos_sem_alignment(tsv_filename, show_non_aligned=False):
     """
     Get POS-SEM tag alignment
     :param tsv_filename: csv filename
+    :param show_non_aligned: Choose to show the non-aligned documents
     :return:
     """
     minidf = pd.read_csv(tsv_filename, sep="\t")
@@ -130,8 +134,9 @@ def get_pos_sem_alignment(tsv_filename):
         tok = value["tok"]
         # Ignore the non-aligned pairs
         if len(pos) != len(sem):
-            # but still print them out
-            print(tok, pos, sem)
+            # Choose to print them out
+            if show_non_aligned:
+                print(tok, pos, sem)
             continue
         for i in range(len(pos)):
             # Get the POS-SEM pair
@@ -147,7 +152,29 @@ def get_pos_sem_alignment(tsv_filename):
     return pos_tags
 
 
-pos_tags = get_pos_sem_alignment("train_gold_it.tsv")
-print(pos_tags)
+# pos_tags = get_pos_sem_alignment("train_gold_it.tsv")
+# print(pos_tags)
 
 #%%
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Data extractor")
+    subparsers = parser.add_subparsers(help='sub-command', dest='command')
+
+    # Add Command Line arguments for the extractor
+    parser_knn = subparsers.add_parser("extract", help="Data extraction")
+    parser_knn.add_argument("--file", type=str, default="en", help="CoNLL file path")
+    parser_knn.add_argument("--pipeline", type=str, default="en_core_web_sm", help="Spacy pipeline name")
+    # Add Command Line arguments to interpret the alignment
+    parser_knn = subparsers.add_parser("inspect", help="Data inspection")
+    parser_knn.add_argument("--file", type=str, default="fr", help="TSV file path")
+    args = parser.parse_args()
+    if args.command == "extract":
+        file = args.file
+        pipeline = args.pipeline
+        print(get_pos_sem_tag(file, pipeline))
+    elif args.command == "inspect":
+        file = args.file
+        results = get_pos_sem_alignment(file)
+        [print(key, results[key]) for key in results.keys()]
+    else:
+        raise RuntimeError(">> Invalid command!")

@@ -2,7 +2,7 @@
 # Evaluating the tokeniser results over gold data.
 from functions_def import tokenise
 # import spacy
-
+########################   function defenition  ###########################
 def calc(s1, s2):
     """
     calculates the expected, correct, and provided "B" tag for eaach sentence. inputs are IOB strings, golden and estimated, respectfully.
@@ -18,7 +18,7 @@ def calc(s1, s2):
         if i < len(s2):
             if s2[i] == "B" : p += 1
     return e, c, p
-#############################
+######################################  main section  #########################
 # nlp = spacy.load("fr_dep_news_trf")
 
 f = open("../pmb_french_163.tsv", "r" , encoding = 'utf-8')
@@ -35,7 +35,8 @@ expected = 0
 for i in range(163):
     line = f.readline().split('\t')
     sentence = line[ind_FrSen]
-    tokens = line[ind_FrTok].split(' ')
+    temp = line[ind_FrTok].strip()
+    tokens = temp.split(' ')
     print(sentence, file=fw)
     print('golden -->' , tokens, end='  ,' ,  file=fw)
     # forming the IOB tags for tokens
@@ -54,13 +55,15 @@ for i in range(163):
     # IOBs[-1] = IOBs[-1] + "O"
     token = tokens[-1]
 
-    if token[-1] == '\n':
+    if True : # token[-1] == '\n':
+        '''
         if token[0] == ' ':
             l = len(token)-2
             if l>0 :
                 iob = "O" + "B" + (l-1)* "I"
                 IOBs.append (iob)
-        elif len(token) > 1 :
+                '''
+        if len(token) >= 1 :
             l = len(token) - 1
             iob = "B" + (l-1)* "I"
             IOBs.append (iob)

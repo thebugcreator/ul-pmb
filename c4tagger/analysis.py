@@ -1,7 +1,12 @@
 import argparse
+from collections import Counter
 
 import pandas as pd
 import spacy
+from matplotlib import pyplot as plt
+import seaborn as sns
+
+import utils
 
 
 # %%
@@ -75,10 +80,6 @@ def get_pos_sem_tag(filename, pipeline):
     return len(poss)
 
 
-# get_pos_sem_tag("train_gold_it", "it_core_news_md")
-# get_pos_sem_tag("train_gold_en", "en_core_web_md")
-
-
 # %%
 def pre_process_spacy_pos_NE(pos_tags):
     """
@@ -106,10 +107,6 @@ def pre_process_spacy_pos_NE(pos_tags):
                 # Handling the Index Error
                 continue
     return results
-
-
-# print(pre_process_spacy_pos_NE(['PROPN', 'PROPN', 'X', 'PROPN', 'PROPN', 'VERB', 'ADP', 'NUM', 'PUNCT']))
-# Result: ['PROPN', 'VERB', 'ADP', 'NUM', 'PUNCT']
 
 
 # %%
@@ -167,24 +164,79 @@ def get_pos_sem_alignment(tsv_filename, show_non_aligned=False, extract_errors=F
     return pos_tags
 
 
-# pos_tags = get_pos_sem_alignment("train_gold_it.tsv")
-# print(pos_tags)
+# %%
+
+def get_pos_sem_pairs(tsv_filename):
+    """
+    Get POS-SEM tag pairs
+    """
+    minidf = pd.read_csv(tsv_filename, sep="\t")
+    pos_sem_pairs = list()
+    # Loop over the data frame
+    for index, value in minidf.iterrows():
+        # Extract record info of POS tags and SEM tags (and tokens as well)
+        pos = value["pos"].split(" ")
+        pos = pre_process_spacy_pos_NE(pos)
+        sem = value["sem"].split(" ")
+        # Ignore the non-aligned pairs
+        if len(pos) != len(sem):
+            continue
+        for i in range(len(pos)):
+            # Get the POS-SEM pair
+            ptag = pos[i]
+            stag = sem[i]
+            pair = (ptag, stag)
+            pos_sem_pairs.append(pair)
+    return pos_sem_pairs
+
+
+# %%
+def get_unique_tags(tsv_filename):
+    """
+    Get POS-SEM tags
+    """
+    minidf = pd.read_csv(tsv_filename, sep="\t")
+    pos_tags = set()
+    sem_tags = set()
+    # Loop over the data frame
+    for index, value in minidf.iterrows():
+        # Extract record info of POS tags and SEM tags (and tokens as well)
+        pos = value["pos"].split(" ")
+        pos = pre_process_spacy_pos_NE(pos)
+        sem = value["sem"].split(" ")
+        # Ignore the non-aligned pairs
+        if len(pos) != len(sem):
+            continue
+        for i in range(len(pos)):
+            # Get the POS-SEM pair
+            ptag = pos[i]
+            stag = sem[i]
+            pos_tags.add(ptag)
+            sem_tags.add(stag)
+    return pos_tags, sem_tags
+
+
+# %%
+def get_cooccurrences(tsv_filename, visualise=False) -> pd.DataFrame:
+    pos_sem_pairs = get_pos_sem_pairs(tsv_filename)
+    pos_tags, sem_tags = get_unique_tags(tsv_filename)
+    pos_tags = sorted(pos_tags)
+    sem_tags = sorted(sem_tags)
+    pair_occurrences = Counter(pos_sem_pairs)
+    result_df = pd.DataFrame(columns=pos_tags, index=sem_tags).fillna(0)
+    for (ptag, stag), frequency in pair_occurrences.items():
+        result_df[ptag][stag] = int(frequency)
+
+    if visualise:
+        fig, ax = plt.subplots(figsize=(10, 20))
+        ax = sns.heatmap(result_df, cmap="YlGnBu", annot=True, fmt="d")
+        plt.show()
+    return result_df
+
 
 # %%
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Data extractor")
-    subparsers = parser.add_subparsers(help='sub-command', dest='command')
-
-    # Add Command Line arguments for the extractor
-    parser_c4 = subparsers.add_parser("extract", help="Data extraction")
-    parser_c4.add_argument("--file", type=str, default="en", help="CoNLL file path")
-    parser_c4.add_argument("--pipeline", type=str, default="en_core_web_sm", help="Spacy pipeline name")
-    # Add Command Line arguments to interpret the alignment
-    parser_c4 = subparsers.add_parser("inspect", help="Data inspection")
-    parser_c4.add_argument("--file", type=str, default="fr", help="TSV file path")
-    parser_c4.add_argument("--extract_errors", type=bool, default=False,
-                           help="Choose to or not to extract the non aligned documents")
-    args = parser.parse_args()
+    args = utils.get_analysis_cli_ars()
     if args.command == "extract":
         file = args.file
         pipeline = args.pipeline
@@ -194,5 +246,9 @@ if __name__ == "__main__":
         extract_errors = args.extract_errors
         results = get_pos_sem_alignment(file, extract_errors=extract_errors)
         [print(key, results[key]) for key in results.keys()]
+    elif args.command == "get_cooccurrences":
+        file = args.file
+        visualise = args.visualise
+        get_cooccurrences(file, visualise=visualise)
     else:
         raise RuntimeError(">> Invalid command!")

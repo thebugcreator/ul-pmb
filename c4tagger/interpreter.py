@@ -176,7 +176,7 @@ def interpret(in_df):
 
 
 if __name__ == "__main__":
-    args = utils.get_cli_args()
+    args = utils.get_interpreter_cli_args()
     if args.command == "interpret":
         interpret(read_raw_data())
     elif args.command == "update":

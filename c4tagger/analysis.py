@@ -218,16 +218,27 @@ def get_unique_tags(tsv_filename):
 
 # %%
 def get_cooccurrences(tsv_filename, visualise=False) -> pd.DataFrame:
+    """
+    This function is to create the co-occurrence dataframe for inference
+    :param tsv_filename: TSV file location to infer from
+    :param visualise: Choose to or not to show a heatmap of the results
+    """
+    # Get POS-SEM tag pars
     pos_sem_pairs = get_pos_sem_pairs(tsv_filename)
+    # Get the unique tags of each to count
     pos_tags, sem_tags = get_unique_tags(tsv_filename)
+    # Sort the list of tags for data visualisation coherence
     pos_tags = sorted(pos_tags)
     sem_tags = sorted(sem_tags)
+    # Count the co-occurrences
     pair_occurrences = Counter(pos_sem_pairs)
+    # Create a dataframe out of the data collected
     result_df = pd.DataFrame(columns=pos_tags, index=sem_tags).fillna(0)
     for (ptag, stag), frequency in pair_occurrences.items():
         result_df[ptag][stag] = int(frequency)
 
     if visualise:
+        # Set the visual stuff on air
         fig, ax = plt.subplots(figsize=(10, 20))
         ax = sns.heatmap(result_df, cmap="YlGnBu", annot=True, fmt="d")
         plt.show()
@@ -235,6 +246,7 @@ def get_cooccurrences(tsv_filename, visualise=False) -> pd.DataFrame:
 
 
 # %%
+# Command Line facilitation
 if __name__ == "__main__":
     args = utils.get_analysis_cli_ars()
     if args.command == "extract":

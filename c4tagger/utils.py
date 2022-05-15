@@ -1,12 +1,6 @@
 import argparse
 import spacy
 
-DEFAULT_FR_PIPELINES = spacy.load("fr_core_news_md")
-DEFAULT_EN_PIPELINES = spacy.load("en_core_web_md")
-DEFAULT_IT_PIPELINES = spacy.load("it_core_news_md")
-DEFAULT_DE_PIPELINES = spacy.load("de_core_news_sm")
-DEFAULT_NL_PIPELINES = spacy.load("nl_core_news_sm")
-
 
 def get_interpreter_cli_args() -> argparse.Namespace:
     """
@@ -48,15 +42,15 @@ def get_analysis_cli_ars() -> argparse.Namespace:
 
 def get_pipeline(language):
     if language == "fr":
-        return DEFAULT_FR_PIPELINES
+        return spacy.load("fr_core_news_md")
     elif language == "it":
-        return DEFAULT_IT_PIPELINES
+        return spacy.load("it_core_news_md")
     elif language == "en":
-        return DEFAULT_EN_PIPELINES
+        return spacy.load("en_core_web_md")
     elif language == "de":
-        return DEFAULT_DE_PIPELINES
+        return spacy.load("de_core_news_sm")
     elif language == "nl":
-        return DEFAULT_NL_PIPELINES
+        return spacy.load("nl_core_news_sm")
     else:
         raise ValueError("{0} is not a supported language".format(language))
     pass

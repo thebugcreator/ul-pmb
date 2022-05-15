@@ -2,7 +2,7 @@ from collections import Counter
 import analysis
 
 
-def manual_tagging(text:str, _postags:str, pos_sem_alm:dict):
+def manual_tagging(text: str, _postags: str, pos_sem_alm: dict) -> str:
     tokens = text.split(" ")
     postags = _postags.split(" ")
     semtags = list()
@@ -10,5 +10,3 @@ def manual_tagging(text:str, _postags:str, pos_sem_alm:dict):
         semtags.append(pos_sem_alm[postags[i]])
 
     return " ".join(semtags)
-
-def

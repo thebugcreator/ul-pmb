@@ -1,12 +1,10 @@
 import argparse
 
 import pandas as pd
-# import conllu # This doesn't work. This conll file is not conllu
 import spacy
-import utils
 
 
-#%%
+# %%
 def extract_data(filename):
     """
     This function is to read the conll file (not readable by conllu)
@@ -36,7 +34,7 @@ def extract_data(filename):
     return sentences
 
 
-#%%
+# %%
 def get_pos_sem_tag(filename, pipeline):
     """
     This function is to get the POS tags using Spacy and the SEM tag provided in the coNLL file.
@@ -81,7 +79,7 @@ def get_pos_sem_tag(filename, pipeline):
 # get_pos_sem_tag("train_gold_en", "en_core_web_md")
 
 
-#%%
+# %%
 def pre_process_spacy_pos_NE(pos_tags):
     """
     This function is to pre process the Spacy POS tags.
@@ -99,10 +97,10 @@ def pre_process_spacy_pos_NE(pos_tags):
         if pos_tags[i] == "PROPN":
             try:
                 # Check if the preceding tag is intended
-                if pos_tags[i-1] != "PROPN" and pos_tags[i-1] != "X":
+                if pos_tags[i - 1] != "PROPN" and pos_tags[i - 1] != "X":
                     results.append(pos_tags[i])
                 # Ignore the next PROPN or X tags if this one is already PROPN
-                if pos_tags[i+1] == "PROPN" and pos_tags[i] == "X":
+                if pos_tags[i + 1] == "PROPN" and pos_tags[i] == "X":
                     continue
             except IndexError:
                 # Handling the Index Error
@@ -114,26 +112,36 @@ def pre_process_spacy_pos_NE(pos_tags):
 # Result: ['PROPN', 'VERB', 'ADP', 'NUM', 'PUNCT']
 
 
-#%%
-def get_pos_sem_alignment(tsv_filename, show_non_aligned=False):
+# %%
+def get_pos_sem_alignment(tsv_filename, show_non_aligned=False, extract_errors=False):
     """
     Get POS-SEM tag alignment
     :param tsv_filename: csv filename
     :param show_non_aligned: Choose to show the non-aligned documents
+    :param extract_errors: Choose to extract the non-aligned documents to tsv
     :return:
     """
     minidf = pd.read_csv(tsv_filename, sep="\t")
-    outputdf = pd.DataFrame()
     pos_tags = dict()
+    err_sentences = list()
+    err_raw_pos = list()
+    err_pos = list()
+    err_sem = list()
     # Loop over the data frame
     for index, value in minidf.iterrows():
         # Extract record info of POS tags and SEM tags (and tokens as well)
-        pos = value["pos"].split(" ")
-        pos = pre_process_spacy_pos_NE(pos)
+        raw_pos = value["pos"].split(" ")
+        pos = pre_process_spacy_pos_NE(raw_pos)
         sem = value["sem"].split(" ")
         tok = value["tok"]
         # Ignore the non-aligned pairs
         if len(pos) != len(sem):
+            # Store the non-aligned sentences
+            if extract_errors:
+                err_sentences.append(tok)
+                err_raw_pos.append(" ".join(raw_pos))
+                err_pos.append(" ".join(pos))
+                err_sem.append(" ".join(sem))
             # Choose to print them out
             if show_non_aligned:
                 print(tok, pos, sem)
@@ -149,24 +157,33 @@ def get_pos_sem_alignment(tsv_filename, show_non_aligned=False):
                 # If the POS tag doesn't exist, add one
                 pos_tags[ptag] = set()
                 pos_tags[ptag].add(stag)
+    # Export the error data
+    if extract_errors:
+        err_df = pd.DataFrame(list(zip(err_raw_pos, err_pos, err_sem)),
+                              index=err_sentences,
+                              columns=["raw_pos", "processed_pos", "sem"])
+        err_df.to_csv("inspections/error.tsv", sep="\t", encoding="UTF-8")
+        print("Extracted.")
     return pos_tags
 
 
 # pos_tags = get_pos_sem_alignment("train_gold_it.tsv")
 # print(pos_tags)
 
-#%%
+# %%
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Data extractor")
     subparsers = parser.add_subparsers(help='sub-command', dest='command')
 
     # Add Command Line arguments for the extractor
-    parser_knn = subparsers.add_parser("extract", help="Data extraction")
-    parser_knn.add_argument("--file", type=str, default="en", help="CoNLL file path")
-    parser_knn.add_argument("--pipeline", type=str, default="en_core_web_sm", help="Spacy pipeline name")
+    parser_c4 = subparsers.add_parser("extract", help="Data extraction")
+    parser_c4.add_argument("--file", type=str, default="en", help="CoNLL file path")
+    parser_c4.add_argument("--pipeline", type=str, default="en_core_web_sm", help="Spacy pipeline name")
     # Add Command Line arguments to interpret the alignment
-    parser_knn = subparsers.add_parser("inspect", help="Data inspection")
-    parser_knn.add_argument("--file", type=str, default="fr", help="TSV file path")
+    parser_c4 = subparsers.add_parser("inspect", help="Data inspection")
+    parser_c4.add_argument("--file", type=str, default="fr", help="TSV file path")
+    parser_c4.add_argument("--extract_errors", type=bool, default=False,
+                           help="Choose to or not to extract the non aligned documents")
     args = parser.parse_args()
     if args.command == "extract":
         file = args.file
@@ -174,7 +191,8 @@ if __name__ == "__main__":
         print(get_pos_sem_tag(file, pipeline))
     elif args.command == "inspect":
         file = args.file
-        results = get_pos_sem_alignment(file)
+        extract_errors = args.extract_errors
+        results = get_pos_sem_alignment(file, extract_errors=extract_errors)
         [print(key, results[key]) for key in results.keys()]
     else:
         raise RuntimeError(">> Invalid command!")

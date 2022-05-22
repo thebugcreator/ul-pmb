@@ -44,8 +44,6 @@ especials = {
 # 			# [faudra][-t-il]","[fait][-il]","[doit][-il]”, “[s’][agit][-il]
 
 patterns = {  
-    # "test-il" : ("test","-il"),
-    # "tost-il" : ("tost", "-il"),
     "qu'est-ce" : ("qu'est-ce",) , "Qu'est-ce" : ("Qu'est-ce", ) ,
     "quelques-uns" : ("quelques-uns",) ,  "Quelques-uns" : ("Quelques-uns",) , 
     "quelques-unes" : ("quelques-unes",) , "Quelques-unes" : ("Quelques-unes",) ,
@@ -92,4 +90,3 @@ patterns = {
     "tout de suite": ("tout de suite",), "Tout de suite": ("Tout de suite",),
 
 } 
-# 'il y a' : ('il', "y", "a"), 'Il y a' : ("Il", "y", "a") ,

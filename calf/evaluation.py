@@ -2,6 +2,13 @@
 # Evaluating the tokeniser results over gold data.
 from functions_def import tokenise
 # import spacy
+import argparse
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Corpus Extractor")
+    parser.add_argument("--file", type=str, default="pmb_french_163.tsv",  help="name of the file including french sentences.")
+    # parser.add_argument('--verbose', help='print out the logs (default: False)', action='store_true')
+    args = parser.parse_args()
 ########################   function defenition  ###########################
 def calc(s1, s2):
     """
@@ -21,19 +28,23 @@ def calc(s1, s2):
 ######################################  main section  #########################
 # nlp = spacy.load("fr_dep_news_trf")
 
-f = open("../pmb_french_163.tsv", "r" , encoding = 'utf-8')
+# f = open("../pmb_french_163.tsv", "r" , encoding = 'utf-8')
+f = open("../" + args.file, "r" , encoding = 'utf-8')
 fw = open("evaluation.txt", "w", encoding = 'utf-8')
 head_line = f.readline().split('\t')
 for i, item in enumerate(head_line):
     if item == "French translation": ind_FrSen = i
-    if  "French tokenisation" in item: ind_FrTok = i
+    if  ("French tokenisation" in item) or ("French tokenization" in item) : ind_FrTok = i
 # print(ind_FrSen)
 # print(ind_FrTok)
 correct = 0
 provided = 0
 expected = 0
-for i in range(163):
-    line = f.readline().split('\t')
+# for i in range(163):
+line_mix = f.readline()
+while line_mix :
+    
+    line = line_mix.split('\t')
     sentence = line[ind_FrSen]
     temp = line[ind_FrTok].strip()
     tokens = temp.split(' ')
@@ -89,6 +100,9 @@ for i in range(163):
     expected += c[0]
     correct += c[1]
     provided += c[2]
+    
+    line_mix = f.readline()
+
 print(expected,'<-- expected\n', correct, '<-- correct\n', provided, '<-- provided\n', '##########################\n', file=fw)
 Precision = correct / provided
 Recall = correct / expected

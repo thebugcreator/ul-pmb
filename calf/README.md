@@ -15,11 +15,11 @@ To tokenise that sentence and get the IOB tags as a byproduct:
 
 `python calf.py tokenise --sentence "Ne soyez pas paresseux !" --iob True`
 
-Output: `
+Output: 
 
 `Ne soyez pas paresseux !`
 
-`BIO BIIIIO BIIO BIIIIIIIIO B'
+`BIO BIIIIO BIIO BIIIIIIIIO B`
 ## 2. Tokenising a number of sentences in a tsv file:
 Arguments:
 <ul>
@@ -34,3 +34,19 @@ For example, to tokenise the sentences in the file located at "../demos/input.ts
 Feel free to add your IOB option
 
 `python calf.py extract "../demos/input.tsv" --outdir "../demos/output.tsv" --iob=True`
+
+## 3. Evaluation over golden data:
+Run the command `python evaluation.py` with optional argument:
+<ul>
+	<li> --file : should be followed by the name of the file containing extention (.tsv) located in the parent folder </li>li>
+</ul>
+
+the result will be stored in a text file named `evaluation.txt` in the current folder.
+
+## 4. Agreement with spaCy :
+Run the command `python agreement.py` with optional argument:
+<ul>
+	<li> --file : should be followed by the name of the file containing extention (.tsv) located in the parent folder </li>li>
+</ul>
+
+the result will be stored in a text file named `agreement.txt` in the current folder.

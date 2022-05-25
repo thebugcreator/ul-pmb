@@ -38,7 +38,7 @@ Feel free to add your IOB option
 ## 3. Evaluation over golden data:
 Run the command `python evaluation.py` with optional argument:
 <ul>
-	<li> --file : should be followed by the name of the file containing extention (.tsv) located in the parent folder </li>li>
+	<li> --file : should be followed by the name of the file containing extention (.tsv) located in the parent folder </li>
 </ul>
 
 the result will be stored in a text file named `evaluation.txt` in the current folder.
@@ -46,7 +46,7 @@ the result will be stored in a text file named `evaluation.txt` in the current f
 ## 4. Agreement with spaCy :
 Run the command `python agreement.py` with optional argument:
 <ul>
-	<li> --file : should be followed by the name of the file containing extention (.tsv) located in the parent folder </li>li>
+	<li> --file : should be followed by the name of the file containing extention (.tsv) located in the parent folder </li>
 </ul>
 
 the result will be stored in a text file named `agreement.txt` in the current folder.

@@ -1,1149 +1,680 @@
-Kraft a vendu Celestial Seasonings.
-[spacy -->] [Kraft] [a] [vendu] [Celestial] [Seasonings] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
-[output-->] [Kraft] [a] [vendu] [Celestial_Seasonings] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIIIIIIIIIIII', 'B']
-BIIIIOBOBIIIIOBIIIIIIIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIIIIOBOBIIIIOBIIIIIIIIIIIIIIIIIIIB <-- string of output IOBs
+Tu est fou.
+[spacy -->] [Tu] [est] [fou] [.]   ,['BIO', 'BIIO', 'BII', 'B']
+[output-->] [Tu] [est] [fou] [.]   ,['BIO', 'BIIO', 'BII', 'B']
+BIOBIIOBIIB <-- string of spacy IOBs
+BIOBIIOBIIB <-- string of output IOBs
 
 
-Anna Politkovskaya a été assassinée.
-[spacy -->] [Anna] [Politkovskaya] [a] [été] [assassinée] [.]   ,['BIIIO', 'BIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
-[output-->] [Anna_Politkovskaya] [a] [été] [assassinée] [.]   ,['BIIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
-BIIIOBIIIIIIIIIIIIOBOBIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIIB <-- string of output IOBs
+Qui est le chef du groupe islamique armé algérien ?
+[spacy -->] [Qui] [est] [le] [chef] [du] [groupe] [islamique] [armé] [algérien] [?]   ,['BIIO', 'BIIO', 'BIO', 'BIIIO', 'BIO', 'BIIIIIO', 'BIIIIIIIIO', 'BIIIO', 'BIIIIIIIO', 'B']
+[output-->] [Qui] [est] [le] [chef] [du] [groupe] [islamique] [armé] [algérien] [?]   ,['BIIO', 'BIIO', 'BIO', 'BIIIO', 'BIO', 'BIIIIIO', 'BIIIIIIIIO', 'BIIIO', 'BIIIIIIIO', 'B']
+BIIOBIIOBIOBIIIOBIOBIIIIIOBIIIIIIIIOBIIIOBIIIIIIIOB <-- string of spacy IOBs
+BIIOBIIOBIOBIIIOBIOBIIIIIOBIIIIIIIIOBIIIOBIIIIIIIOB <-- string of output IOBs
 
 
-Les yakuza forment la mafia japonaise.
-[spacy -->] [Les] [yakuza] [forment] [la] [mafia] [japonaise] [.]   ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'BIIIIIIII', 'B']
-[output-->] [Les] [yakuza] [forment] [la] [mafia] [japonaise] [.]   ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'BIIIIIIII', 'B']
-BIIOBIIIIIOBIIIIIIOBIOBIIIIOBIIIIIIIIB <-- string of spacy IOBs
-BIIOBIIIIIOBIIIIIIOBIOBIIIIOBIIIIIIIIB <-- string of output IOBs
+Qui a écrit la Bible ?
+[spacy -->] [Qui] [a] [écrit] [la] [Bible] [?]   ,['BIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIO', 'B']
+[output-->] [Qui] [a] [écrit] [la] [Bible] [?]   ,['BIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIO', 'B']
+BIIOBOBIIIIOBIOBIIIIOB <-- string of spacy IOBs
+BIIOBOBIIIIOBIOBIIIIOB <-- string of output IOBs
 
 
-Yunus a fondé la banque Grameen il y a 30 ans.
-[spacy -->] [Yunus] [a] [fondé] [la] [banque] [Grameen] [il] [y] [a] [30] [ans] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIIO', 'BIO', 'BO', 'BO', 'BIO', 'BII', 'B']
-[output-->] [Yunus] [a] [fondé] [la] [banque] [Grameen] [il_y_a] [30] [ans] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIIO', 'BIIIIIO', 'BIO', 'BII', 'B']
-BIIIIOBOBIIIIOBIOBIIIIIOBIIIIIIOBIOBOBOBIOBIIB <-- string of spacy IOBs
-BIIIIOBOBIIIIOBIOBIIIIIOBIIIIIIOBIIIIIOBIOBIIB <-- string of output IOBs
+Quelle est l'assosation dirigée par Hope Holcomb ?
+[spacy -->] [Quelle] [est] [l'] [assosation] [dirigée] [par] [Hope] [Holcomb] [?]   ,['BIIIIIO', 'BIIO', 'BI', 'BIIIIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIO', 'BIIIIIIO', 'B']
+[output-->] [Quelle] [est] [l'] [assosation] [dirigée] [par] [Hope_Holcomb] [?]   ,['BIIIIIO', 'BIIO', 'BI', 'BIIIIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIIIIO', 'B']
+BIIIIIOBIIOBIBIIIIIIIIIOBIIIIIIOBIIOBIIIOBIIIIIIOB <-- string of spacy IOBs
+BIIIIIOBIIOBIBIIIIIIIIIOBIIIIIIOBIIOBIIIIIIIIIIIOB <-- string of output IOBs
 
 
-Maria a les cheveux longs.
-[spacy -->] [Maria] [a] [les] [cheveux] [longs] [.]   ,['BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIII', 'B']
-[output-->] [Maria] [a] [les] [cheveux] [longs] [.]   ,['BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIII', 'B']
-BIIIIOBOBIIOBIIIIIIOBIIIIB <-- string of spacy IOBs
-BIIIIOBOBIIOBIIIIIIOBIIIIB <-- string of output IOBs
-
-
-Bob est populaire à l'école.
-[spacy -->] [Bob] [est] [populaire] [à] [l'] [école] [.]   ,['BIIO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BI', 'BIIII', 'B']
-[output-->] [Bob] [est] [populaire] [à] [l'] [école] [.]   ,['BIIO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BI', 'BIIII', 'B']
-BIIOBIIOBIIIIIIIIOBOBIBIIIIB <-- string of spacy IOBs
-BIIOBIIOBIIIIIIIIOBOBIBIIIIB <-- string of output IOBs
-
-
-Joli costume.
-[spacy -->] [Joli] [costume] [.]   ,['BIIIO', 'BIIIIII', 'B']
-[output-->] [Joli] [costume] [.]   ,['BIIIO', 'BIIIIII', 'B']
-BIIIOBIIIIIIB <-- string of spacy IOBs
-BIIIOBIIIIIIB <-- string of output IOBs
-
-
-Où sont les parcmètres ?
-[spacy -->] [Où] [sont] [les] [parcmètres] [?]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIIIIIIIO', 'B']
-[output-->] [Où] [sont] [les] [parcmètres] [?]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIIIIIIIO', 'B']
-BIOBIIIOBIIOBIIIIIIIIIOB <-- string of spacy IOBs
-BIOBIIIOBIIOBIIIIIIIIIOB <-- string of output IOBs
-
-
-Tom a utilisé un cure-dent.
-[spacy -->] [Tom] [a] [utilisé] [un] [cure] [-] [dent] [.]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIII', 'B', 'BIII', 'B']
-[output-->] [Tom] [a] [utilisé] [un] [cure-dent] [.]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
-BIIOBOBIIIIIIOBIOBIIIBBIIIB <-- string of spacy IOBs
-BIIOBOBIIIIIIOBIOBIIIIIIIIB <-- string of output IOBs
-
-
-Voici Mademoiselle Curtis.
-[spacy -->] [Voici] [Mademoiselle] [Curtis] [.]   ,['BIIIIO', 'BIIIIIIIIIIIO', 'BIIIII', 'B']
-[output-->] [Voici_Mademoiselle_Curtis] [.]   ,['BIIIIIIIIIIIIIIIIIIIIIIII', 'B']
-BIIIIOBIIIIIIIIIIIOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIIIIIIIIIB <-- string of output IOBs
-
-
-Bob était très content.
-[spacy -->] [Bob] [était] [très] [content] [.]   ,['BIIO', 'BIIIIO', 'BIIIO', 'BIIIIII', 'B']
-[output-->] [Bob] [était] [très] [content] [.]   ,['BIIO', 'BIIIIO', 'BIIIO', 'BIIIIII', 'B']
-BIIOBIIIIOBIIIOBIIIIIIB <-- string of spacy IOBs
-BIIOBIIIIOBIIIOBIIIIIIB <-- string of output IOBs
-
-
-Salut.
-[spacy -->] [Salut] [.]   ,['BIIII', 'B']
-[output-->] [Salut] [.]   ,['BIIII', 'B']
-BIIIIB <-- string of spacy IOBs
-BIIIIB <-- string of output IOBs
-
-
-Bonjour !
-[spacy -->] [Bonjour] [!]   ,['BIIIIIIO', 'B']
-[output-->] [Bonjour] [!]   ,['BIIIIIIO', 'B']
-BIIIIIIOB <-- string of spacy IOBs
-BIIIIIIOB <-- string of output IOBs
-
-
-Kraft a vendu Celestial Seasonings.
-[spacy -->] [Kraft] [a] [vendu] [Celestial] [Seasonings] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
-[output-->] [Kraft] [a] [vendu] [Celestial_Seasonings] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIIIIIIIIIIII', 'B']
-BIIIIOBOBIIIIOBIIIIIIIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIIIIOBOBIIIIOBIIIIIIIIIIIIIIIIIIIB <-- string of output IOBs
-
-
-Raman Raghav a assassiné 9 personnes.
-[spacy -->] [Raman] [Raghav] [a] [assassiné] [9] [personnes] [.]   ,['BIIIIO', 'BIIIIIO', 'BO', 'BIIIIIIIIO', 'BO', 'BIIIIIIII', 'B']
-[output-->] [Raman_Raghav] [a] [assassiné] [9] [personnes] [.]   ,['BIIIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BO', 'BIIIIIIII', 'B']
-BIIIIOBIIIIIOBOBIIIIIIIIOBOBIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIOBOBIIIIIIIIOBOBIIIIIIIIB <-- string of output IOBs
-
-
-Alfred Nobel a inventé la dynamite en 1866.
-[spacy -->] [Alfred] [Nobel] [a] [inventé] [la] [dynamite] [en] [1866] [.]   ,['BIIIIIO', 'BIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIO', 'BIO', 'BIII', 'B']
-[output-->] [Alfred_Nobel] [a] [inventé] [la] [dynamite] [en] [1866] [.]   ,['BIIIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIO', 'BIO', 'BIII', 'B']
-BIIIIIOBIIIIOBOBIIIIIIOBIOBIIIIIIIOBIOBIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIOBOBIIIIIIOBIOBIIIIIIIOBIOBIIIB <-- string of output IOBs
-
-
-Il a brassé de la bière.
-[spacy -->] [Il] [a] [brassé] [de] [la] [bière] [.]   ,['BIO', 'BO', 'BIIIIIO', 'BIO', 'BIO', 'BIIII', 'B']
-[output-->] [Il] [a] [brassé] [de] [la] [bière] [.]   ,['BIO', 'BO', 'BIIIIIO', 'BIO', 'BIO', 'BIIII', 'B']
-BIOBOBIIIIIOBIOBIOBIIIIB <-- string of spacy IOBs
-BIOBOBIIIIIOBIOBIOBIIIIB <-- string of output IOBs
-
-
-Elle a une maladie contagieuse.
-[spacy -->] [Elle] [a] [une] [maladie] [contagieuse] [.]   ,['BIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIIIIIIII', 'B']
-[output-->] [Elle] [a] [une] [maladie] [contagieuse] [.]   ,['BIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIIIIIIII', 'B']
-BIIIOBOBIIOBIIIIIIOBIIIIIIIIIIB <-- string of spacy IOBs
-BIIIOBOBIIOBIIIIIIOBIIIIIIIIIIB <-- string of output IOBs
-
-
-Il y a aussi des touristes français.
-[spacy -->] [Il] [y] [a] [aussi] [des] [touristes] [français] [.]   ,['BIO', 'BO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIII', 'B']
-[output-->] [Il] [y] [a] [aussi] [des] [touristes] [français] [.]   ,['BIO', 'BO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIII', 'B']
-BIOBOBOBIIIIOBIIOBIIIIIIIIOBIIIIIIIB <-- string of spacy IOBs
-BIOBOBOBIIIIOBIIOBIIIIIIIIOBIIIIIIIB <-- string of output IOBs
-
-
-Le lac est très profond.
-[spacy -->] [Le] [lac] [est] [très] [profond] [.]   ,['BIO', 'BIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
-[output-->] [Le] [lac] [est] [très] [profond] [.]   ,['BIO', 'BIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
-BIOBIIOBIIOBIIIOBIIIIIIB <-- string of spacy IOBs
-BIOBIIOBIIOBIIIOBIIIIIIB <-- string of output IOBs
-
-
-Personne ne peut résoudre ce problème.
-[spacy -->] [Personne] [ne] [peut] [résoudre] [ce] [problème] [.]   ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIIIO', 'BIO', 'BIIIIIII', 'B']
-[output-->] [Personne] [ne] [peut] [résoudre] [ce] [problème] [.]   ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIIIO', 'BIO', 'BIIIIIII', 'B']
-BIIIIIIIOBIOBIIIOBIIIIIIIOBIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIOBIOBIIIOBIIIIIIIOBIOBIIIIIIIB <-- string of output IOBs
-
-
-La jupe rouge est neuve.
-[spacy -->] [La] [jupe] [rouge] [est] [neuve] [.]   ,['BIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [La] [jupe] [rouge] [est] [neuve] [.]   ,['BIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-BIOBIIIOBIIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIOBIIIIOBIIOBIIIIB <-- string of output IOBs
-
-
-Personne n'a résolu le problème.
-[spacy -->] [Personne] [n'] [a] [résolu] [le] [problème] [.]   ,['BIIIIIIIO', 'BI', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIII', 'B']
-[output-->] [Personne] [n'] [a] [résolu] [le] [problème] [.]   ,['BIIIIIIIO', 'BI', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIII', 'B']
-BIIIIIIIOBIBOBIIIIIOBIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIOBIBOBIIIIIOBIOBIIIIIIIB <-- string of output IOBs
-
-
-Je mange une pomme.
-[spacy -->] [Je] [mange] [une] [pomme] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [Je] [mange] [une] [pomme] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-BIOBIIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
-
-
-Le capitaine Scott a découvert l'île Scott en décembre 1902.
-[spacy -->] [Le] [capitaine] [Scott] [a] [découvert] [l'] [île] [Scott] [en] [décembre] [1902] [.]   ,['BIO', 'BIIIIIIIIO', 'BIIIIO', 'BO', 'BIIIIIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIO', 'BIII', 'B']
-[output-->] [Le] [capitaine] [Scott] [a] [découvert] [l'] [île] [Scott] [en] [décembre] [1902] [.]   ,['BIO', 'BIIIIIIIIO', 'BIIIIO', 'BO', 'BIIIIIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIO', 'BIII', 'B']
-BIOBIIIIIIIIOBIIIIOBOBIIIIIIIIOBIBIIOBIIIIOBIOBIIIIIIIOBIIIB <-- string of spacy IOBs
-BIOBIIIIIIIIOBIIIIOBOBIIIIIIIIOBIBIIOBIIIIOBIOBIIIIIIIOBIIIB <-- string of output IOBs
-
-
-Il a plu pendant cinq jours.
-[spacy -->] [Il] [a] [plu] [pendant] [cinq] [jours] [.]   ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIO', 'BIIII', 'B']
-[output-->] [Il] [a] [plu] [pendant] [cinq] [jours] [.]   ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIO', 'BIIII', 'B']
-BIOBOBIIOBIIIIIIOBIIIOBIIIIB <-- string of spacy IOBs
-BIOBOBIIOBIIIIIIOBIIIOBIIIIB <-- string of output IOBs
-
-
-J'ai deux chats.
-[spacy -->] [J'] [ai] [deux] [chats] [.]   ,['BI', 'BIO', 'BIIIO', 'BIIII', 'B']
-[output-->] [J'] [ai] [deux] [chats] [.]   ,['BI', 'BIO', 'BIIIO', 'BIIII', 'B']
-BIBIOBIIIOBIIIIB <-- string of spacy IOBs
-BIBIOBIIIOBIIIIB <-- string of output IOBs
-
-
-Carl Smith est mort le 8 août.
-[spacy -->] [Carl] [Smith] [est] [mort] [le] [8] [août] [.]   ,['BIIIO', 'BIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BO', 'BIII', 'B']
-[output-->] [Carl_Smith] [est] [mort] [le] [8] [août] [.]   ,['BIIIIIIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BO', 'BIII', 'B']
-BIIIOBIIIIOBIIOBIIIOBIOBOBIIIB <-- string of spacy IOBs
-BIIIIIIIIIOBIIOBIIIOBIOBOBIIIB <-- string of output IOBs
-
-
-Cet homme a raison.
-[spacy -->] [Cet] [homme] [a] [raison] [.]   ,['BIIO', 'BIIIIO', 'BO', 'BIIIII', 'B']
-[output-->] [Cet] [homme] [a] [raison] [.]   ,['BIIO', 'BIIIIO', 'BO', 'BIIIII', 'B']
-BIIOBIIIIOBOBIIIIIB <-- string of spacy IOBs
-BIIOBIIIIOBOBIIIIIB <-- string of output IOBs
-
-
-Il y a un biscuit sous la table.
-[spacy -->] [Il] [y] [a] [un] [biscuit] [sous] [la] [table] [.]   ,['BIO', 'BO', 'BO', 'BIO', 'BIIIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Il] [y] [a] [un] [biscuit] [sous] [la] [table] [.]   ,['BIO', 'BO', 'BO', 'BIO', 'BIIIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-BIOBOBOBIOBIIIIIIOBIIIOBIOBIIIIB <-- string of spacy IOBs
-BIOBOBOBIOBIIIIIIOBIIIOBIOBIIIIB <-- string of output IOBs
-
-
-Ma mère a fait cuire dix œufs.
-[spacy -->] [Ma] [mère] [a] [fait] [cuire] [dix] [œufs] [.]   ,['BIO', 'BIIIO', 'BO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
-[output-->] [Ma] [mère] [a] [fait] [cuire] [dix] [œufs] [.]   ,['BIO', 'BIIIO', 'BO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
-BIOBIIIOBOBIIIOBIIIIOBIIOBIIIB <-- string of spacy IOBs
-BIOBIIIOBOBIIIOBIIIIOBIIOBIIIB <-- string of output IOBs
-
-
-Je conduis une décapotable.
-[spacy -->] [Je] [conduis] [une] [décapotable] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
-[output-->] [Je] [conduis] [une] [décapotable] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
-BIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of output IOBs
-
-
-La Roumanie a envoyé 730 soldats en Irak.
-[spacy -->] [La] [Roumanie] [a] [envoyé] [730] [soldats] [en] [Irak] [.]   ,['BIO', 'BIIIIIIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIIIO', 'BIO', 'BIII', 'B']
-[output-->] [La] [Roumanie] [a] [envoyé] [730] [soldats] [en] [Irak] [.]   ,['BIO', 'BIIIIIIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIIIO', 'BIO', 'BIII', 'B']
-BIOBIIIIIIIOBOBIIIIIOBIIOBIIIIIIOBIOBIIIB <-- string of spacy IOBs
-BIOBIIIIIIIOBOBIIIIIOBIIOBIIIIIIOBIOBIIIB <-- string of output IOBs
-
-
-Bill n'a pas commis ce crime.
-[spacy -->] [Bill] [n'] [a] [pas] [commis] [ce] [crime] [.]   ,['BIIIO', 'BI', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Bill] [n'] [a] [pas] [commis] [ce] [crime] [.]   ,['BIIIO', 'BI', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
-BIIIOBIBOBIIOBIIIIIOBIOBIIIIB <-- string of spacy IOBs
-BIIIOBIBOBIIOBIIIIIOBIOBIIIIB <-- string of output IOBs
-
-
-Ce livre coûte 4 dollars.
-[spacy -->] [Ce] [livre] [coûte] [4] [dollars] [.]   ,['BIO', 'BIIIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
-[output-->] [Ce] [livre] [coûte] [4] [dollars] [.]   ,['BIO', 'BIIIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
-BIOBIIIIOBIIIIOBOBIIIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIIIOBOBIIIIIIB <-- string of output IOBs
-
-
-Où est né le réalisateur Michelangelo Antonioni ?
-[spacy -->] [Où] [est] [né] [le] [réalisateur] [Michelangelo] [Antonioni] [?]   ,['BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIIIIIO', 'BIIIIIIIIIIIO', 'BIIIIIIIIO', 'B']
-[output-->] [Où] [est] [né] [le] [réalisateur] [Michelangelo_Antonioni] [?]   ,['BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIIIIIO', 'BIIIIIIIIIIIIIIIIIIIIIO', 'B']
-BIOBIIOBIOBIOBIIIIIIIIIIOBIIIIIIIIIIIOBIIIIIIIIOB <-- string of spacy IOBs
-BIOBIIOBIOBIOBIIIIIIIIIIOBIIIIIIIIIIIIIIIIIIIIIOB <-- string of output IOBs
-
-
-J'ai commandé une pizza.
-[spacy -->] [J'] [ai] [commandé] [une] [pizza] [.]   ,['BI', 'BIO', 'BIIIIIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [J'] [ai] [commandé] [une] [pizza] [.]   ,['BI', 'BIO', 'BIIIIIIIO', 'BIIO', 'BIIII', 'B']
-BIBIOBIIIIIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIBIOBIIIIIIIOBIIOBIIIIB <-- string of output IOBs
-
-
-Baena Soares a été arrêté par l'armée.
-[spacy -->] [Baena] [Soares] [a] [été] [arrêté] [par] [l'] [armée] [.]   ,['BIIIIO', 'BIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BI', 'BIIII', 'B']
-[output-->] [Baena_Soares] [a] [été] [arrêté] [par] [l'] [armée] [.]   ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BI', 'BIIII', 'B']
-BIIIIOBIIIIIOBOBIIOBIIIIIOBIIOBIBIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIOBOBIIOBIIIIIOBIIOBIBIIIIB <-- string of output IOBs
-
-
-John vit à New York.
-[spacy -->] [John] [vit] [à] [New] [York] [.]   ,['BIIIO', 'BIIO', 'BO', 'BIIO', 'BIII', 'B']
-[output-->] [John] [vit] [à] [New_York] [.]   ,['BIIIO', 'BIIO', 'BO', 'BIIIIIII', 'B']
-BIIIOBIIOBOBIIOBIIIB <-- string of spacy IOBs
-BIIIOBIIOBOBIIIIIIIB <-- string of output IOBs
-
-
-Où est le journal ?
-[spacy -->] [Où] [est] [le] [journal] [?]   ,['BIO', 'BIIO', 'BIO', 'BIIIIIIO', 'B']
-[output-->] [Où] [est] [le] [journal] [?]   ,['BIO', 'BIIO', 'BIO', 'BIIIIIIO', 'B']
-BIOBIIOBIOBIIIIIIOB <-- string of spacy IOBs
-BIOBIIOBIOBIIIIIIOB <-- string of output IOBs
-
-
-Il avait une fille.
-[spacy -->] [Il] [avait] [une] [fille] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [Il] [avait] [une] [fille] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-BIOBIIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
-
-
-Le chien est blanc.
-[spacy -->] [Le] [chien] [est] [blanc] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [Le] [chien] [est] [blanc] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-BIOBIIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
-
-
-Cette maison est connue.
-[spacy -->] [Cette] [maison] [est] [connue] [.]   ,['BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIII', 'B']
-[output-->] [Cette] [maison] [est] [connue] [.]   ,['BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIII', 'B']
-BIIIIOBIIIIIOBIIOBIIIIIB <-- string of spacy IOBs
-BIIIIOBIIIIIOBIIOBIIIIIB <-- string of output IOBs
-
-
-Qui chante cette chanson ?
-[spacy -->] [Qui] [chante] [cette] [chanson] [?]   ,['BIIO', 'BIIIIIO', 'BIIIIO', 'BIIIIIIO', 'B']
-[output-->] [Qui] [chante] [cette] [chanson] [?]   ,['BIIO', 'BIIIIIO', 'BIIIIO', 'BIIIIIIO', 'B']
-BIIOBIIIIIOBIIIIOBIIIIIIOB <-- string of spacy IOBs
-BIIOBIIIIIOBIIIIOBIIIIIIOB <-- string of output IOBs
-
-
-La tour fait quinze mètres de haut.
-[spacy -->] [La] [tour] [fait] [quinze] [mètres] [de] [haut] [.]   ,['BIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
-[output-->] [La] [tour] [fait] [quinze] [mètres] [de] [haut] [.]   ,['BIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
-BIOBIIIOBIIIOBIIIIIOBIIIIIOBIOBIIIB <-- string of spacy IOBs
-BIOBIIIOBIIIOBIIIIIOBIIIIIOBIOBIIIB <-- string of output IOBs
-
-
-Le Canada a battu les Etats-Unis.
-[spacy -->] [Le] [Canada] [a] [battu] [les] [Etats-Unis] [.]   ,['BIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-[output-->] [Le] [Canada] [a] [battu] [les] [Etats-Unis] [.]   ,['BIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-BIOBIIIIIOBOBIIIIOBIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIOBOBIIIIOBIIOBIIIIIIIIIB <-- string of output IOBs
-
-
-L'Italie a battu le Kazakhstan.
-[spacy -->] [L'] [Italie] [a] [battu] [le] [Kazakhstan] [.]   ,['BI', 'BIIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIIIII', 'B']
-[output-->] [L'] [Italie] [a] [battu] [le] [Kazakhstan] [.]   ,['BI', 'BIIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIIIII', 'B']
-BIBIIIIIOBOBIIIIOBIOBIIIIIIIIIB <-- string of spacy IOBs
-BIBIIIIIOBOBIIIIOBIOBIIIIIIIIIB <-- string of output IOBs
-
-
-Vladislav Listyev a été assassiné à Moscou.
-[spacy -->] [Vladislav] [Listyev] [a] [été] [assassiné] [à] [Moscou] [.]   ,['BIIIIIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
-[output-->] [Vladislav_Listyev] [a] [été] [assassiné] [à] [Moscou] [.]   ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
-BIIIIIIIIOBIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of output IOBs
-
-
-Personne n'aime la guerre.
-[spacy -->] [Personne] [n'] [aime] [la] [guerre] [.]   ,['BIIIIIIIO', 'BI', 'BIIIO', 'BIO', 'BIIIII', 'B']
-[output-->] [Personne] [n'] [aime] [la] [guerre] [.]   ,['BIIIIIIIO', 'BI', 'BIIIO', 'BIO', 'BIIIII', 'B']
-BIIIIIIIOBIBIIIOBIOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIOBIBIIIOBIOBIIIIIB <-- string of output IOBs
-
-
-Vladislav Listyev a été assassiné à Moscou.
-[spacy -->] [Vladislav] [Listyev] [a] [été] [assassiné] [à] [Moscou] [.]   ,['BIIIIIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
-[output-->] [Vladislav_Listyev] [a] [été] [assassiné] [à] [Moscou] [.]   ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
-BIIIIIIIIOBIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of output IOBs
-
-
-Ma soeur est célèbre.
-[spacy -->] [Ma] [soeur] [est] [célèbre] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIII', 'B']
-[output-->] [Ma] [soeur] [est] [célèbre] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIII', 'B']
-BIOBIIIIOBIIOBIIIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIOBIIIIIIB <-- string of output IOBs
-
-
-La porte est fermée.
-[spacy -->] [La] [porte] [est] [fermée] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
-[output-->] [La] [porte] [est] [fermée] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
-BIOBIIIIOBIIOBIIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIOBIIIIIB <-- string of output IOBs
-
-
-La viande est congelée.
-[spacy -->] [La] [viande] [est] [congelée] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIIIII', 'B']
-[output-->] [La] [viande] [est] [congelée] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIIIII', 'B']
-BIOBIIIIIOBIIOBIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIOBIIOBIIIIIIIB <-- string of output IOBs
-
-
-Saddam Hussein fuit aux États-Unis.
-[spacy -->] [Saddam] [Hussein] [fuit] [aux] [États-Unis] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-[output-->] [Saddam_Hussein] [fuit] [aux] [États-Unis] [.]   ,['BIIIIIIIIIIIIIO', 'BIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-BIIIIIOBIIIIIIOBIIIOBIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIOBIIIOBIIOBIIIIIIIIIB <-- string of output IOBs
-
-
-Auckland est une ville de Nouvelle-Zélande.
-[spacy -->] [Auckland] [est] [une] [ville] [de] [Nouvelle] [-] [Zélande] [.]   ,['BIIIIIIIO', 'BIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIII', 'B', 'BIIIIII', 'B']
-[output-->] [Auckland] [est] [une] [ville] [de] [Nouvelle-Zélande] [.]   ,['BIIIIIIIO', 'BIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIIIIIIIII', 'B']
-BIIIIIIIOBIIOBIIOBIIIIOBIOBIIIIIIIBBIIIIIIB <-- string of spacy IOBs
-BIIIIIIIOBIIOBIIOBIIIIOBIOBIIIIIIIIIIIIIIIB <-- string of output IOBs
-
-
-Mon père est grand.
-[spacy -->] [Mon] [père] [est] [grand] [.]   ,['BIIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [Mon] [père] [est] [grand] [.]   ,['BIIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
-BIIOBIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIIOBIIIOBIIOBIIIIB <-- string of output IOBs
-
-
-Aurore Paquiss est marié à Chabrol.
-[spacy -->] [Aurore] [Paquiss] [est] [marié] [à] [Chabrol] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
-[output-->] [Aurore_Paquiss] [est] [marié] [à] [Chabrol] [.]   ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
-BIIIIIOBIIIIIIOBIIOBIIIIOBOBIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIOBIIOBIIIIOBOBIIIIIIB <-- string of output IOBs
-
-
-Henri Ford a fondé l'entreprise Ford.
-[spacy -->] [Henri] [Ford] [a] [fondé] [l'] [entreprise] [Ford] [.]   ,['BIIIIO', 'BIIIO', 'BO', 'BIIIIO', 'BI', 'BIIIIIIIIIO', 'BIII', 'B']
-[output-->] [Henri_Ford] [a] [fondé] [l'] [entreprise] [Ford] [.]   ,['BIIIIIIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIIIIIIIIO', 'BIII', 'B']
-BIIIIOBIIIOBOBIIIIOBIBIIIIIIIIIOBIIIB <-- string of spacy IOBs
-BIIIIIIIIIOBOBIIIIOBIBIIIIIIIIIOBIIIB <-- string of output IOBs
-
-
-La frontière est fermée.
-[spacy -->] [La] [frontière] [est] [fermée] [.]   ,['BIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
-[output-->] [La] [frontière] [est] [fermée] [.]   ,['BIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
-BIOBIIIIIIIIOBIIOBIIIIIB <-- string of spacy IOBs
-BIOBIIIIIIIIOBIIOBIIIIIB <-- string of output IOBs
-
-
-Tom est mon cousin.
-[spacy -->] [Tom] [est] [mon] [cousin] [.]   ,['BIIO', 'BIIO', 'BIIO', 'BIIIII', 'B']
-[output-->] [Tom] [est] [mon] [cousin] [.]   ,['BIIO', 'BIIO', 'BIIO', 'BIIIII', 'B']
-BIIOBIIOBIIOBIIIIIB <-- string of spacy IOBs
-BIIOBIIOBIIOBIIIIIB <-- string of output IOBs
-
-
-Senecal habite le Manoir Cortland.
-[spacy -->] [Senecal] [habite] [le] [Manoir] [Cortland] [.]   ,['BIIIIIIO', 'BIIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIII', 'B']
-[output-->] [Senecal] [habite] [le] [Manoir_Cortland] [.]   ,['BIIIIIIO', 'BIIIIIO', 'BIO', 'BIIIIIIIIIIIIII', 'B']
-BIIIIIIOBIIIIIOBIOBIIIIIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIOBIIIIIOBIOBIIIIIIIIIIIIIIB <-- string of output IOBs
-
-
-Picasso est un artiste célèbre.
-[spacy -->] [Picasso] [est] [un] [artiste] [célèbre] [.]   ,['BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIII', 'B']
-[output-->] [Picasso] [est] [un] [artiste] [célèbre] [.]   ,['BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIII', 'B']
-BIIIIIIOBIIOBIOBIIIIIIOBIIIIIIB <-- string of spacy IOBs
-BIIIIIIOBIIOBIOBIIIIIIOBIIIIIIB <-- string of output IOBs
-
-
-Le vent souffle.
-[spacy -->] [Le] [vent] [souffle] [.]   ,['BIO', 'BIIIO', 'BIIIIII', 'B']
-[output-->] [Le] [vent] [souffle] [.]   ,['BIO', 'BIIIO', 'BIIIIII', 'B']
+Je suis fatigué.
+[spacy -->] [Je] [suis] [fatigué] [.]   ,['BIO', 'BIIIO', 'BIIIIII', 'B']
+[output-->] [Je] [suis] [fatigué] [.]   ,['BIO', 'BIIIO', 'BIIIIII', 'B']
 BIOBIIIOBIIIIIIB <-- string of spacy IOBs
 BIOBIIIOBIIIIIIB <-- string of output IOBs
 
 
-Sumatra est une île.
-[spacy -->] [Sumatra] [est] [une] [île] [.]   ,['BIIIIIIO', 'BIIO', 'BIIO', 'BII', 'B']
-[output-->] [Sumatra] [est] [une] [île] [.]   ,['BIIIIIIO', 'BIIO', 'BIIO', 'BII', 'B']
-BIIIIIIOBIIOBIIOBIIB <-- string of spacy IOBs
-BIIIIIIOBIIOBIIOBIIB <-- string of output IOBs
+Dean Lynn Hart vit à Truckee River Trail.
+[spacy -->] [Dean] [Lynn] [Hart] [vit] [à] [Truckee] [River] [Trail] [.]   ,['BIIIO', 'BIIIO', 'BIIIO', 'BIIO', 'BO', 'BIIIIIIO', 'BIIIIO', 'BIIII', 'B']
+[output-->] [Dean_Lynn_Hart] [vit] [à] [Truckee_River_Trail] [.]   ,['BIIIIIIIIIIIIIO', 'BIIO', 'BO', 'BIIIIIIIIIIIIIIIIII', 'B']
+BIIIOBIIIOBIIIOBIIOBOBIIIIIIOBIIIIOBIIIIB <-- string of spacy IOBs
+BIIIIIIIIIIIIIOBIIOBOBIIIIIIIIIIIIIIIIIIB <-- string of output IOBs
 
 
-Deux plus deux égale quatre.
-[spacy -->] [Deux] [plus] [deux] [égale] [quatre] [.]   ,['BIIIO', 'BIIIO', 'BIIIO', 'BIIIIO', 'BIIIII', 'B']
-[output-->] [Deux] [plus] [deux] [égale] [quatre] [.]   ,['BIIIO', 'BIIIO', 'BIIIO', 'BIIIIO', 'BIIIII', 'B']
-BIIIOBIIIOBIIIOBIIIIOBIIIIIB <-- string of spacy IOBs
-BIIIOBIIIOBIIIOBIIIIOBIIIIIB <-- string of output IOBs
+Mon grand-père est né en 1920.
+[spacy -->] [Mon] [grand-père] [est] [né] [en] [1920] [.]   ,['BIIO', 'BIIIIIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIII', 'B']
+[output-->] [Mon] [grand-père] [est] [né] [en] [1920] [.]   ,['BIIO', 'BIIIIIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIII', 'B']
+BIIOBIIIIIIIIIOBIIOBIOBIOBIIIB <-- string of spacy IOBs
+BIIOBIIIIIIIIIOBIIOBIOBIOBIIIB <-- string of output IOBs
 
 
-Marilyn Monroe est morte il y a 33 ans.
-[spacy -->] [Marilyn] [Monroe] [est] [morte] [il] [y] [a] [33] [ans] [.]   ,['BIIIIIIO', 'BIIIIIO', 'BIIO', 'BIIIIO', 'BIO', 'BO', 'BO', 'BIO', 'BII', 'B']
-[output-->] [Marilyn_Monroe] [est] [morte] [il_y_a] [33] [ans] [.]   ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIIIIIO', 'BIO', 'BII', 'B']
-BIIIIIIOBIIIIIOBIIOBIIIIOBIOBOBOBIOBIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIOBIIOBIIIIOBIIIIIOBIOBIIB <-- string of output IOBs
+Franz Liszt a vécu de 1811 à 1886.
+[spacy -->] [Franz] [Liszt] [a] [vécu] [de] [1811] [à] [1886] [.]   ,['BIIIIO', 'BIIIIO', 'BO', 'BIIIO', 'BIO', 'BIIIO', 'BO', 'BIII', 'B']
+[output-->] [Franz_Liszt] [a] [vécu] [de] [1811] [à] [1886] [.]   ,['BIIIIIIIIIIO', 'BO', 'BIIIO', 'BIO', 'BIIIO', 'BO', 'BIII', 'B']
+BIIIIOBIIIIOBOBIIIOBIOBIIIOBOBIIIB <-- string of spacy IOBs
+BIIIIIIIIIIOBOBIIIOBIOBIIIOBOBIIIB <-- string of output IOBs
 
 
-Beaucoup de gens admire Nikklo.
-[spacy -->] [Beaucoup] [de] [gens] [admire] [Nikklo] [.]   ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIO', 'BIIIII', 'B']
-[output-->] [Beaucoup] [de] [gens] [admire] [Nikklo] [.]   ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIO', 'BIIIII', 'B']
-BIIIIIIIOBIOBIIIOBIIIIIOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIOBIOBIIIOBIIIIIOBIIIIIB <-- string of output IOBs
+Ils ont peur de Tom.
+[spacy -->] [Ils] [ont] [peur] [de] [Tom] [.]   ,['BIIO', 'BIIO', 'BIIIO', 'BIO', 'BII', 'B']
+[output-->] [Ils] [ont] [peur] [de] [Tom] [.]   ,['BIIO', 'BIIO', 'BIIIO', 'BIO', 'BII', 'B']
+BIIOBIIOBIIIOBIOBIIB <-- string of spacy IOBs
+BIIOBIIOBIIIOBIOBIIB <-- string of output IOBs
 
 
-Sandra Goudie a perdu contre Max Purnell.
-[spacy -->] [Sandra] [Goudie] [a] [perdu] [contre] [Max] [Purnell] [.]   ,['BIIIIIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
-[output-->] [Sandra_Goudie] [a] [perdu] [contre] [Max_Purnell] [.]   ,['BIIIIIIIIIIIIO', 'BO', 'BIIIIO', 'BIIIIIO', 'BIIIIIIIIII', 'B']
-BIIIIIOBIIIIIOBOBIIIIOBIIIIIOBIIOBIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIOBOBIIIIOBIIIIIOBIIIIIIIIIIB <-- string of output IOBs
-
-
-Le chat est sous la table.
-[spacy -->] [Le] [chat] [est] [sous] [la] [table] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Le] [chat] [est] [sous] [la] [table] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-BIOBIIIOBIIOBIIIOBIOBIIIIB <-- string of spacy IOBs
-BIOBIIIOBIIOBIIIOBIOBIIIIB <-- string of output IOBs
-
-
-Les inondations ravagent l'Europe.
-[spacy -->] [Les] [inondations] [ravagent] [l'] [Europe] [.]   ,['BIIO', 'BIIIIIIIIIIO', 'BIIIIIIIO', 'BI', 'BIIIII', 'B']
-[output-->] [Les] [inondations] [ravagent] [l'] [Europe] [.]   ,['BIIO', 'BIIIIIIIIIIO', 'BIIIIIIIO', 'BI', 'BIIIII', 'B']
-BIIOBIIIIIIIIIIOBIIIIIIIOBIBIIIIIB <-- string of spacy IOBs
-BIIOBIIIIIIIIIIOBIIIIIIIOBIBIIIIIB <-- string of output IOBs
-
-
-Edison a inventé le Kinétoscope.
-[spacy -->] [Edison] [a] [inventé] [le] [Kinétoscope] [.]   ,['BIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIIII', 'B']
-[output-->] [Edison] [a] [inventé] [le] [Kinétoscope] [.]   ,['BIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIIII', 'B']
-BIIIIIOBOBIIIIIIOBIOBIIIIIIIIIIB <-- string of spacy IOBs
-BIIIIIOBOBIIIIIIOBIOBIIIIIIIIIIB <-- string of output IOBs
-
-
-Mon chien est blanc.
-[spacy -->] [Mon] [chien] [est] [blanc] [.]   ,['BIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [Mon] [chien] [est] [blanc] [.]   ,['BIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+Mon oncle est riche.
+[spacy -->] [Mon] [oncle] [est] [riche] [.]   ,['BIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+[output-->] [Mon] [oncle] [est] [riche] [.]   ,['BIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
 BIIOBIIIIOBIIOBIIIIB <-- string of spacy IOBs
 BIIOBIIIIOBIIOBIIIIB <-- string of output IOBs
 
 
-Leloir est né en Argentine.
-[spacy -->] [Leloir] [est] [né] [en] [Argentine] [.]   ,['BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
-[output-->] [Leloir] [est] [né] [en] [Argentine] [.]   ,['BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
-BIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of spacy IOBs
-BIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of output IOBs
+Tom a acheté un journal.
+[spacy -->] [Tom] [a] [acheté] [un] [journal] [.]   ,['BIIO', 'BO', 'BIIIIIO', 'BIO', 'BIIIIII', 'B']
+[output-->] [Tom] [a] [acheté] [un] [journal] [.]   ,['BIIO', 'BO', 'BIIIIIO', 'BIO', 'BIIIIII', 'B']
+BIIOBOBIIIIIOBIOBIIIIIIB <-- string of spacy IOBs
+BIIOBOBIIIIIOBIOBIIIIIIB <-- string of output IOBs
 
 
-El-Nashar a été arrêté en Egypte.
-[spacy -->] [El] [-] [Nashar] [a] [été] [arrêté] [en] [Egypte] [.]   ,['BI', 'B', 'BIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIII', 'B']
-[output-->] [El-Nashar] [a] [été] [arrêté] [en] [Egypte] [.]   ,['BIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIII', 'B']
-BIBBIIIIIOBOBIIOBIIIIIOBIOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIOBOBIIOBIIIIIOBIOBIIIIIB <-- string of output IOBs
+Tout le monde commet des erreurs.
+[spacy -->] [Tout] [le] [monde] [commet] [des] [erreurs] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
+[output-->] [Tout] [le] [monde] [commet] [des] [erreurs] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
+BIIIOBIOBIIIIOBIIIIIOBIIOBIIIIIIB <-- string of spacy IOBs
+BIIIOBIOBIIIIOBIIIIIOBIIOBIIIIIIB <-- string of output IOBs
 
 
-Sylvia Costas est la femme d'Andy Sipowicz.
-[spacy -->] [Sylvia] [Costas] [est] [la] [femme] [d'] [Andy] [Sipowicz] [.]   ,['BIIIIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BI', 'BIIIO', 'BIIIIIII', 'B']
-[output-->] [Sylvia_Costas] [est] [la] [femme] [d'] [Andy] [Sipowicz] [.]   ,['BIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BI', 'BIIIO', 'BIIIIIII', 'B']
-BIIIIIOBIIIIIOBIIOBIOBIIIIOBIBIIIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIOBIIOBIOBIIIIOBIBIIIOBIIIIIIIB <-- string of output IOBs
+Ce livre est écrit en anglais.
+[spacy -->] [Ce] [livre] [est] [écrit] [en] [anglais] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIII', 'B']
+[output-->] [Ce] [livre] [est] [écrit] [en] [anglais] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIII', 'B']
+BIOBIIIIOBIIOBIIIIOBIOBIIIIIIB <-- string of spacy IOBs
+BIOBIIIIOBIIOBIIIIOBIOBIIIIIIB <-- string of output IOBs
 
 
-PM a acheté trois usines russes.
-[spacy -->] [PM] [a] [acheté] [trois] [usines] [russes] [.]   ,['BIO', 'BO', 'BIIIIIO', 'BIIIIO', 'BIIIIIO', 'BIIIII', 'B']
-[output-->] [PM] [a] [acheté] [trois] [usines] [russes] [.]   ,['BIO', 'BO', 'BIIIIIO', 'BIIIIO', 'BIIIIIO', 'BIIIII', 'B']
-BIOBOBIIIIIOBIIIIOBIIIIIOBIIIIIB <-- string of spacy IOBs
-BIOBOBIIIIIOBIIIIOBIIIIIOBIIIIIB <-- string of output IOBs
+J'étais jeune et innocent.
+[spacy -->] [J'] [étais] [jeune] [et] [innocent] [.]   ,['BI', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIIIIII', 'B']
+[output-->] [J'] [étais] [jeune] [et] [innocent] [.]   ,['BI', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIIIIII', 'B']
+BIBIIIIOBIIIIOBIOBIIIIIIIB <-- string of spacy IOBs
+BIBIIIIOBIIIIOBIOBIIIIIIIB <-- string of output IOBs
 
 
-Le chien a mordu l'homme.
-[spacy -->] [Le] [chien] [a] [mordu] [l'] [homme] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIII', 'B']
-[output-->] [Le] [chien] [a] [mordu] [l'] [homme] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIII', 'B']
-BIOBIIIIOBOBIIIIOBIBIIIIB <-- string of spacy IOBs
-BIOBIIIIOBOBIIIIOBIBIIIIB <-- string of output IOBs
+Je lis des bandes dessinées.
+[spacy -->] [Je] [lis] [des] [bandes] [dessinées] [.]   ,['BIO', 'BIIO', 'BIIO', 'BIIIIIO', 'BIIIIIIII', 'B']
+[output-->] [Je] [lis] [des] [bandes] [dessinées] [.]   ,['BIO', 'BIIO', 'BIIO', 'BIIIIIO', 'BIIIIIIII', 'B']
+BIOBIIOBIIOBIIIIIOBIIIIIIIIB <-- string of spacy IOBs
+BIOBIIOBIIOBIIIIIOBIIIIIIIIB <-- string of output IOBs
 
 
-Tu es saoul !
-[spacy -->] [Tu] [es] [saoul] [ ] [!]   ,['BIO', 'BIO', 'BIIII', 'B', 'B']
-[output-->] [Tu] [es] [saoul !]   ,['BIO', 'BIO', 'BIIIIII']
-BIOBIOBIIIIBB <-- string of spacy IOBs
-BIOBIOBIIIIII <-- string of output IOBs
+Qui a découvert le radium?
+[spacy -->] [Qui] [a] [découvert] [le] [radium] [?]   ,['BIIO', 'BO', 'BIIIIIIIIO', 'BIO', 'BIIIII', 'B']
+[output-->] [Qui] [a] [découvert] [le] [radium] [?]   ,['BIIO', 'BO', 'BIIIIIIIIO', 'BIO', 'BIIIII', 'B']
+BIIOBOBIIIIIIIIOBIOBIIIIIB <-- string of spacy IOBs
+BIIOBOBIIIIIIIIOBIOBIIIIIB <-- string of output IOBs
 
 
-Accardo a composé 24 Caprices.
-[spacy -->] [Accardo] [a] [composé] [24] [Caprices] [.]   ,['BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIII', 'B']
-[output-->] [Accardo] [a] [composé] [24] [Caprices] [.]   ,['BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIII', 'B']
-BIIIIIIOBOBIIIIIIOBIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIOBOBIIIIIIOBIOBIIIIIIIB <-- string of output IOBs
+Le Kanchenjunga est haut de 8586 mètres.
+[spacy -->] [Le] [Kanchenjunga] [est] [haut] [de] [8586] [mètres] [.]   ,['BIO', 'BIIIIIIIIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIIIO', 'BIIIII', 'B']
+[output-->] [Le] [Kanchenjunga] [est] [haut] [de] [8586] [mètres] [.]   ,['BIO', 'BIIIIIIIIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIIIO', 'BIIIII', 'B']
+BIOBIIIIIIIIIIIOBIIOBIIIOBIOBIIIOBIIIIIB <-- string of spacy IOBs
+BIOBIIIIIIIIIIIOBIIOBIIIOBIOBIIIOBIIIIIB <-- string of output IOBs
 
 
-La fille est seule.
-[spacy -->] [La] [fille] [est] [seule] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [La] [fille] [est] [seule] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-BIOBIIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
+Ma petite amie est très jalouse.
+[spacy -->] [Ma] [petite] [amie] [est] [très] [jalouse] [.]   ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
+[output-->] [Ma] [petite] [amie] [est] [très] [jalouse] [.]   ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
+BIOBIIIIIOBIIIOBIIOBIIIOBIIIIIIB <-- string of spacy IOBs
+BIOBIIIIIOBIIIOBIIOBIIIOBIIIIIIB <-- string of output IOBs
 
 
-Pourquoi Jane est-elle allée à la gare ? 
-[spacy -->] [Pourquoi] [Jane] [est-elle] [allée] [à] [la] [gare] [?]   ,['BIIIIIIIO', 'BIIIO', 'BIIIIIIIO', 'BIIIIO', 'BO', 'BIO', 'BIIIO', 'B']
-[output-->] [Pourquoi_Jane] [est] [-elle] [allée] [à] [la] [gare] [?]   ,['BIIIIIIIIIIIIO', 'BII', 'BIIIIO', 'BIIIIO', 'BO', 'BIO', 'BIIIO', 'B']
-BIIIIIIIOBIIIOBIIIIIIIOBIIIIOBOBIOBIIIOB <-- string of spacy IOBs
-BIIIIIIIIIIIIOBIIBIIIIOBIIIIOBOBIOBIIIOB <-- string of output IOBs
+Dickson a travaillé pour Edison.
+[spacy -->] [Dickson] [a] [travaillé] [pour] [Edison] [.]   ,['BIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIIIII', 'B']
+[output-->] [Dickson] [a] [travaillé] [pour] [Edison] [.]   ,['BIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIIIII', 'B']
+BIIIIIIOBOBIIIIIIIIOBIIIOBIIIIIB <-- string of spacy IOBs
+BIIIIIIOBOBIIIIIIIIOBIIIOBIIIIIB <-- string of output IOBs
 
 
-Texas Instruments produit des téléphones portables.
-[spacy -->] [Texas] [Instruments] [produit] [des] [téléphones] [portables] [.]   ,['BIIIIO', 'BIIIIIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIIO', 'BIIIIIIII', 'B']
-[output-->] [Texas_Instruments] [produit] [des] [téléphones] [portables] [.]   ,['BIIIIIIIIIIIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIIO', 'BIIIIIIII', 'B']
-BIIIIOBIIIIIIIIIIOBIIIIIIOBIIOBIIIIIIIIIOBIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIOBIIIIIIOBIIOBIIIIIIIIIOBIIIIIIIIB <-- string of output IOBs
+Tom a repassé ses vêtements.
+[spacy -->] [Tom] [a] [repassé] [ses] [vêtements] [.]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIIO', 'BIIIIIIII', 'B']
+[output-->] [Tom] [a] [repassé] [ses] [vêtements] [.]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIIO', 'BIIIIIIII', 'B']
+BIIOBOBIIIIIIOBIIOBIIIIIIIIB <-- string of spacy IOBs
+BIIOBOBIIIIIIOBIIOBIIIIIIIIB <-- string of output IOBs
 
 
-C'est un scientifique.
-[spacy -->] [C'] [est] [un] [scientifique] [.]   ,['BI', 'BIIO', 'BIO', 'BIIIIIIIIIII', 'B']
-[output-->] [C'] [est] [un] [scientifique] [.]   ,['BI', 'BIIO', 'BIO', 'BIIIIIIIIIII', 'B']
-BIBIIOBIOBIIIIIIIIIIIB <-- string of spacy IOBs
-BIBIIOBIOBIIIIIIIIIIIB <-- string of output IOBs
+Nous avions raison.
+[spacy -->] [Nous] [avions] [raison] [.]   ,['BIIIO', 'BIIIIIO', 'BIIIII', 'B']
+[output-->] [Nous] [avions] [raison] [.]   ,['BIIIO', 'BIIIIIO', 'BIIIII', 'B']
+BIIIOBIIIIIOBIIIIIB <-- string of spacy IOBs
+BIIIOBIIIIIOBIIIIIB <-- string of output IOBs
 
 
-Ce drapeau est très joli.
-[spacy -->] [Ce] [drapeau] [est] [très] [joli] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIO', 'BIII', 'B']
-[output-->] [Ce] [drapeau] [est] [très] [joli] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIO', 'BIII', 'B']
-BIOBIIIIIIOBIIOBIIIOBIIIB <-- string of spacy IOBs
-BIOBIIIIIIOBIIOBIIIOBIIIB <-- string of output IOBs
+Mon oncle m'a acheté ce livre.
+[spacy -->] [Mon] [oncle] [m'] [a] [acheté] [ce] [livre] [.]   ,['BIIO', 'BIIIIO', 'BI', 'BO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
+[output-->] [Mon] [oncle] [m'] [a] [acheté] [ce] [livre] [.]   ,['BIIO', 'BIIIIO', 'BI', 'BO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
+BIIOBIIIIOBIBOBIIIIIOBIOBIIIIB <-- string of spacy IOBs
+BIIOBIIIIOBIBOBIIIIIOBIOBIIIIB <-- string of output IOBs
 
 
-Les blessés ont été transportés en ambulance.
-[spacy -->] [Les] [blessés] [ont] [été] [transportés] [en] [ambulance] [.]   ,['BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
-[output-->] [Les] [blessés] [ont] [été] [transportés] [en] [ambulance] [.]   ,['BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
-BIIOBIIIIIIOBIIOBIIOBIIIIIIIIIIOBIOBIIIIIIIIB <-- string of spacy IOBs
-BIIOBIIIIIIOBIIOBIIOBIIIIIIIIIIOBIOBIIIIIIIIB <-- string of output IOBs
+J'ai sommeil !
+[spacy -->] [J'] [ai] [sommeil] [!]   ,['BI', 'BIO', 'BIIIIIIO', 'B']
+[output-->] [J'] [ai] [sommeil] [!]   ,['BI', 'BIO', 'BIIIIIIO', 'B']
+BIBIOBIIIIIIOB <-- string of spacy IOBs
+BIBIOBIIIIIIOB <-- string of output IOBs
 
 
-Tom a une voiture.
-[spacy -->] [Tom] [a] [une] [voiture] [.]   ,['BIIO', 'BO', 'BIIO', 'BIIIIII', 'B']
-[output-->] [Tom] [a] [une] [voiture] [.]   ,['BIIO', 'BO', 'BIIO', 'BIIIIII', 'B']
-BIIOBOBIIOBIIIIIIB <-- string of spacy IOBs
-BIIOBOBIIOBIIIIIIB <-- string of output IOBs
+J'ai perdu mes clés.
+[spacy -->] [J'] [ai] [perdu] [mes] [clés] [.]   ,['BI', 'BIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
+[output-->] [J'] [ai] [perdu] [mes] [clés] [.]   ,['BI', 'BIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
+BIBIOBIIIIOBIIOBIIIB <-- string of spacy IOBs
+BIBIOBIIIIOBIIOBIIIB <-- string of output IOBs
 
 
-Le film 'speed' a été réalisé par Jan De Bont.
-[spacy -->] [Le] [film] ['] [speed] ['] [a] [été] [réalisé] [par] [Jan] [De] [Bont] [.]   ,['BIO', 'BIIIO', 'B', 'BIIII', 'BO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIII', 'B']
-[output-->] [Le] [film] ['speed'] [a] [été] [réalisé] [par] [Jan_De_Bont] [.]   ,['BIO', 'BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
-BIOBIIIOBBIIIIBOBOBIIOBIIIIIIOBIIOBIIOBIOBIIIB <-- string of spacy IOBs
-BIOBIIIOBIIIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of output IOBs
+Il traversa la rivière à la nage.
+[spacy -->] [Il] [traversa] [la] [rivière] [à] [la] [nage] [.]   ,['BIO', 'BIIIIIIIO', 'BIO', 'BIIIIIIO', 'BO', 'BIO', 'BIII', 'B']
+[output-->] [Il] [traversa] [la] [rivière] [à] [la] [nage] [.]   ,['BIO', 'BIIIIIIIO', 'BIO', 'BIIIIIIO', 'BO', 'BIO', 'BIII', 'B']
+BIOBIIIIIIIOBIOBIIIIIIOBOBIOBIIIB <-- string of spacy IOBs
+BIOBIIIIIIIOBIOBIIIIIIOBOBIOBIIIB <-- string of output IOBs
 
 
-Le groupe de rock Spock's Beard vient du Japon.
-[spacy -->] [Le] [groupe] [de] [rock] [Spock'] [s] [Beard] [vient] [du] [Japon] [.]   ,['BIO', 'BIIIIIO', 'BIO', 'BIIIO', 'BIIIII', 'BO', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Le] [groupe] [de] [rock] [Spock'] [s] [Beard] [vient] [du] [Japon] [.]   ,['BIO', 'BIIIIIO', 'BIO', 'BIIIO', 'BIIIII', 'BO', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIII', 'B']
-BIOBIIIIIOBIOBIIIOBIIIIIBOBIIIIOBIIIIOBIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIIOBIOBIIIOBIIIIIBOBIIIIOBIIIIOBIOBIIIIB <-- string of output IOBs
+Quelqu'un frappe à la porte.
+[spacy -->] [Quelqu'] [un] [frappe] [à] [la] [porte] [.]   ,['BIIIIII', 'BIO', 'BIIIIIO', 'BO', 'BIO', 'BIIII', 'B']
+[output-->] [Quelqu'] [un] [frappe] [à] [la] [porte] [.]   ,['BIIIIII', 'BIO', 'BIIIIIO', 'BO', 'BIO', 'BIIII', 'B']
+BIIIIIIBIOBIIIIIOBOBIOBIIIIB <-- string of spacy IOBs
+BIIIIIIBIOBIIIIIOBOBIOBIIIIB <-- string of output IOBs
 
 
-Le film 'speed' a été réalisé par Jan De Bont.
-[spacy -->] [Le] [film] ['] [speed] ['] [a] [été] [réalisé] [par] [Jan] [De] [Bont] [.]   ,['BIO', 'BIIIO', 'B', 'BIIII', 'BO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIII', 'B']
-[output-->] [Le] [film] ['speed'] [a] [été] [réalisé] [par] [Jan_De_Bont] [.]   ,['BIO', 'BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
-BIOBIIIOBBIIIIBOBOBIIOBIIIIIIOBIIOBIIOBIOBIIIB <-- string of spacy IOBs
-BIOBIIIOBIIIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of output IOBs
+Je viens du Portugal.
+[spacy -->] [Je] [viens] [du] [Portugal] [.]   ,['BIO', 'BIIIIO', 'BIO', 'BIIIIIII', 'B']
+[output-->] [Je] [viens] [du] [Portugal] [.]   ,['BIO', 'BIIIIO', 'BIO', 'BIIIIIII', 'B']
+BIOBIIIIOBIOBIIIIIIIB <-- string of spacy IOBs
+BIOBIIIIOBIOBIIIIIIIB <-- string of output IOBs
 
 
-Une éponge absorbe l'eau.
-[spacy -->] [Une] [éponge] [absorbe] [l'] [eau] [.]   ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BI', 'BII', 'B']
-[output-->] [Une] [éponge] [absorbe] [l'] [eau] [.]   ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BI', 'BII', 'B']
-BIIOBIIIIIOBIIIIIIOBIBIIB <-- string of spacy IOBs
-BIIOBIIIIIOBIIIIIIOBIBIIB <-- string of output IOBs
+Le feu s'éteignit.
+[spacy -->] [Le] [feu] [s'] [éteignit] [.]   ,['BIO', 'BIIO', 'BI', 'BIIIIIII', 'B']
+[output-->] [Le] [feu] [s'] [éteignit] [.]   ,['BIO', 'BIIO', 'BI', 'BIIIIIII', 'B']
+BIOBIIOBIBIIIIIIIB <-- string of spacy IOBs
+BIOBIIOBIBIIIIIIIB <-- string of output IOBs
 
 
-L'eau n'est pas potable.
-[spacy -->] [L'] [eau] [n'] [est] [pas] [potable] [.]   ,['BI', 'BIIO', 'BI', 'BIIO', 'BIIO', 'BIIIIII', 'B']
-[output-->] [L'] [eau] [n'] [est] [pas] [potable] [.]   ,['BI', 'BIIO', 'BI', 'BIIO', 'BIIO', 'BIIIIII', 'B']
-BIBIIOBIBIIOBIIOBIIIIIIB <-- string of spacy IOBs
-BIBIIOBIBIIOBIIOBIIIIIIB <-- string of output IOBs
+Tony Blair est membre du Labor Party.
+[spacy -->] [Tony] [Blair] [est] [membre] [du] [Labor] [Party] [.]   ,['BIIIO', 'BIIIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIIO', 'BIIII', 'B']
+[output-->] [Tony_Blair] [est] [membre] [du] [Labor_Party] [.]   ,['BIIIIIIIIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIIIIIIII', 'B']
+BIIIOBIIIIOBIIOBIIIIIOBIOBIIIIOBIIIIB <-- string of spacy IOBs
+BIIIIIIIIIOBIIOBIIIIIOBIOBIIIIIIIIIIB <-- string of output IOBs
 
 
-Personne n'est parfait.
-[spacy -->] [Personne] [n'] [est] [parfait] [.]   ,['BIIIIIIIO', 'BI', 'BIIO', 'BIIIIII', 'B']
-[output-->] [Personne] [n'] [est] [parfait] [.]   ,['BIIIIIIIO', 'BI', 'BIIO', 'BIIIIII', 'B']
-BIIIIIIIOBIBIIOBIIIIIIB <-- string of spacy IOBs
-BIIIIIIIOBIBIIOBIIIIIIB <-- string of output IOBs
+Fermilab a créé le Linux LTS.
+[spacy -->] [Fermilab] [a] [créé] [le] [Linux] [LTS] [.]   ,['BIIIIIIIO', 'BO', 'BIIIO', 'BIO', 'BIIIIO', 'BII', 'B']
+[output-->] [Fermilab] [a] [créé] [le] [Linux] [LTS.]   ,['BIIIIIIIO', 'BO', 'BIIIO', 'BIO', 'BIIIIO', 'BIII']
+BIIIIIIIOBOBIIIOBIOBIIIIOBIIB <-- string of spacy IOBs
+BIIIIIIIOBOBIIIOBIOBIIIIOBIII <-- string of output IOBs
 
 
-Tout le monde s'est moqué de lui.
-[spacy -->] [Tout] [le] [monde] [s'] [est] [moqué] [de] [lui] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BII', 'B']
-[output-->] [Tout] [le] [monde] [s'] [est] [moqué] [de] [lui] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BII', 'B']
-BIIIOBIOBIIIIOBIBIIOBIIIIOBIOBIIB <-- string of spacy IOBs
-BIIIOBIOBIIIIOBIBIIOBIIIIOBIOBIIB <-- string of output IOBs
+Hooper a acheté une maison à Portland.
+[spacy -->] [Hooper] [a] [acheté] [une] [maison] [à] [Portland] [.]   ,['BIIIIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIIO', 'BO', 'BIIIIIII', 'B']
+[output-->] [Hooper] [a] [acheté] [une] [maison] [à] [Portland] [.]   ,['BIIIIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIIO', 'BO', 'BIIIIIII', 'B']
+BIIIIIOBOBIIIIIOBIIOBIIIIIOBOBIIIIIIIB <-- string of spacy IOBs
+BIIIIIOBOBIIIIIOBIIOBIIIIIOBOBIIIIIIIB <-- string of output IOBs
 
 
-J'ai 18 ans.
-[spacy -->] [J'] [ai] [18] [ans] [.]   ,['BI', 'BIO', 'BIO', 'BII', 'B']
-[output-->] [J'] [ai] [18] [ans] [.]   ,['BI', 'BIO', 'BIO', 'BII', 'B']
-BIBIOBIOBIIB <-- string of spacy IOBs
-BIBIOBIOBIIB <-- string of output IOBs
+Je mangerai une pomme.
+[spacy -->] [Je] [mangerai] [une] [pomme] [.]   ,['BIO', 'BIIIIIIIO', 'BIIO', 'BIIII', 'B']
+[output-->] [Je] [mangerai] [une] [pomme] [.]   ,['BIO', 'BIIIIIIIO', 'BIIO', 'BIIII', 'B']
+BIOBIIIIIIIOBIIOBIIIIB <-- string of spacy IOBs
+BIOBIIIIIIIOBIIOBIIIIB <-- string of output IOBs
 
 
-Tout le monde a ri.
-[spacy -->] [Tout] [le] [monde] [a] [ri] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BO', 'BI', 'B']
-[output-->] [Tout] [le] [monde] [a] [ri] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BO', 'BI', 'B']
-BIIIOBIOBIIIIOBOBIB <-- string of spacy IOBs
-BIIIOBIOBIIIIOBOBIB <-- string of output IOBs
+Cette école fut fondée en 1650.
+[spacy -->] [Cette] [école] [fut] [fondée] [en] [1650] [.]   ,['BIIIIO', 'BIIIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
+[output-->] [Cette] [école] [fut] [fondée] [en] [1650] [.]   ,['BIIIIO', 'BIIIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
+BIIIIOBIIIIOBIIOBIIIIIOBIOBIIIB <-- string of spacy IOBs
+BIIIIOBIIIIOBIIOBIIIIIOBIOBIIIB <-- string of output IOBs
 
 
-GUS a vendu Wehkamp.
-[spacy -->] [GUS] [a] [vendu] [Wehkamp] [.]   ,['BIIO', 'BO', 'BIIIIO', 'BIIIIII', 'B']
-[output-->] [GUS] [a] [vendu] [Wehkamp] [.]   ,['BIIO', 'BO', 'BIIIIO', 'BIIIIII', 'B']
-BIIOBOBIIIIOBIIIIIIB <-- string of spacy IOBs
-BIIOBOBIIIIOBIIIIIIB <-- string of output IOBs
+Le vent souffle de l'est.
+[spacy -->] [Le] [vent] [souffle] [de] [l'] [est] [.]   ,['BIO', 'BIIIO', 'BIIIIIIO', 'BIO', 'BI', 'BII', 'B']
+[output-->] [Le] [vent] [souffle] [de] [l'] [est] [.]   ,['BIO', 'BIIIO', 'BIIIIIIO', 'BIO', 'BI', 'BII', 'B']
+BIOBIIIOBIIIIIIOBIOBIBIIB <-- string of spacy IOBs
+BIOBIIIOBIIIIIIOBIOBIBIIB <-- string of output IOBs
 
 
-André Henri Constant van Hasselt a fait ces études à Maastricht.
-[spacy -->] [André] [Henri] [Constant] [van] [Hasselt] [a] [fait] [ces] [études] [à] [Maastricht] [.]   ,['BIIIIO', 'BIIIIO', 'BIIIIIIIO', 'BIIO', 'BIIIIIIO', 'BO', 'BIIIO', 'BIIO', 'BIIIIIO', 'BO', 'BIIIIIIIII', 'B']
-[output-->] [André_Henri_Constant] [van] [Hasselt] [a] [fait] [ces] [études] [à] [Maastricht] [.]   ,['BIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIIIIIIO', 'BO', 'BIIIO', 'BIIO', 'BIIIIIO', 'BO', 'BIIIIIIIII', 'B']
-BIIIIOBIIIIOBIIIIIIIOBIIOBIIIIIIOBOBIIIOBIIOBIIIIIOBOBIIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIIIIOBIIOBIIIIIIOBOBIIIOBIIOBIIIIIOBOBIIIIIIIIIB <-- string of output IOBs
+Mon explication est-elle claire ?
+[spacy -->] [Mon] [explication] [est-elle] [claire] [ ] [?]   ,['BIIO', 'BIIIIIIIIIIO', 'BIIIIIIIO', 'BIIIII', 'B', 'B']
+[output-->] [Mon] [explication] [est] [-elle] [claire ?]   ,['BIIO', 'BIIIIIIIIIIO', 'BII', 'BIIIIO', 'BIIIIIII']
+BIIOBIIIIIIIIIIOBIIIIIIIOBIIIIIBB <-- string of spacy IOBs
+BIIOBIIIIIIIIIIOBIIBIIIIOBIIIIIII <-- string of output IOBs
 
 
-Wolfgang Amadeus Mozart est né à Salzbourg.
-[spacy -->] [Wolfgang] [Amadeus] [Mozart] [est] [né] [à] [Salzbourg] [.]   ,['BIIIIIIIO', 'BIIIIIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BO', 'BIIIIIIII', 'B']
-[output-->] [Wolfgang_Amadeus_Mozart] [est] [né] [à] [Salzbourg] [.]   ,['BIIIIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BO', 'BIIIIIIII', 'B']
-BIIIIIIIOBIIIIIIOBIIIIIOBIIOBIOBOBIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIIIIIIIOBIIOBIOBOBIIIIIIIIB <-- string of output IOBs
+Le feu brûle.
+[spacy -->] [Le] [feu] [brûle] [.]   ,['BIO', 'BIIO', 'BIIII', 'B']
+[output-->] [Le] [feu] [brûle] [.]   ,['BIO', 'BIIO', 'BIIII', 'B']
+BIOBIIOBIIIIB <-- string of spacy IOBs
+BIOBIIOBIIIIB <-- string of output IOBs
 
 
-Il faudrait repasser cette chemise.
-[spacy -->] [Il] [faudrait] [repasser] [cette] [chemise] [.]   ,['BIO', 'BIIIIIIIO', 'BIIIIIIIO', 'BIIIIO', 'BIIIIII', 'B']
-[output-->] [Il] [faudrait] [repasser] [cette] [chemise] [.]   ,['BIO', 'BIIIIIIIO', 'BIIIIIIIO', 'BIIIIO', 'BIIIIII', 'B']
-BIOBIIIIIIIOBIIIIIIIOBIIIIOBIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIIIOBIIIIIIIOBIIIIOBIIIIIIB <-- string of output IOBs
+J'adore les hamburgers.
+[spacy -->] [J'] [adore] [les] [hamburgers] [.]   ,['BI', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
+[output-->] [J'] [adore] [les] [hamburgers] [.]   ,['BI', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
+BIBIIIIOBIIOBIIIIIIIIIB <-- string of spacy IOBs
+BIBIIIIOBIIOBIIIIIIIIIB <-- string of output IOBs
 
 
-Le thé coûte deux euros.
-[spacy -->] [Le] [thé] [coûte] [deux] [euros] [.]   ,['BIO', 'BIIO', 'BIIIIO', 'BIIIO', 'BIIII', 'B']
-[output-->] [Le] [thé] [coûte] [deux] [euros] [.]   ,['BIO', 'BIIO', 'BIIIIO', 'BIIIO', 'BIIII', 'B']
-BIOBIIOBIIIIOBIIIOBIIIIB <-- string of spacy IOBs
-BIOBIIOBIIIIOBIIIOBIIIIB <-- string of output IOBs
+Qui a écrit ce livre ?
+[spacy -->] [Qui] [a] [écrit] [ce] [livre] [ ] [?]   ,['BIIO', 'BO', 'BIIIIO', 'BIO', 'BIIII', 'B', 'B']
+[output-->] [Qui] [a] [écrit] [ce] [livre ?]   ,['BIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIII']
+BIIOBOBIIIIOBIOBIIIIBB <-- string of spacy IOBs
+BIIOBOBIIIIOBIOBIIIIII <-- string of output IOBs
 
 
-Ibrahim Sofu a été assassiné par Metin Kaplan.
-[spacy -->] [Ibrahim] [Sofu] [a] [été] [assassiné] [par] [Metin] [Kaplan] [.]   ,['BIIIIIIO', 'BIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIIIII', 'B']
-[output-->] [Ibrahim_Sofu] [a] [été] [assassiné] [par] [Metin_Kaplan] [.]   ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIIIIIIIII', 'B']
-BIIIIIIOBIIIOBOBIIOBIIIIIIIIOBIIOBIIIIOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIOBOBIIOBIIIIIIIIOBIIOBIIIIIIIIIIIB <-- string of output IOBs
+Je suis plus grand.
+[spacy -->] [Je] [suis] [plus] [grand] [.]   ,['BIO', 'BIIIO', 'BIIIO', 'BIIII', 'B']
+[output-->] [Je] [suis] [plus] [grand] [.]   ,['BIO', 'BIIIO', 'BIIIO', 'BIIII', 'B']
+BIOBIIIOBIIIOBIIIIB <-- string of spacy IOBs
+BIOBIIIOBIIIOBIIIIB <-- string of output IOBs
 
 
-Le garçon parle à son grand-père.
-[spacy -->] [Le] [garçon] [parle] [à] [son] [grand-père] [.]   ,['BIO', 'BIIIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
-[output-->] [Le] [garçon] [parle] [à] [son] [grand-père] [.]   ,['BIO', 'BIIIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
-BIOBIIIIIOBIIIIOBOBIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIOBIIIIOBOBIIOBIIIIIIIIIB <-- string of output IOBs
+La guerre dura deux ans.
+[spacy -->] [La] [guerre] [dura] [deux] [ans] [.]   ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIIO', 'BII', 'B']
+[output-->] [La] [guerre] [dura] [deux] [ans] [.]   ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIIO', 'BII', 'B']
+BIOBIIIIIOBIIIOBIIIOBIIB <-- string of spacy IOBs
+BIOBIIIIIOBIIIOBIIIOBIIB <-- string of output IOBs
 
 
-Le Kanchenjunga fait 8586 mètres de haut.
-[spacy -->] [Le] [Kanchenjunga] [fait] [8586] [mètres] [de] [haut] [.]   ,['BIO', 'BIIIIIIIIIIIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
-[output-->] [Le] [Kanchenjunga] [fait] [8586] [mètres] [de] [haut] [.]   ,['BIO', 'BIIIIIIIIIIIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
-BIOBIIIIIIIIIIIOBIIIOBIIIOBIIIIIOBIOBIIIB <-- string of spacy IOBs
-BIOBIIIIIIIIIIIOBIIIOBIIIOBIIIIIOBIOBIIIB <-- string of output IOBs
+J'ai gagné à la loterie.
+[spacy -->] [J'] [ai] [gagné] [à] [la] [loterie] [.]   ,['BI', 'BIO', 'BIIIIO', 'BO', 'BIO', 'BIIIIII', 'B']
+[output-->] [J'] [ai] [gagné] [à] [la] [loterie] [.]   ,['BI', 'BIO', 'BIIIIO', 'BO', 'BIO', 'BIIIIII', 'B']
+BIBIOBIIIIOBOBIOBIIIIIIB <-- string of spacy IOBs
+BIBIOBIIIIOBOBIOBIIIIIIB <-- string of output IOBs
 
 
-Le policier porte un masque à gaz.
-[spacy -->] [Le] [policier] [porte] [un] [masque] [à] [gaz] [.]   ,['BIO', 'BIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BO', 'BII', 'B']
-[output-->] [Le] [policier] [porte] [un] [masque] [à] [gaz] [.]   ,['BIO', 'BIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BO', 'BII', 'B']
-BIOBIIIIIIIOBIIIIOBIOBIIIIIOBOBIIB <-- string of spacy IOBs
-BIOBIIIIIIIOBIIIIOBIOBIIIIIOBOBIIB <-- string of output IOBs
+Les arbres sont verts.
+[spacy -->] [Les] [arbres] [sont] [verts] [.]   ,['BIIO', 'BIIIIIO', 'BIIIO', 'BIIII', 'B']
+[output-->] [Les] [arbres] [sont] [verts] [.]   ,['BIIO', 'BIIIIIO', 'BIIIO', 'BIIII', 'B']
+BIIOBIIIIIOBIIIOBIIIIB <-- string of spacy IOBs
+BIIOBIIIIIOBIIIOBIIIIB <-- string of output IOBs
 
 
-O.J. Simpson a été accusé de meurtre.
-[spacy -->] [O.J.] [Simpson] [a] [été] [accusé] [de] [meurtre] [.]   ,['BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIIII', 'B']
-[output-->] [O.J._Simpson] [a] [été] [accusé] [de] [meurtre] [.]   ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIIII', 'B']
-BIIIOBIIIIIIOBOBIIOBIIIIIOBIOBIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIOBOBIIOBIIIIIOBIOBIIIIIIB <-- string of output IOBs
+Alexandre Berthier est mort en 1799.
+[spacy -->] [Alexandre] [Berthier] [est] [mort] [en] [1799] [.]   ,['BIIIIIIIIO', 'BIIIIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIII', 'B']
+[output-->] [Alexandre_Berthier] [est] [mort] [en] [1799] [.]   ,['BIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIII', 'B']
+BIIIIIIIIOBIIIIIIIOBIIOBIIIOBIOBIIIB <-- string of spacy IOBs
+BIIIIIIIIIIIIIIIIIOBIIOBIIIOBIOBIIIB <-- string of output IOBs
 
 
-Betty est une tueuse en série.
-[spacy -->] [Betty] [est] [une] [tueuse] [en] [série] [.]   ,['BIIIIO', 'BIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Betty] [est] [une] [tueuse] [en] [série] [.]   ,['BIIIIO', 'BIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
-BIIIIOBIIOBIIOBIIIIIOBIOBIIIIB <-- string of spacy IOBs
-BIIIIOBIIOBIIOBIIIIIOBIOBIIIIB <-- string of output IOBs
+La Suisse est un beau pays.
+[spacy -->] [La] [Suisse] [est] [un] [beau] [pays] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIO', 'BIII', 'B']
+[output-->] [La] [Suisse] [est] [un] [beau] [pays] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIO', 'BIII', 'B']
+BIOBIIIIIOBIIOBIOBIIIOBIIIB <-- string of spacy IOBs
+BIOBIIIIIOBIIOBIOBIIIOBIIIB <-- string of output IOBs
 
 
-Je comprends.
-[spacy -->] [Je] [comprends] [.]   ,['BIO', 'BIIIIIIII', 'B']
-[output-->] [Je] [comprends] [.]   ,['BIO', 'BIIIIIIII', 'B']
-BIOBIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIIIIB <-- string of output IOBs
+Dagbladet est un journal norwegien.
+[spacy -->] [Dagbladet] [est] [un] [journal] [norwegien] [.]   ,['BIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
+[output-->] [Dagbladet] [est] [un] [journal] [norwegien] [.]   ,['BIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
+BIIIIIIIIOBIIOBIOBIIIIIIOBIIIIIIIIB <-- string of spacy IOBs
+BIIIIIIIIOBIIOBIOBIIIIIIOBIIIIIIIIB <-- string of output IOBs
 
 
-Jerry Reinsdorf a remporté 7 championnats.
-[spacy -->] [Jerry] [Reinsdorf] [a] [remporté] [7] [championnats] [.]   ,['BIIIIO', 'BIIIIIIIIO', 'BO', 'BIIIIIIIO', 'BO', 'BIIIIIIIIIII', 'B']
-[output-->] [Jerry_Reinsdorf] [a] [remporté] [7] [championnats] [.]   ,['BIIIIIIIIIIIIIIO', 'BO', 'BIIIIIIIO', 'BO', 'BIIIIIIIIIII', 'B']
-BIIIIOBIIIIIIIIOBOBIIIIIIIOBOBIIIIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIOBOBIIIIIIIOBOBIIIIIIIIIIIB <-- string of output IOBs
+M. Smith est venu.
+[spacy -->] [M.] [Smith] [est] [venu] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
+[output-->] [M._Smith] [est] [venu] [.]   ,['BIIIIIIIO', 'BIIO', 'BIII', 'B']
+BIOBIIIIOBIIOBIIIB <-- string of spacy IOBs
+BIIIIIIIOBIIOBIIIB <-- string of output IOBs
 
 
-La porte n'était pas fermée.
-[spacy -->] [La] [porte] [n'] [était] [pas] [fermée] [.]   ,['BIO', 'BIIIIO', 'BI', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
-[output-->] [La] [porte] [n'] [était] [pas] [fermée] [.]   ,['BIO', 'BIIIIO', 'BI', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
-BIOBIIIIOBIBIIIIOBIIOBIIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIBIIIIOBIIOBIIIIIB <-- string of output IOBs
+Tom est plus grand que sa mère.
+[spacy -->] [Tom] [est] [plus] [grand] [que] [sa] [mère] [.]   ,['BIIO', 'BIIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIO', 'BIII', 'B']
+[output-->] [Tom] [est] [plus] [grand] [que] [sa] [mère] [.]   ,['BIIO', 'BIIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIO', 'BIII', 'B']
+BIIOBIIOBIIIOBIIIIOBIIOBIOBIIIB <-- string of spacy IOBs
+BIIOBIIOBIIIOBIIIIOBIIOBIOBIIIB <-- string of output IOBs
 
 
-Spartan Air Lines a racheté United Airways.
-[spacy -->] [Spartan] [Air] [Lines] [a] [racheté] [United] [Airways] [.]   ,['BIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIIIIIO', 'BIIIIIO', 'BIIIIII', 'B']
-[output-->] [Spartan_Air_Lines] [a] [racheté] [United_Airways] [.]   ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIIIIIIIIIIIII', 'B']
-BIIIIIIOBIIOBIIIIOBOBIIIIIIOBIIIIIOBIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIOBOBIIIIIIOBIIIIIIIIIIIIIB <-- string of output IOBs
+Tom a renversé le lait.
+[spacy -->] [Tom] [a] [renversé] [le] [lait] [.]   ,['BIIO', 'BO', 'BIIIIIIIO', 'BIO', 'BIII', 'B']
+[output-->] [Tom] [a] [renversé] [le] [lait] [.]   ,['BIIO', 'BO', 'BIIIIIIIO', 'BIO', 'BIII', 'B']
+BIIOBOBIIIIIIIOBIOBIIIB <-- string of spacy IOBs
+BIIOBOBIIIIIIIOBIOBIIIB <-- string of output IOBs
 
 
-Vladislav Listyev a été tué à Moscou.
-[spacy -->] [Vladislav] [Listyev] [a] [été] [tué] [à] [Moscou] [.]   ,['BIIIIIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIO', 'BO', 'BIIIII', 'B']
-[output-->] [Vladislav_Listyev] [a] [été] [tué] [à] [Moscou] [.]   ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIO', 'BO', 'BIIIII', 'B']
-BIIIIIIIIOBIIIIIIOBOBIIOBIIOBOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIOBOBIIOBIIOBOBIIIIIB <-- string of output IOBs
+Elle le gifla.
+[spacy -->] [Elle] [le] [gifla] [.]   ,['BIIIO', 'BIO', 'BIIII', 'B']
+[output-->] [Elle] [le] [gifla] [.]   ,['BIIIO', 'BIO', 'BIIII', 'B']
+BIIIOBIOBIIIIB <-- string of spacy IOBs
+BIIIOBIOBIIIIB <-- string of output IOBs
 
 
-Le docteur a examiné les patients.
-[spacy -->] [Le] [docteur] [a] [examiné] [les] [patients] [.]   ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIIO', 'BIIIIIII', 'B']
-[output-->] [Le] [docteur] [a] [examiné] [les] [patients] [.]   ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIIO', 'BIIIIIII', 'B']
-BIOBIIIIIIOBOBIIIIIIOBIIOBIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIIOBOBIIIIIIOBIIOBIIIIIIIB <-- string of output IOBs
+Je fumais.
+[spacy -->] [Je] [fumais] [.]   ,['BIO', 'BIIIII', 'B']
+[output-->] [Je] [fumais] [.]   ,['BIO', 'BIIIII', 'B']
+BIOBIIIIIB <-- string of spacy IOBs
+BIOBIIIIIB <-- string of output IOBs
 
 
-Un éléphant a un long nez.
-[spacy -->] [Un] [éléphant] [a] [un] [long] [nez] [.]   ,['BIO', 'BIIIIIIIO', 'BO', 'BIO', 'BIIIO', 'BII', 'B']
-[output-->] [Un] [éléphant] [a] [un] [long] [nez] [.]   ,['BIO', 'BIIIIIIIO', 'BO', 'BIO', 'BIIIO', 'BII', 'B']
-BIOBIIIIIIIOBOBIOBIIIOBIIB <-- string of spacy IOBs
-BIOBIIIIIIIOBOBIOBIIIOBIIB <-- string of output IOBs
+Ma valise est cassée.
+[spacy -->] [Ma] [valise] [est] [cassée] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIII', 'B']
+[output-->] [Ma] [valise] [est] [cassée] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIII', 'B']
+BIOBIIIIIOBIIOBIIIIIB <-- string of spacy IOBs
+BIOBIIIIIOBIIOBIIIIIB <-- string of output IOBs
 
 
-L'argent est sur la table.
-[spacy -->] [L'] [argent] [est] [sur] [la] [table] [.]   ,['BI', 'BIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIII', 'B']
-[output-->] [L'] [argent] [est] [sur] [la] [table] [.]   ,['BI', 'BIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIII', 'B']
-BIBIIIIIOBIIOBIIOBIOBIIIIB <-- string of spacy IOBs
-BIBIIIIIOBIIOBIIOBIOBIIIIB <-- string of output IOBs
+L'archer a tué le cerf.
+[spacy -->] [L'] [archer] [a] [tué] [le] [cerf] [.]   ,['BI', 'BIIIIIO', 'BO', 'BIIO', 'BIO', 'BIII', 'B']
+[output-->] [L'] [archer] [a] [tué] [le] [cerf] [.]   ,['BI', 'BIIIIIO', 'BO', 'BIIO', 'BIO', 'BIII', 'B']
+BIBIIIIIOBOBIIOBIOBIIIB <-- string of spacy IOBs
+BIBIIIIIOBOBIIOBIOBIIIB <-- string of output IOBs
 
 
-Un dollar vaut cent cents.
-[spacy -->] [Un] [dollar] [vaut] [cent] [cents] [.]   ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIIO', 'BIIII', 'B']
-[output-->] [Un] [dollar] [vaut] [cent] [cents] [.]   ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIIO', 'BIIII', 'B']
-BIOBIIIIIOBIIIOBIIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIIOBIIIOBIIIOBIIIIB <-- string of output IOBs
+Lady Diana est morte à Paris.
+[spacy -->] [Lady] [Diana] [est] [morte] [à] [Paris] [.]   ,['BIIIO', 'BIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIII', 'B']
+[output-->] [Lady_Diana] [est] [morte] [à] [Paris] [.]   ,['BIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIII', 'B']
+BIIIOBIIIIOBIIOBIIIIOBOBIIIIB <-- string of spacy IOBs
+BIIIIIIIIIOBIIOBIIIIOBOBIIIIB <-- string of output IOBs
 
 
-Bervely travaillait pour WEDCOR.
-[spacy -->] [Bervely] [travaillait] [pour] [WEDCOR] [.]   ,['BIIIIIIO', 'BIIIIIIIIIIO', 'BIIIO', 'BIIIII', 'B']
-[output-->] [Bervely] [travaillait] [pour] [WEDCOR.]   ,['BIIIIIIO', 'BIIIIIIIIIIO', 'BIIIO', 'BIIIIII']
-BIIIIIIOBIIIIIIIIIIOBIIIOBIIIIIB <-- string of spacy IOBs
-BIIIIIIOBIIIIIIIIIIOBIIIOBIIIIII <-- string of output IOBs
+Il jouait du piano.
+[spacy -->] [Il] [jouait] [du] [piano] [.]   ,['BIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
+[output-->] [Il] [jouait] [du] [piano] [.]   ,['BIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
+BIOBIIIIIOBIOBIIIIB <-- string of spacy IOBs
+BIOBIIIIIOBIOBIIIIB <-- string of output IOBs
 
 
-Ma femme a une pneumonie.
-[spacy -->] [Ma] [femme] [a] [une] [pneumonie] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIII', 'B']
-[output-->] [Ma] [femme] [a] [une] [pneumonie] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIII', 'B']
-BIOBIIIIOBOBIIOBIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIOBOBIIOBIIIIIIIIB <-- string of output IOBs
+Il pleurait.
+[spacy -->] [Il] [pleurait] [.]   ,['BIO', 'BIIIIIII', 'B']
+[output-->] [Il] [pleurait] [.]   ,['BIO', 'BIIIIIII', 'B']
+BIOBIIIIIIIB <-- string of spacy IOBs
+BIOBIIIIIIIB <-- string of output IOBs
 
 
-Nikos Kourkoulos était un acteur grec.
-[spacy -->] [Nikos] [Kourkoulos] [était] [un] [acteur] [grec] [.]   ,['BIIIIO', 'BIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIII', 'B']
-[output-->] [Nikos_Kourkoulos] [était] [un] [acteur] [grec] [.]   ,['BIIIIIIIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIII', 'B']
-BIIIIOBIIIIIIIIIOBIIIIOBIOBIIIIIOBIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIOBIIIIOBIOBIIIIIOBIIIB <-- string of output IOBs
+Une banane est jaune.
+[spacy -->] [Une] [banane] [est] [jaune] [.]   ,['BIIO', 'BIIIIIO', 'BIIO', 'BIIII', 'B']
+[output-->] [Une] [banane] [est] [jaune] [.]   ,['BIIO', 'BIIIIIO', 'BIIO', 'BIIII', 'B']
+BIIOBIIIIIOBIIOBIIIIB <-- string of spacy IOBs
+BIIOBIIIIIOBIIOBIIIIB <-- string of output IOBs
 
 
-Klaus Pohl est un dramaturge allemand.
-[spacy -->] [Klaus] [Pohl] [est] [un] [dramaturge] [allemand] [.]   ,['BIIIIO', 'BIIIO', 'BIIO', 'BIO', 'BIIIIIIIIIO', 'BIIIIIII', 'B']
-[output-->] [Klaus_Pohl] [est] [un] [dramaturge] [allemand] [.]   ,['BIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIIIIO', 'BIIIIIII', 'B']
-BIIIIOBIIIOBIIOBIOBIIIIIIIIIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIOBIIOBIOBIIIIIIIIIOBIIIIIIIB <-- string of output IOBs
+Cette école a été fondée en 1650.
+[spacy -->] [Cette] [école] [a] [été] [fondée] [en] [1650] [.]   ,['BIIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
+[output-->] [Cette] [école] [a] [été] [fondée] [en] [1650] [.]   ,['BIIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
+BIIIIOBIIIIOBOBIIOBIIIIIOBIOBIIIB <-- string of spacy IOBs
+BIIIIOBIIIIOBOBIIOBIIIIIOBIOBIIIB <-- string of output IOBs
 
 
-Ken est content.
-[spacy -->] [Ken] [est] [content] [.]   ,['BIIO', 'BIIO', 'BIIIIII', 'B']
-[output-->] [Ken] [est] [content] [.]   ,['BIIO', 'BIIO', 'BIIIIII', 'B']
-BIIOBIIOBIIIIIIB <-- string of spacy IOBs
-BIIOBIIOBIIIIIIB <-- string of output IOBs
+Êtes-vous allergique à quelque chose ?
+[spacy -->] [Êtes] [-vous] [allergique] [à] [quelque] [chose] [?]   ,['BIII', 'BIIIIO', 'BIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIIIIO', 'B']
+[output-->] [Êtes] [-vous] [allergique] [à] [quelque] [chose] [?]   ,['BIII', 'BIIIIO', 'BIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIIIIO', 'B']
+BIIIBIIIIOBIIIIIIIIIOBOBIIIIIIOBIIIIOB <-- string of spacy IOBs
+BIIIBIIIIOBIIIIIIIIIOBOBIIIIIIOBIIIIOB <-- string of output IOBs
 
 
-J'ai soif.
-[spacy -->] [J'] [ai] [soif] [.]   ,['BI', 'BIO', 'BIII', 'B']
-[output-->] [J'] [ai] [soif] [.]   ,['BI', 'BIO', 'BIII', 'B']
-BIBIOBIIIB <-- string of spacy IOBs
-BIBIOBIIIB <-- string of output IOBs
+Quel prix Elizabeth Neufeld a-t'elle reçu ? 
+[spacy -->] [Quel] [prix] [Elizabeth] [Neufeld] [a] [-] [t'] [elle] [reçu] [?]   ,['BIIIO', 'BIIIO', 'BIIIIIIIIO', 'BIIIIIIO', 'B', 'B', 'BI', 'BIIIO', 'BIIIO', 'B']
+[output-->] [Quel] [prix] [Elizabeth_Neufeld] [a-t'] [elle] [reçu] [?]   ,['BIIIO', 'BIIIO', 'BIIIIIIIIIIIIIIIIO', 'BIII', 'BIIIO', 'BIIIO', 'B']
+BIIIOBIIIOBIIIIIIIIOBIIIIIIOBBBIBIIIOBIIIOB <-- string of spacy IOBs
+BIIIOBIIIOBIIIIIIIIIIIIIIIIOBIIIBIIIOBIIIOB <-- string of output IOBs
 
 
-Mary a giflé Tom.
-[spacy -->] [Mary] [a] [giflé] [Tom] [.]   ,['BIIIO', 'BO', 'BIIIIO', 'BII', 'B']
-[output-->] [Mary] [a] [giflé] [Tom] [.]   ,['BIIIO', 'BO', 'BIIIIO', 'BII', 'B']
-BIIIOBOBIIIIOBIIB <-- string of spacy IOBs
-BIIIOBOBIIIIOBIIB <-- string of output IOBs
+Le ciel est bleu.
+[spacy -->] [Le] [ciel] [est] [bleu] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIII', 'B']
+[output-->] [Le] [ciel] [est] [bleu] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIII', 'B']
+BIOBIIIOBIIOBIIIB <-- string of spacy IOBs
+BIOBIIIOBIIOBIIIB <-- string of output IOBs
 
 
-J'ai mangé du caviar.
-[spacy -->] [J'] [ai] [mangé] [du] [caviar] [.]   ,['BI', 'BIO', 'BIIIIO', 'BIO', 'BIIIII', 'B']
-[output-->] [J'] [ai] [mangé] [du] [caviar] [.]   ,['BI', 'BIO', 'BIIIIO', 'BIO', 'BIIIII', 'B']
-BIBIOBIIIIOBIOBIIIIIB <-- string of spacy IOBs
-BIBIOBIIIIOBIOBIIIIIB <-- string of output IOBs
+Le chien a été heurté par une voiture.
+[spacy -->] [Le] [chien] [a] [été] [heurté] [par] [une] [voiture] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIIO', 'BIIIIII', 'B']
+[output-->] [Le] [chien] [a] [été] [heurté] [par] [une] [voiture] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIIO', 'BIIIIII', 'B']
+BIOBIIIIOBOBIIOBIIIIIOBIIOBIIOBIIIIIIB <-- string of spacy IOBs
+BIOBIIIIOBOBIIOBIIIIIOBIIOBIIOBIIIIIIB <-- string of output IOBs
 
 
-Il neige.
-[spacy -->] [Il] [neige] [.]   ,['BIO', 'BIIII', 'B']
-[output-->] [Il] [neige] [.]   ,['BIO', 'BIIII', 'B']
-BIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIB <-- string of output IOBs
+Londres a été bombardé plusieurs fois.
+[spacy -->] [Londres] [a] [été] [bombardé] [plusieurs] [fois] [.]   ,['BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIO', 'BIIIIIIIIO', 'BIII', 'B']
+[output-->] [Londres] [a] [été] [bombardé] [plusieurs] [fois] [.]   ,['BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIO', 'BIIIIIIIIO', 'BIII', 'B']
+BIIIIIIOBOBIIOBIIIIIIIOBIIIIIIIIOBIIIB <-- string of spacy IOBs
+BIIIIIIOBOBIIOBIIIIIIIOBIIIIIIIIOBIIIB <-- string of output IOBs
 
 
-L'oiseau vole.
-[spacy -->] [L'] [oiseau] [vole] [.]   ,['BI', 'BIIIIIO', 'BIII', 'B']
-[output-->] [L'] [oiseau] [vole] [.]   ,['BI', 'BIIIIIO', 'BIII', 'B']
-BIBIIIIIOBIIIB <-- string of spacy IOBs
-BIBIIIIIOBIIIB <-- string of output IOBs
+Ma sœur est plus jeune que moi.
+[spacy -->] [Ma] [sœur] [est] [plus] [jeune] [que] [moi] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BII', 'B']
+[output-->] [Ma] [sœur] [est] [plus] [jeune] [que] [moi] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BII', 'B']
+BIOBIIIOBIIOBIIIOBIIIIOBIIOBIIB <-- string of spacy IOBs
+BIOBIIIOBIIOBIIIOBIIIIOBIIOBIIB <-- string of output IOBs
 
 
-Louis Riel a assassiné Scott.
-[spacy -->] [Louis] [Riel] [a] [assassiné] [Scott] [.]   ,['BIIIIO', 'BIIIO', 'BO', 'BIIIIIIIIO', 'BIIII', 'B']
-[output-->] [Louis_Riel] [a] [assassiné] [Scott] [.]   ,['BIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIII', 'B']
-BIIIIOBIIIOBOBIIIIIIIIOBIIIIB <-- string of spacy IOBs
-BIIIIIIIIIOBOBIIIIIIIIOBIIIIB <-- string of output IOBs
+Une abeille bourdonne.
+[spacy -->] [Une] [abeille] [bourdonne] [.]   ,['BIIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
+[output-->] [Une] [abeille] [bourdonne] [.]   ,['BIIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
+BIIOBIIIIIIOBIIIIIIIIB <-- string of spacy IOBs
+BIIOBIIIIIIOBIIIIIIIIB <-- string of output IOBs
 
 
-Ce seau fuit.
-[spacy -->] [Ce] [seau] [fuit] [.]   ,['BIO', 'BIIIO', 'BIII', 'B']
-[output-->] [Ce] [seau] [fuit] [.]   ,['BIO', 'BIIIO', 'BIII', 'B']
-BIOBIIIOBIIIB <-- string of spacy IOBs
-BIOBIIIOBIIIB <-- string of output IOBs
+Le beau Serge a été réalisé par Chabrol.
+[spacy -->] [Le] [beau] [Serge] [a] [été] [réalisé] [par] [Chabrol] [.]   ,['BIO', 'BIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIII', 'B']
+[output-->] [Le] [beau] [Serge] [a] [été] [réalisé] [par] [Chabrol] [.]   ,['BIO', 'BIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIII', 'B']
+BIOBIIIOBIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIB <-- string of spacy IOBs
+BIOBIIIOBIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIB <-- string of output IOBs
 
 
-Le pape Jean-Paul II est né en Pologne.
-[spacy -->] [Le] [pape] [Jean-Paul] [II] [est] [né] [en] [Pologne] [.]   ,['BIO', 'BIIIO', 'BIIIIIIIIO', 'BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIII', 'B']
-[output-->] [Le] [pape] [Jean-Paul] [II] [est] [né] [en] [Pologne] [.]   ,['BIO', 'BIIIO', 'BIIIIIIIIO', 'BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIII', 'B']
-BIOBIIIOBIIIIIIIIOBIOBIIOBIOBIOBIIIIIIB <-- string of spacy IOBs
-BIOBIIIOBIIIIIIIIOBIOBIIOBIOBIOBIIIIIIB <-- string of output IOBs
+Martin Luther King a été assassiné en 1968.
+[spacy -->] [Martin] [Luther] [King] [a] [été] [assassiné] [en] [1968] [.]   ,['BIIIIIO', 'BIIIIIO', 'BIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BIO', 'BIII', 'B']
+[output-->] [Martin_Luther_King] [a] [été] [assassiné] [en] [1968] [.]   ,['BIIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BIO', 'BIII', 'B']
+BIIIIIOBIIIIIOBIIIOBOBIIOBIIIIIIIIOBIOBIIIB <-- string of spacy IOBs
+BIIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIOBIOBIIIB <-- string of output IOBs
 
 
-Je suis boulanger.
-[spacy -->] [Je] [suis] [boulanger] [.]   ,['BIO', 'BIIIO', 'BIIIIIIII', 'B']
-[output-->] [Je] [suis] [boulanger] [.]   ,['BIO', 'BIIIO', 'BIIIIIIII', 'B']
-BIOBIIIOBIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIOBIIIIIIIIB <-- string of output IOBs
+Des millions d'animaux sauvages vivent en Alaska.
+[spacy -->] [Des] [millions] [d'] [animaux] [sauvages] [vivent] [en] [Alaska] [.]   ,['BIIO', 'BIIIIIIIO', 'BI', 'BIIIIIIO', 'BIIIIIIIO', 'BIIIIIO', 'BIO', 'BIIIII', 'B']
+[output-->] [Des] [millions] [d'] [animaux] [sauvages] [vivent] [en] [Alaska] [.]   ,['BIIO', 'BIIIIIIIO', 'BI', 'BIIIIIIO', 'BIIIIIIIO', 'BIIIIIO', 'BIO', 'BIIIII', 'B']
+BIIOBIIIIIIIOBIBIIIIIIOBIIIIIIIOBIIIIIOBIOBIIIIIB <-- string of spacy IOBs
+BIIOBIIIIIIIOBIBIIIIIIOBIIIIIIIOBIIIIIOBIOBIIIIIB <-- string of output IOBs
 
 
-La reine Elizabeth I est morte en 1603.
-[spacy -->] [La] [reine] [Elizabeth] [I] [est] [morte] [en] [1603] [.]   ,['BIO', 'BIIIIO', 'BIIIIIIIIO', 'BO', 'BIIO', 'BIIIIO', 'BIO', 'BIII', 'B']
-[output-->] [La] [reine] [Elizabeth_I] [est] [morte] [en] [1603] [.]   ,['BIO', 'BIIIIO', 'BIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIII', 'B']
-BIOBIIIIOBIIIIIIIIOBOBIIOBIIIIOBIOBIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIIIIIIIIIOBIIOBIIIIOBIOBIIIB <-- string of output IOBs
+Brad Pitt est un acteur.
+[spacy -->] [Brad] [Pitt] [est] [un] [acteur] [.]   ,['BIIIO', 'BIIIO', 'BIIO', 'BIO', 'BIIIII', 'B']
+[output-->] [Brad_Pitt] [est] [un] [acteur] [.]   ,['BIIIIIIIIO', 'BIIO', 'BIO', 'BIIIII', 'B']
+BIIIOBIIIOBIIOBIOBIIIIIB <-- string of spacy IOBs
+BIIIIIIIIOBIIOBIOBIIIIIB <-- string of output IOBs
 
 
-Marlowe a été arrêté par les autorités italiennes.
-[spacy -->] [Marlowe] [a] [été] [arrêté] [par] [les] [autorités] [italiennes] [.]   ,['BIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
-[output-->] [Marlowe] [a] [été] [arrêté] [par] [les] [autorités] [italiennes] [.]   ,['BIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
-BIIIIIIOBOBIIOBIIIIIOBIIOBIIOBIIIIIIIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIOBOBIIOBIIIIIOBIIOBIIOBIIIIIIIIOBIIIIIIIIIB <-- string of output IOBs
+Kieslowski est un réalisateur.
+[spacy -->] [Kieslowski] [est] [un] [réalisateur] [.]   ,['BIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIIIII', 'B']
+[output-->] [Kieslowski] [est] [un] [réalisateur] [.]   ,['BIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIIIII', 'B']
+BIIIIIIIIIOBIIOBIOBIIIIIIIIIIB <-- string of spacy IOBs
+BIIIIIIIIIOBIIOBIOBIIIIIIIIIIB <-- string of output IOBs
 
 
-Gianni Versace est un styliste.
-[spacy -->] [Gianni] [Versace] [est] [un] [styliste] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
-[output-->] [Gianni_Versace] [est] [un] [styliste] [.]   ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
-BIIIIIOBIIIIIIOBIIOBIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIOBIIOBIOBIIIIIIIB <-- string of output IOBs
+Michael Crichton est l'auteur du livre Jurassic Park.
+[spacy -->] [Michael] [Crichton] [est] [l'] [auteur] [du] [livre] [Jurassic] [Park] [.]   ,['BIIIIIIO', 'BIIIIIIIO', 'BIIO', 'BI', 'BIIIIIO', 'BIO', 'BIIIIO', 'BIIIIIIIO', 'BIII', 'B']
+[output-->] [Michael_Crichton] [est] [l'] [auteur] [du] [livre] [Jurassic_Park] [.]   ,['BIIIIIIIIIIIIIIIO', 'BIIO', 'BI', 'BIIIIIO', 'BIO', 'BIIIIO', 'BIIIIIIIIIIII', 'B']
+BIIIIIIOBIIIIIIIOBIIOBIBIIIIIOBIOBIIIIOBIIIIIIIOBIIIB <-- string of spacy IOBs
+BIIIIIIIIIIIIIIIOBIIOBIBIIIIIOBIOBIIIIOBIIIIIIIIIIIIB <-- string of output IOBs
 
 
-Personne ne me comprend.
-[spacy -->] [Personne] [ne] [me] [comprend] [.]   ,['BIIIIIIIO', 'BIO', 'BIO', 'BIIIIIII', 'B']
-[output-->] [Personne] [ne] [me] [comprend] [.]   ,['BIIIIIIIO', 'BIO', 'BIO', 'BIIIIIII', 'B']
-BIIIIIIIOBIOBIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIOBIOBIOBIIIIIIIB <-- string of output IOBs
+Tout le monde a applaudi.
+[spacy -->] [Tout] [le] [monde] [a] [applaudi] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BO', 'BIIIIIII', 'B']
+[output-->] [Tout] [le] [monde] [a] [applaudi] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BO', 'BIIIIIII', 'B']
+BIIIOBIOBIIIIOBOBIIIIIIIB <-- string of spacy IOBs
+BIIIOBIOBIIIIOBOBIIIIIIIB <-- string of output IOBs
 
 
-Reinventing Comics est un livre de Scott McCloud.
-[spacy -->] [Reinventing] [Comics] [est] [un] [livre] [de] [Scott] [McCloud] [.]   ,['BIIIIIIIIIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BIO', 'BIIIIO', 'BIIIIII', 'B']
-[output-->] [Reinventing_Comics] [est] [un] [livre] [de] [Scott] [McCloud] [.]   ,['BIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BIO', 'BIIIIO', 'BIIIIII', 'B']
-BIIIIIIIIIIOBIIIIIOBIIOBIOBIIIIOBIOBIIIIOBIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIIOBIIOBIOBIIIIOBIOBIIIIOBIIIIIIB <-- string of output IOBs
+Êtes-vous prêt ?
+[spacy -->] [Êtes] [-vous] [prêt] [ ] [?]   ,['BIII', 'BIIIIO', 'BIII', 'B', 'B']
+[output-->] [Êtes] [-vous] [prêt ?]   ,['BIII', 'BIIIIO', 'BIIIII']
+BIIIBIIIIOBIIIBB <-- string of spacy IOBs
+BIIIBIIIIOBIIIII <-- string of output IOBs
 
 
-Johann Wolfgang von Goethe est né en Allemagne.
-[spacy -->] [Johann] [Wolfgang] [von] [Goethe] [est] [né] [en] [Allemagne] [.]   ,['BIIIIIO', 'BIIIIIIIO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
-[output-->] [Johann_Wolfgang] [von] [Goethe] [est] [né] [en] [Allemagne] [.]   ,['BIIIIIIIIIIIIIIO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
-BIIIIIOBIIIIIIIOBIIOBIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIOBIIOBIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of output IOBs
+Pékin est plus grand que Rome.
+[spacy -->] [Pékin] [est] [plus] [grand] [que] [Rome] [.]   ,['BIIIIO', 'BIIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
+[output-->] [Pékin] [est] [plus] [grand] [que] [Rome] [.]   ,['BIIIIO', 'BIIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
+BIIIIOBIIOBIIIOBIIIIOBIIOBIIIB <-- string of spacy IOBs
+BIIIIOBIIOBIIIOBIIIIOBIIOBIIIB <-- string of output IOBs
 
 
-Le chirurgien a amputé la mauvaise jambe.
-[spacy -->] [Le] [chirurgien] [a] [amputé] [la] [mauvaise] [jambe] [.]   ,['BIO', 'BIIIIIIIIIO', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIIIO', 'BIIII', 'B']
-[output-->] [Le] [chirurgien] [a] [amputé] [la] [mauvaise] [jambe] [.]   ,['BIO', 'BIIIIIIIIIO', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIIIO', 'BIIII', 'B']
-BIOBIIIIIIIIIOBOBIIIIIOBIOBIIIIIIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIIIIIIOBOBIIIIIOBIOBIIIIIIIOBIIIIB <-- string of output IOBs
+Ce CD lui appartient.
+[spacy -->] [Ce] [CD] [lui] [appartient] [.]   ,['BIO', 'BIO', 'BIIO', 'BIIIIIIIII', 'B']
+[output-->] [Ce] [CD] [lui] [appartient] [.]   ,['BIO', 'BIO', 'BIIO', 'BIIIIIIIII', 'B']
+BIOBIOBIIOBIIIIIIIIIB <-- string of spacy IOBs
+BIOBIOBIIOBIIIIIIIIIB <-- string of output IOBs
 
 
-Le vin était excellent.
-[spacy -->] [Le] [vin] [était] [excellent] [.]   ,['BIO', 'BIIO', 'BIIIIO', 'BIIIIIIII', 'B']
-[output-->] [Le] [vin] [était] [excellent] [.]   ,['BIO', 'BIIO', 'BIIIIO', 'BIIIIIIII', 'B']
-BIOBIIOBIIIIOBIIIIIIIIB <-- string of spacy IOBs
-BIOBIIOBIIIIOBIIIIIIIIB <-- string of output IOBs
+J'ai commandé deux hamburgers.
+[spacy -->] [J'] [ai] [commandé] [deux] [hamburgers] [.]   ,['BI', 'BIO', 'BIIIIIIIO', 'BIIIO', 'BIIIIIIIII', 'B']
+[output-->] [J'] [ai] [commandé] [deux] [hamburgers] [.]   ,['BI', 'BIO', 'BIIIIIIIO', 'BIIIO', 'BIIIIIIIII', 'B']
+BIBIOBIIIIIIIOBIIIOBIIIIIIIIIB <-- string of spacy IOBs
+BIBIOBIIIIIIIOBIIIOBIIIIIIIIIB <-- string of output IOBs
 
 
-Ma mère est belle.
-[spacy -->] [Ma] [mère] [est] [belle] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
-[output-->] [Ma] [mère] [est] [belle] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
-BIOBIIIOBIIOBIIIIB <-- string of spacy IOBs
-BIOBIIIOBIIOBIIIIB <-- string of output IOBs
+J'ai été invité par un vieil ami.
+[spacy -->] [J'] [ai] [été] [invité] [par] [un] [vieil] [ami] [.]   ,['BI', 'BIO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BII', 'B']
+[output-->] [J'] [ai] [été] [invité] [par] [un] [vieil] [ami] [.]   ,['BI', 'BIO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BII', 'B']
+BIBIOBIIOBIIIIIOBIIOBIOBIIIIOBIIB <-- string of spacy IOBs
+BIBIOBIIOBIIIIIOBIIOBIOBIIIIOBIIB <-- string of output IOBs
 
 
-Nous comprenons.
-[spacy -->] [Nous] [comprenons] [.]   ,['BIIIO', 'BIIIIIIIII', 'B']
-[output-->] [Nous] [comprenons] [.]   ,['BIIIO', 'BIIIIIIIII', 'B']
-BIIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIIIOBIIIIIIIIIB <-- string of output IOBs
+L'Illinois est limitrophe du Missouri.
+[spacy -->] [L'] [Illinois] [est] [limitrophe] [du] [Missouri] [.]   ,['BI', 'BIIIIIIIO', 'BIIO', 'BIIIIIIIIIO', 'BIO', 'BIIIIIII', 'B']
+[output-->] [L'] [Illinois] [est] [limitrophe] [du] [Missouri] [.]   ,['BI', 'BIIIIIIIO', 'BIIO', 'BIIIIIIIIIO', 'BIO', 'BIIIIIII', 'B']
+BIBIIIIIIIOBIIOBIIIIIIIIIOBIOBIIIIIIIB <-- string of spacy IOBs
+BIBIIIIIIIOBIIOBIIIIIIIIIOBIOBIIIIIIIB <-- string of output IOBs
 
 
-Manchester United a battu Fulham.
-[spacy -->] [Manchester] [United] [a] [battu] [Fulham] [.]   ,['BIIIIIIIIIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIIII', 'B']
-[output-->] [Manchester_United] [a] [battu] [Fulham] [.]   ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIIIO', 'BIIIII', 'B']
-BIIIIIIIIIOBIIIIIOBOBIIIIOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIOBOBIIIIOBIIIIIB <-- string of output IOBs
+Il a pris l'avion de Londres à Paris.
+[spacy -->] [Il] [a] [pris] [l'] [avion] [de] [Londres] [à] [Paris] [.]   ,['BIO', 'BO', 'BIIIO', 'BI', 'BIIIIO', 'BIO', 'BIIIIIIO', 'BO', 'BIIII', 'B']
+[output-->] [Il] [a] [pris] [l'] [avion] [de] [Londres] [à] [Paris] [.]   ,['BIO', 'BO', 'BIIIO', 'BI', 'BIIIIO', 'BIO', 'BIIIIIIO', 'BO', 'BIIII', 'B']
+BIOBOBIIIOBIBIIIIOBIOBIIIIIIOBOBIIIIB <-- string of spacy IOBs
+BIOBOBIIIOBIBIIIIOBIOBIIIIIIOBOBIIIIB <-- string of output IOBs
 
 
-L'école commence à 8h30.
-[spacy -->] [L'] [école] [commence] [à] [8h30] [.]   ,['BI', 'BIIIIO', 'BIIIIIIIO', 'BO', 'BIII', 'B']
-[output-->] [L'] [école] [commence] [à] [8h30] [.]   ,['BI', 'BIIIIO', 'BIIIIIIIO', 'BO', 'BIII', 'B']
-BIBIIIIOBIIIIIIIOBOBIIIB <-- string of spacy IOBs
-BIBIIIIOBIIIIIIIOBOBIIIB <-- string of output IOBs
+Il est vieux.
+[spacy -->] [Il] [est] [vieux] [.]   ,['BIO', 'BIIO', 'BIIII', 'B']
+[output-->] [Il] [est] [vieux] [.]   ,['BIO', 'BIIO', 'BIIII', 'B']
+BIOBIIOBIIIIB <-- string of spacy IOBs
+BIOBIIOBIIIIB <-- string of output IOBs
 
 
-Je m'appelle Antonio.
-[spacy -->] [Je] [m'] [appelle] [Antonio] [.]   ,['BIO', 'BI', 'BIIIIIIO', 'BIIIIII', 'B']
-[output-->] [Je] [m'] [appelle] [Antonio] [.]   ,['BIO', 'BI', 'BIIIIIIO', 'BIIIIII', 'B']
-BIOBIBIIIIIIOBIIIIIIB <-- string of spacy IOBs
-BIOBIBIIIIIIOBIIIIIIB <-- string of output IOBs
+Tom a été dévoré par un tigre.
+[spacy -->] [Tom] [a] [été] [dévoré] [par] [un] [tigre] [.]   ,['BIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIII', 'B']
+[output-->] [Tom] [a] [été] [dévoré] [par] [un] [tigre] [.]   ,['BIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIII', 'B']
+BIIOBOBIIOBIIIIIOBIIOBIOBIIIIB <-- string of spacy IOBs
+BIIOBOBIIOBIIIIIOBIIOBIOBIIIIB <-- string of output IOBs
 
 
-Un docteur a examiné M. Brown.
-[spacy -->] [Un] [docteur] [a] [examiné] [M.] [Brown] [.]   ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Un] [docteur] [a] [examiné] [M._Brown] [.]   ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIIIIIII', 'B']
-BIOBIIIIIIOBOBIIIIIIOBIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIIIOBOBIIIIIIOBIIIIIIIB <-- string of output IOBs
+Ma montre est très précise.
+[spacy -->] [Ma] [montre] [est] [très] [précise] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
+[output-->] [Ma] [montre] [est] [très] [précise] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
+BIOBIIIIIOBIIOBIIIOBIIIIIIB <-- string of spacy IOBs
+BIOBIIIIIOBIIOBIIIOBIIIIIIB <-- string of output IOBs
 
 
-Tom est fort.
-[spacy -->] [Tom] [est] [fort] [.]   ,['BIIO', 'BIIO', 'BIII', 'B']
-[output-->] [Tom] [est] [fort] [.]   ,['BIIO', 'BIIO', 'BIII', 'B']
-BIIOBIIOBIIIB <-- string of spacy IOBs
-BIIOBIIOBIIIB <-- string of output IOBs
+Tom est en colère contre nous.
+[spacy -->] [Tom] [est] [en] [colère] [contre] [nous] [.]   ,['BIIO', 'BIIO', 'BIO', 'BIIIIIO', 'BIIIIIO', 'BIII', 'B']
+[output-->] [Tom] [est] [en] [colère] [contre] [nous] [.]   ,['BIIO', 'BIIO', 'BIO', 'BIIIIIO', 'BIIIIIO', 'BIII', 'B']
+BIIOBIIOBIOBIIIIIOBIIIIIOBIIIB <-- string of spacy IOBs
+BIIOBIIOBIOBIIIIIOBIIIIIOBIIIB <-- string of output IOBs
 
 
-BSN a acheté RJR Nabisco.
-[spacy -->] [BSN] [a] [acheté] [RJR] [Nabisco] [.]   ,['BIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
-[output-->] [BSN] [a] [acheté] [RJR] [Nabisco] [.]   ,['BIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
-BIIOBOBIIIIIOBIIOBIIIIIIB <-- string of spacy IOBs
-BIIOBOBIIIIIOBIIOBIIIIIIB <-- string of output IOBs
+Je suis très fatigué maintenant.
+[spacy -->] [Je] [suis] [très] [fatigué] [maintenant] [.]   ,['BIO', 'BIIIO', 'BIIIO', 'BIIIIIIO', 'BIIIIIIIII', 'B']
+[output-->] [Je] [suis] [très] [fatigué] [maintenant] [.]   ,['BIO', 'BIIIO', 'BIIIO', 'BIIIIIIO', 'BIIIIIIIII', 'B']
+BIOBIIIOBIIIOBIIIIIIOBIIIIIIIIIB <-- string of spacy IOBs
+BIOBIIIOBIIIOBIIIIIIOBIIIIIIIIIB <-- string of output IOBs
 
 
-Il a bu une bière.
-[spacy -->] [Il] [a] [bu] [une] [bière] [.]   ,['BIO', 'BO', 'BIO', 'BIIO', 'BIIII', 'B']
-[output-->] [Il] [a] [bu] [une] [bière] [.]   ,['BIO', 'BO', 'BIO', 'BIIO', 'BIIII', 'B']
-BIOBOBIOBIIOBIIIIB <-- string of spacy IOBs
-BIOBOBIOBIIOBIIIIB <-- string of output IOBs
+Il est plus fort que toi.
+[spacy -->] [Il] [est] [plus] [fort] [que] [toi] [.]   ,['BIO', 'BIIO', 'BIIIO', 'BIIIO', 'BIIO', 'BII', 'B']
+[output-->] [Il] [est] [plus] [fort] [que] [toi] [.]   ,['BIO', 'BIIO', 'BIIIO', 'BIIIO', 'BIIO', 'BII', 'B']
+BIOBIIOBIIIOBIIIOBIIOBIIB <-- string of spacy IOBs
+BIOBIIOBIIIOBIIIOBIIOBIIB <-- string of output IOBs
 
 
-La tarte est délicieuse.
-[spacy -->] [La] [tarte] [est] [délicieuse] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-[output-->] [La] [tarte] [est] [délicieuse] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-BIOBIIIIOBIIOBIIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIOBIIOBIIIIIIIIIB <-- string of output IOBs
+Joseph Wilson a travaillé pour la CIA.
+[spacy -->] [Joseph] [Wilson] [a] [travaillé] [pour] [la] [CIA] [.]   ,['BIIIIIO', 'BIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIO', 'BII', 'B']
+[output-->] [Joseph_Wilson] [a] [travaillé] [pour] [la] [CIA.]   ,['BIIIIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIO', 'BIII']
+BIIIIIOBIIIIIOBOBIIIIIIIIOBIIIOBIOBIIB <-- string of spacy IOBs
+BIIIIIIIIIIIIOBOBIIIIIIIIOBIIIOBIOBIII <-- string of output IOBs
 
 
-Qin Shi Huang était le premier empereur de Chine.
-[spacy -->] [Qin] [Shi] [Huang] [était] [le] [premier] [empereur] [de] [Chine] [.]   ,['BIIO', 'BIIO', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Qin_Shi_Huang] [était] [le] [premier] [empereur] [de] [Chine] [.]   ,['BIIIIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIIO', 'BIO', 'BIIII', 'B']
-BIIOBIIOBIIIIOBIIIIOBIOBIIIIIIOBIIIIIIIOBIOBIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIOBIIIIOBIOBIIIIIIOBIIIIIIIOBIOBIIIIB <-- string of output IOBs
-
-
-M. Zhao est mort à Pékin.
-[spacy -->] [M.] [Zhao] [est] [mort] [à] [Pékin] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BO', 'BIIII', 'B']
-[output-->] [M._Zhao] [est] [mort] [à] [Pékin] [.]   ,['BIIIIIIO', 'BIIO', 'BIIIO', 'BO', 'BIIII', 'B']
-BIOBIIIOBIIOBIIIOBOBIIIIB <-- string of spacy IOBs
-BIIIIIIOBIIOBIIIOBOBIIIIB <-- string of output IOBs
-
-
-Gabriel Garcia Marquez est un écrivain.
-[spacy -->] [Gabriel] [Garcia] [Marquez] [est] [un] [écrivain] [.]   ,['BIIIIIIO', 'BIIIIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
-[output-->] [Gabriel_Garcia_Marquez] [est] [un] [écrivain] [.]   ,['BIIIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
-BIIIIIIOBIIIIIOBIIIIIIOBIIOBIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIIIIIIIIOBIIOBIOBIIIIIIIB <-- string of output IOBs
-
-
-Nancy Ianiero a été tuée à Mexico.
-[spacy -->] [Nancy] [Ianiero] [a] [été] [tuée] [à] [Mexico] [.]   ,['BIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIO', 'BO', 'BIIIII', 'B']
-[output-->] [Nancy_Ianiero] [a] [été] [tuée] [à] [Mexico] [.]   ,['BIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIO', 'BO', 'BIIIII', 'B']
-BIIIIOBIIIIIIOBOBIIOBIIIOBOBIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIOBOBIIOBIIIOBOBIIIIIB <-- string of output IOBs
-
-
-Verdens Gang est un journal norvégien.
-[spacy -->] [Verdens] [Gang] [est] [un] [journal] [norvégien] [.]   ,['BIIIIIIO', 'BIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
-[output-->] [Verdens_Gang] [est] [un] [journal] [norvégien] [.]   ,['BIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
-BIIIIIIOBIIIOBIIOBIOBIIIIIIOBIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIOBIIOBIOBIIIIIIOBIIIIIIIIB <-- string of output IOBs
-
-
-Qui a inventé la radio ?
-[spacy -->] [Qui] [a] [inventé] [la] [radio] [?]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'B']
-[output-->] [Qui] [a] [inventé] [la] [radio] [?]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'B']
-BIIOBOBIIIIIIOBIOBIIIIOB <-- string of spacy IOBs
-BIIOBOBIIIIIIOBIOBIIIIOB <-- string of output IOBs
-
-
-Nelson Beavers a travaillé pour Eurofins.
-[spacy -->] [Nelson] [Beavers] [a] [travaillé] [pour] [Eurofins] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIIIIIII', 'B']
-[output-->] [Nelson_Beavers] [a] [travaillé] [pour] [Eurofins] [.]   ,['BIIIIIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIIIIIII', 'B']
-BIIIIIOBIIIIIIOBOBIIIIIIIIOBIIIOBIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIOBOBIIIIIIIIOBIIIOBIIIIIIIB <-- string of output IOBs
-
-
-Il a été attaqué par un requin.
-[spacy -->] [Il] [a] [été] [attaqué] [par] [un] [requin] [.]   ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIII', 'B']
-[output-->] [Il] [a] [été] [attaqué] [par] [un] [requin] [.]   ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIII', 'B']
-BIOBOBIIOBIIIIIIOBIIOBIOBIIIIIB <-- string of spacy IOBs
-BIOBOBIIOBIIIIIIOBIIOBIOBIIIIIB <-- string of output IOBs
-
-
-Les chats attrapent des souris.
-[spacy -->] [Les] [chats] [attrapent] [des] [souris] [.]   ,['BIIO', 'BIIIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
-[output-->] [Les] [chats] [attrapent] [des] [souris] [.]   ,['BIIO', 'BIIIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
-BIIOBIIIIOBIIIIIIIIOBIIOBIIIIIB <-- string of spacy IOBs
-BIIOBIIIIOBIIIIIIIIOBIIOBIIIIIB <-- string of output IOBs
-
-
-Un dauphin est un mammifère.
-[spacy -->] [Un] [dauphin] [est] [un] [mammifère] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
-[output-->] [Un] [dauphin] [est] [un] [mammifère] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
-BIOBIIIIIIOBIIOBIOBIIIIIIIIB <-- string of spacy IOBs
-BIOBIIIIIIOBIIOBIOBIIIIIIIIB <-- string of output IOBs
-
-
-Elle est heureuse.
-[spacy -->] [Elle] [est] [heureuse] [.]   ,['BIIIO', 'BIIO', 'BIIIIIII', 'B']
-[output-->] [Elle] [est] [heureuse] [.]   ,['BIIIO', 'BIIO', 'BIIIIIII', 'B']
+Elle est gentille.
+[spacy -->] [Elle] [est] [gentille] [.]   ,['BIIIO', 'BIIO', 'BIIIIIII', 'B']
+[output-->] [Elle] [est] [gentille] [.]   ,['BIIIO', 'BIIO', 'BIIIIIII', 'B']
 BIIIOBIIOBIIIIIIIB <-- string of spacy IOBs
 BIIIOBIIOBIIIIIIIB <-- string of output IOBs
 
 
-John a hérité d'une grosse fortune.
-[spacy -->] [John] [a] [hérité] [d'] [une] [grosse] [fortune] [.]   ,['BIIIO', 'BO', 'BIIIIIO', 'BI', 'BIIO', 'BIIIIIO', 'BIIIIII', 'B']
-[output-->] [John] [a] [hérité] [d'] [une] [grosse] [fortune] [.]   ,['BIIIO', 'BO', 'BIIIIIO', 'BI', 'BIIO', 'BIIIIIO', 'BIIIIII', 'B']
-BIIIOBOBIIIIIOBIBIIOBIIIIIOBIIIIIIB <-- string of spacy IOBs
-BIIIOBOBIIIIIOBIBIIOBIIIIIOBIIIIIIB <-- string of output IOBs
+Je déteste ce tapis.
+[spacy -->] [Je] [déteste] [ce] [tapis] [.]   ,['BIO', 'BIIIIIIO', 'BIO', 'BIIII', 'B']
+[output-->] [Je] [déteste] [ce] [tapis] [.]   ,['BIO', 'BIIIIIIO', 'BIO', 'BIIII', 'B']
+BIOBIIIIIIOBIOBIIIIB <-- string of spacy IOBs
+BIOBIIIIIIOBIOBIIIIB <-- string of output IOBs
 
 
-Stephen Hawking est un physicien.
-[spacy -->] [Stephen] [Hawking] [est] [un] [physicien] [.]   ,['BIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
-[output-->] [Stephen_Hawking] [est] [un] [physicien] [.]   ,['BIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
-BIIIIIIOBIIIIIIOBIIOBIOBIIIIIIIIB <-- string of spacy IOBs
-BIIIIIIIIIIIIIIOBIIOBIOBIIIIIIIIB <-- string of output IOBs
+Betty a tué sa mère.
+[spacy -->] [Betty] [a] [tué] [sa] [mère] [.]   ,['BIIIIO', 'BO', 'BIIO', 'BIO', 'BIII', 'B']
+[output-->] [Betty] [a] [tué] [sa] [mère] [.]   ,['BIIIIO', 'BO', 'BIIO', 'BIO', 'BIII', 'B']
+BIIIIOBOBIIOBIOBIIIB <-- string of spacy IOBs
+BIIIIOBOBIIOBIOBIIIB <-- string of output IOBs
 
 
-John est bon en mathématiques.
-[spacy -->] [John] [est] [bon] [en] [mathématiques] [.]   ,['BIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIIIIIIIIIII', 'B']
-[output-->] [John] [est] [bon] [en] [mathématiques] [.]   ,['BIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIIIIIIIIIII', 'B']
-BIIIOBIIOBIIOBIOBIIIIIIIIIIIIB <-- string of spacy IOBs
-BIIIOBIIOBIIOBIOBIIIIIIIIIIIIB <-- string of output IOBs
+Je dormais.
+[spacy -->] [Je] [dormais] [.]   ,['BIO', 'BIIIIII', 'B']
+[output-->] [Je] [dormais] [.]   ,['BIO', 'BIIIIII', 'B']
+BIOBIIIIIIB <-- string of spacy IOBs
+BIOBIIIIIIB <-- string of output IOBs
 
 
-C'est mon ami.
-[spacy -->] [C'] [est] [mon] [ami] [.]   ,['BI', 'BIIO', 'BIIO', 'BII', 'B']
-[output-->] [C'] [est] [mon] [ami] [.]   ,['BI', 'BIIO', 'BIIO', 'BII', 'B']
-BIBIIOBIIOBIIB <-- string of spacy IOBs
-BIBIIOBIIOBIIB <-- string of output IOBs
+Le film Speed a été réalisé par Jan De Bont.
+[spacy -->] [Le] [film] [Speed] [a] [été] [réalisé] [par] [Jan] [De] [Bont] [.]   ,['BIO', 'BIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIII', 'B']
+[output-->] [Le] [film] [Speed] [a] [été] [réalisé] [par] [Jan_De_Bont] [.]   ,['BIO', 'BIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
+BIOBIIIOBIIIIOBOBIIOBIIIIIIOBIIOBIIOBIOBIIIB <-- string of spacy IOBs
+BIOBIIIOBIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of output IOBs
 
 
-Il faisait chaud dans la pièce.
-[spacy -->] [Il] [faisait] [chaud] [dans] [la] [pièce] [.]   ,['BIO', 'BIIIIIIO', 'BIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-[output-->] [Il] [faisait] [chaud] [dans] [la] [pièce] [.]   ,['BIO', 'BIIIIIIO', 'BIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-BIOBIIIIIIOBIIIIOBIIIOBIOBIIIIB <-- string of spacy IOBs
-BIOBIIIIIIOBIIIIOBIIIOBIOBIIIIB <-- string of output IOBs
+Où travaille Raymond Pettibon ?
+[spacy -->] [Où] [travaille] [Raymond] [Pettibon] [?]   ,['BIO', 'BIIIIIIIIO', 'BIIIIIIO', 'BIIIIIIIO', 'B']
+[output-->] [Où] [travaille] [Raymond_Pettibon] [?]   ,['BIO', 'BIIIIIIIIO', 'BIIIIIIIIIIIIIIIO', 'B']
+BIOBIIIIIIIIOBIIIIIIOBIIIIIIIOB <-- string of spacy IOBs
+BIOBIIIIIIIIOBIIIIIIIIIIIIIIIOB <-- string of output IOBs
+
+
+Il ne sait pas nager.
+[spacy -->] [Il] [ne] [sait] [pas] [nager] [.]   ,['BIO', 'BIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
+[output-->] [Il] [ne] [sait] [pas] [nager] [.]   ,['BIO', 'BIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
+BIOBIOBIIIOBIIOBIIIIB <-- string of spacy IOBs
+BIOBIOBIIIOBIIOBIIIIB <-- string of output IOBs
+
+
+Mayuko entra dans la pièce.
+[spacy -->] [Mayuko] [entra] [dans] [la] [pièce] [.]   ,['BIIIIIO', 'BIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
+[output-->] [Mayuko] [entra] [dans] [la] [pièce] [.]   ,['BIIIIIO', 'BIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
+BIIIIIOBIIIIOBIIIOBIOBIIIIB <-- string of spacy IOBs
+BIIIIIOBIIIIOBIIIOBIOBIIIIB <-- string of output IOBs
+
+
+Swift est mort en 1745.
+[spacy -->] [Swift] [est] [mort] [en] [1745] [.]   ,['BIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIII', 'B']
+[output-->] [Swift] [est] [mort] [en] [1745] [.]   ,['BIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIII', 'B']
+BIIIIOBIIOBIIIOBIOBIIIB <-- string of spacy IOBs
+BIIIIOBIIOBIIIOBIOBIIIB <-- string of output IOBs
+
+
+Les fast foods sont très populaires au Japon.
+[spacy -->] [Les] [fast] [foods] [sont] [très] [populaires] [au] [Japon] [.]   ,['BIIO', 'BIIIO', 'BIIIIO', 'BIIIO', 'BIIIO', 'BIIIIIIIIIO', 'BIO', 'BIIII', 'B']
+[output-->] [Les] [fast] [foods] [sont] [très] [populaires] [au] [Japon] [.]   ,['BIIO', 'BIIIO', 'BIIIIO', 'BIIIO', 'BIIIO', 'BIIIIIIIIIO', 'BIO', 'BIIII', 'B']
+BIIOBIIIOBIIIIOBIIIOBIIIOBIIIIIIIIIOBIOBIIIIB <-- string of spacy IOBs
+BIIOBIIIOBIIIIOBIIIOBIIIOBIIIIIIIIIOBIOBIIIIB <-- string of output IOBs
+
+
+Il est fainéant.
+[spacy -->] [Il] [est] [fainéant] [.]   ,['BIO', 'BIIO', 'BIIIIIII', 'B']
+[output-->] [Il] [est] [fainéant] [.]   ,['BIO', 'BIIO', 'BIIIIIII', 'B']
+BIOBIIOBIIIIIIIB <-- string of spacy IOBs
+BIOBIIOBIIIIIIIB <-- string of output IOBs
 
 
 
 
- 1778 <-- annotation
- 1643 <-- agreement
+ 1026 <-- annotation
+ 974 <-- agreement
  ##########################
 
 ...........Agreement Results ............
-A0:  0.9240719910011248
+A0:  0.949317738791423

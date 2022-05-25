@@ -12,9 +12,9 @@ def manual_tagging(_postags: str, pos_sem_alm: dict) -> str:
     # Turn the POS tag string into a list
     postags = _postags.split(" ")
     semtags = list()
-    for i in range(len(postags)):
+    for tag in postags:
         # Get the according SEM tag
-        semtags.append(pos_sem_alm[postags[i]])
+        semtags.append(pos_sem_alm[postags])
 
     return " ".join(semtags)
 

@@ -1,4 +1,4 @@
-	raw_pos	processed_pos	sem
+document	raw_pos	processed_pos	sem
 Charles~de~Gaulle morì nel 1970 .	PROPN PROPN ADP VERB ADP NUM PUNCT	PROPN ADP VERB ADP NUM PUNCT	PER EPS DEF YOC NIL
 L' aeroplano decollò .	PRON PUNCT PRON VERB PUNCT	PRON PUNCT PRON VERB PUNCT	DEF CON EPS NIL
 Charles~de~Gaulle morì nel 1970 .	PROPN PROPN ADP VERB ADP NUM PUNCT	PROPN ADP VERB ADP NUM PUNCT	PER EPS DEF YOC NIL

@@ -156,9 +156,9 @@ def get_pos_sem_alignment(tsv_filename, show_non_aligned=False, extract_errors=F
                 pos_tags[ptag].add(stag)
     # Export the error data
     if extract_errors:
-        err_df = pd.DataFrame(list(zip(err_raw_pos, err_pos, err_sem)),
-                              index=err_sentences,
-                              columns=["raw_pos", "processed_pos", "sem"])
+        err_df = pd.DataFrame(list(zip(err_sentences, err_raw_pos, err_pos, err_sem)),
+                              index=False,
+                              columns=["document", "raw_pos", "processed_pos", "sem"])
         err_df.to_csv("inspections/error.tsv", sep="\t", encoding="UTF-8")
         print("Extracted.")
     return pos_tags

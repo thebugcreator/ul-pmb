@@ -35,8 +35,9 @@ def get_analysis_cli_ars() -> argparse.Namespace:
                            help="Choose to or not to extract the non aligned documents")
     # Add the coocurences extractor
     parser_c4 = subparsers.add_parser("get_cooccurrences", help="POS-SEM cooccurrences")
-    parser_c4.add_argument("--file", type=str, default="it/train.tsv", help="TSV file path")
+    parser_c4.add_argument("--lang", type=str, default="it", help="Language")
     parser_c4.add_argument("--visualise", type=bool, default=True, help="Visualisation choice")
+    parser_c4.add_argument("--savefig", type=bool, default=True, help="Figure export choice")
     return parser.parse_args()
 
 

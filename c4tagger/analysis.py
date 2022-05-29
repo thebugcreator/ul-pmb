@@ -8,6 +8,22 @@ import seaborn as sns
 
 import utils
 
+data_directory = "data"
+languages = ["de", "en", "it", "nl"]
+default_tsv_filename = "train.tsv"
+
+# %%
+def build_directory(*args) -> str:
+    """
+    Function used to build directory string
+    :param args: list of folder and file in tree
+    """
+    result = ""
+    for i in range(len(args) - 1):
+        result += args[i] + "/"
+    result += args[-1]
+    return result
+
 
 # %%
 def extract_data(filename):
@@ -217,16 +233,18 @@ def get_unique_tags(tsv_filename):
 
 
 # %%
-def get_cooccurrences(tsv_filename, visualise=False) -> pd.DataFrame:
+def get_cooccurrences(lang, visualise=False, savefig=False) -> pd.DataFrame:
     """
     This function is to create the co-occurrence dataframe for inference
-    :param tsv_filename: TSV file location to infer from
+    :param lang: TSV file location to infer from
     :param visualise: Choose to or not to show a heatmap of the results
+    :param savefig: Choose to or not to export an image of the heatmap
     """
+    file_directory = build_directory(data_directory, lang, default_tsv_filename)
     # Get POS-SEM tag pars
-    pos_sem_pairs = get_pos_sem_pairs(tsv_filename)
+    pos_sem_pairs = get_pos_sem_pairs(file_directory)
     # Get the unique tags of each to count
-    pos_tags, sem_tags = get_unique_tags(tsv_filename)
+    pos_tags, sem_tags = get_unique_tags(file_directory)
     # Sort the list of tags for data visualisation coherence
     pos_tags = sorted(pos_tags)
     sem_tags = sorted(sem_tags)
@@ -239,8 +257,10 @@ def get_cooccurrences(tsv_filename, visualise=False) -> pd.DataFrame:
 
     if visualise:
         # Set the visual stuff on air
-        fig, ax = plt.subplots(figsize=(10, 20))
-        ax = sns.heatmap(result_df, cmap="YlGnBu", annot=True, fmt="d")
+        plt.subplots(figsize=(10, 20))
+        sns.heatmap(result_df, cmap="YlGnBu", annot=True, fmt="d")
+        if savefig:
+            plt.savefig("heatmaps/" + lang + ".jpg")
         plt.show()
     return result_df
 
@@ -259,8 +279,9 @@ if __name__ == "__main__":
         results = get_pos_sem_alignment(file, extract_errors=extract_errors)
         [print(key, results[key]) for key in results.keys()]
     elif args.command == "get_cooccurrences":
-        file = args.file
+        lang = args.lang
         visualise = args.visualise
-        get_cooccurrences(file, visualise=visualise)
+        savefig = args.savefig
+        get_cooccurrences(lang, visualise=visualise, savefig=savefig)
     else:
         raise RuntimeError(">> Invalid command!")

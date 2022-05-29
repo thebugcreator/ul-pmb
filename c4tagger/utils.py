@@ -30,11 +30,11 @@ def get_analysis_cli_ars() -> argparse.Namespace:
     parser_c4.add_argument("--pipeline", type=str, default="en_core_web_sm", help="Spacy pipeline name")
     # Add Command Line arguments to interpret the alignment
     parser_c4 = subparsers.add_parser("inspect", help="Data inspection")
-    parser_c4.add_argument("--file", type=str, default="fr", help="TSV file path")
-    parser_c4.add_argument("--extract_errors", type=bool, default=False,
+    parser_c4.add_argument("--lang", type=str, default="it", help="TSV file path")
+    parser_c4.add_argument("--extract_err", type=bool, default=False,
                            help="Choose to or not to extract the non aligned documents")
     # Add the coocurences extractor
-    parser_c4 = subparsers.add_parser("get_cooccurrences", help="POS-SEM cooccurrences")
+    parser_c4 = subparsers.add_parser("get_cooc", help="POS-SEM cooccurrences")
     parser_c4.add_argument("--lang", type=str, default="it", help="Language")
     parser_c4.add_argument("--visualise", type=bool, default=True, help="Visualisation choice")
     parser_c4.add_argument("--savefig", type=bool, default=True, help="Figure export choice")

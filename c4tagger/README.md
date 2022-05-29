@@ -11,18 +11,19 @@
 ## 2. POS-SEM tag relation
 - To see the POS-SEM projection in format POS - (List of SEM): <br/>
 `python analysis.py inspect --file  <tsv file path> --extract_errors <boolean>`<br/>
-  - `--file`: TSV file location
-  - `--extract_error`: Choose to or not to extract the filtered sentences<br/>
+  - `--lang`: chosen language, for example one of these: \[it, de, en, nl]
+  - `--extract_err`: Choose to or not to extract the filtered sentences<br/>
   - For example, if you want to see the occurences of `it/train.tsv`:<br/>
-  `python analysis.py inspect --file  it/train.tsv`
+  `python analysis.py inspect --lang  it`
 
 ## 3. POS-SEM tag co-occurrences preview
 - To get the structure, co-occurrences, and number of occurences of the POS-SEM:<br/>
-  `python analysis.py get_cooccurrences --file <tsv file path> --visualise <Visualisation choice>`
-  - `--file`: TSV file path
+  `python analysis.py get_cooc --lang <tsv file path> --visualise <Visualisation choice>`
+  - `--lang`: chosen language, for example one of these: \[it, de, en, nl]
   - `--visualise`: Choose to or not to render a heatmap of co-occurrences. Default: `True`
+  - `--savefig`: Choose to or not to save the rendered heatmap of co-occurrences. Default: `True`
   - For example, if you want to see the co-occurrences of POS-SEM for `it/train.tsv`:<br/>
-  `python analysis.py get_cooccurrences --file it/train.tsv --visualise True`
+  `python analysis.py get_cooc --lang it --visualise True --savefig True`
 ## Z. Interpreter for data exploration
 - To run the interpreter: 
 <br/>`python interpreter.py interpret`<br/>

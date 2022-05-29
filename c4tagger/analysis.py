@@ -126,15 +126,17 @@ def pre_process_spacy_pos_NE(pos_tags):
 
 
 # %%
-def get_pos_sem_alignment(tsv_filename, show_non_aligned=False, extract_errors=False):
+def get_pos_sem_alignment(lang, show_non_aligned=False, extract_errors=False):
     """
     Get POS-SEM tag alignment
-    :param tsv_filename: csv filename
+    :param lang: tsv filename
     :param show_non_aligned: Choose to show the non-aligned documents
     :param extract_errors: Choose to extract the non-aligned documents to tsv
     :return:
     """
-    minidf = pd.read_csv(tsv_filename, sep="\t")
+    file_directory = build_directory(data_directory, lang, default_tsv_filename)
+    print("Inspecting", file_directory)
+    minidf = pd.read_csv(file_directory, sep="\t")
     pos_tags = dict()
     err_sentences = list()
     err_raw_pos = list()
@@ -172,9 +174,11 @@ def get_pos_sem_alignment(tsv_filename, show_non_aligned=False, extract_errors=F
                 pos_tags[ptag].add(stag)
     # Export the error data
     if extract_errors:
-        err_df = pd.DataFrame(list(zip(err_sentences, err_raw_pos, err_pos, err_sem)),
-                              index=False,
-                              columns=["document", "raw_pos", "processed_pos", "sem"])
+        err_df = pd.DataFrame()
+        err_df["document"] = err_sentences
+        err_df["raw_pos"] = err_raw_pos
+        err_df["processed_pos"] = err_pos
+        err_df["sem"] = err_sem
         err_df.to_csv("inspections/error.tsv", sep="\t", encoding="UTF-8")
         print("Extracted.")
     return pos_tags
@@ -236,7 +240,7 @@ def get_unique_tags(tsv_filename):
 def get_cooccurrences(lang, visualise=False, savefig=False) -> pd.DataFrame:
     """
     This function is to create the co-occurrence dataframe for inference
-    :param lang: TSV file location to infer from
+    :param lang: language to infer from
     :param visualise: Choose to or not to show a heatmap of the results
     :param savefig: Choose to or not to export an image of the heatmap
     """
@@ -274,11 +278,11 @@ if __name__ == "__main__":
         pipeline = args.pipeline
         print(get_pos_sem_tag(file, pipeline))
     elif args.command == "inspect":
-        file = args.file
-        extract_errors = args.extract_errors
-        results = get_pos_sem_alignment(file, extract_errors=extract_errors)
+        lang = args.lang
+        extract_errors = args.extract_err
+        results = get_pos_sem_alignment(lang, extract_errors=extract_errors)
         [print(key, results[key]) for key in results.keys()]
-    elif args.command == "get_cooccurrences":
+    elif args.command == "get_cooc":
         lang = args.lang
         visualise = args.visualise
         savefig = args.savefig

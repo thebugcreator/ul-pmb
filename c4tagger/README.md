@@ -20,10 +20,14 @@
 - To get the structure, co-occurrences, and number of occurences of the POS-SEM:<br/>
   `python analysis.py get_cooc --lang <tsv file path> --visualise <Visualisation choice>`
   - `--lang`: chosen language, for example one of these: \[it, de, en, nl]
+  - `--stacked`: choose to include different languages, default: `False`
+  - `--sample_size`: Choose the number of samples for each language if `stacked`, default `500`
   - `--visualise`: Choose to or not to render a heatmap of co-occurrences. Default: `True`
   - `--savefig`: Choose to or not to save the rendered heatmap of co-occurrences. Default: `True`
   - For example, if you want to see the co-occurrences of POS-SEM for `it/train.tsv`:<br/>
   `python analysis.py get_cooc --lang it --visualise True --savefig True`
+  - Or, POS-SEM co-occurrences in different languages (for instance EN and DE):<br/>
+  `python analysis.py get_cooc --lang en,de --stacked True --visualise True --savefig True`
 ## Z. Interpreter for data exploration
 - To run the interpreter: 
 <br/>`python interpreter.py interpret`<br/>

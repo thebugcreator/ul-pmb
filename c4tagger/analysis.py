@@ -12,6 +12,7 @@ data_directory = "data"
 languages = ["de", "en", "it", "nl"]
 default_tsv_filename = "train.tsv"
 
+
 # %%
 def build_directory(*args) -> str:
     """
@@ -186,11 +187,13 @@ def get_pos_sem_alignment(lang, show_non_aligned=False, extract_errors=False):
 
 # %%
 
-def get_pos_sem_pairs(tsv_filename):
+def get_pos_sem_pairs(tsv_filename, sampling=False, samples=100):
     """
     Get POS-SEM tag pairs
     """
     minidf = pd.read_csv(tsv_filename, sep="\t")
+    if sampling:
+        minidf = minidf.sample(n=samples)
     pos_sem_pairs = list()
     # Loop over the data frame
     for index, value in minidf.iterrows():
@@ -270,6 +273,44 @@ def get_cooccurrences(lang, visualise=False, savefig=False) -> pd.DataFrame:
 
 
 # %%
+def get_stacked_cooc(_lang, sample_size=100, visualise=False, savefig=False) -> pd.DataFrame:
+    """
+    Get the co-occurrences of sem-pos tags in different languages
+    """
+    pos_tags = set()  # For saving unique POS tags
+    sem_tags = set()  # For saving unique SEM tags
+    mul_pairs = list()  # For saving co-occurrences
+    langs = _lang.split(",")  # Chosen languages should be separated by comma
+
+    for lang in langs:
+        file_directory = build_directory(data_directory, lang, default_tsv_filename)
+        # Get POS-SEM tag pars
+        pos_sem_pairs = get_pos_sem_pairs(file_directory, sampling=True, samples=sample_size)
+        # Get the unique tags of each to count
+        pos, sem = get_unique_tags(file_directory)
+        pos_tags.update(pos)
+        sem_tags.update(sem)
+        mul_pairs += pos_sem_pairs
+
+    # Count the co-occurrences
+    pair_occurrences = Counter(mul_pairs)
+    # Create a dataframe out of the data collected
+    result_df = pd.DataFrame(columns=pos_tags, index=sem_tags).fillna(0)
+    for (ptag, stag), frequency in pair_occurrences.items():
+        result_df[ptag][stag] = int(frequency)
+
+    if visualise:
+        # Set the visual stuff on air
+        plt.subplots(figsize=(10, 20))
+        sns.heatmap(result_df, cmap="YlGnBu", annot=True, fmt="d")
+        if savefig:
+            plt.savefig("heatmaps/" + "_".join(langs) + ".jpg")
+        plt.show()
+    return result_df
+
+
+# %%
+
 # Command Line facilitation
 if __name__ == "__main__":
     args = utils.get_analysis_cli_ars()
@@ -284,8 +325,13 @@ if __name__ == "__main__":
         [print(key, results[key]) for key in results.keys()]
     elif args.command == "get_cooc":
         lang = args.lang
+        stacked = args.stacked
+        sample_size = args.sample_size
         visualise = args.visualise
         savefig = args.savefig
-        get_cooccurrences(lang, visualise=visualise, savefig=savefig)
+        if stacked:
+            get_stacked_cooc(lang, sample_size=sample_size, visualise=visualise, savefig=savefig)
+        else:
+            get_cooccurrences(lang, visualise=visualise, savefig=savefig)
     else:
         raise RuntimeError(">> Invalid command!")

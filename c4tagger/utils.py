@@ -36,6 +36,8 @@ def get_analysis_cli_ars() -> argparse.Namespace:
     # Add the coocurences extractor
     parser_c4 = subparsers.add_parser("get_cooc", help="POS-SEM cooccurrences")
     parser_c4.add_argument("--lang", type=str, default="it", help="Language")
+    parser_c4.add_argument("--stacked", type=bool, default=False, help="Stacking language samples")
+    parser_c4.add_argument("--sample_size", type=int, default=500, help="Number of stacked samples")
     parser_c4.add_argument("--visualise", type=bool, default=True, help="Visualisation choice")
     parser_c4.add_argument("--savefig", type=bool, default=True, help="Figure export choice")
     return parser.parse_args()

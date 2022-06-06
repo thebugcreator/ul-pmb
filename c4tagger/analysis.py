@@ -310,6 +310,31 @@ def get_stacked_cooc(_lang, sample_size=100, visualise=False, savefig=False) -> 
 
 
 # %%
+def get_tagging_rules(_lang, sample_size=100):
+    """
+    Get the tagging rule based on the highest co-occurrence of semantic tag along with the POS tag
+    """
+    sc_df = get_stacked_cooc(_lang, sample_size=sample_size)
+    pos_sem = dict()
+
+    for col in sc_df.columns:
+        if col == "VERB":
+            pos_sem[col] = "EVE"  # EVENT tag, to be disambiguated
+        else:
+            pos_sem[col] = sc_df[col].idxmax()
+    return pos_sem
+
+
+# %%
+def get_data_from_tsv(_lang) -> pd.DataFrame:
+    """
+    For retrieving data (sentence, sem tag, pos tag) from the tsv files
+    """
+    file_directory = build_directory(data_directory, _lang, default_tsv_filename)
+    return pd.read_csv(file_directory, sep="\t", encoding="UTF-8")
+
+
+# %%
 
 # Command Line facilitation
 if __name__ == "__main__":

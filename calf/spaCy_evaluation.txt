@@ -1,987 +1,987 @@
 Kraft a vendu Celestial Seasonings.
 golden --> ['Kraft', 'a', 'vendu', 'Celestial_Seasonings', '.']  ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIIIIIIIIIIII', 'B']
-output --> ['Kraft', 'a', 'vendu', 'Celestial_Seasonings', '.']  ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIIIIIIIIIIII', 'B']
+[spacy -->] [Kraft] [a] [vendu] [Celestial] [Seasonings] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
 BIIIIOBOBIIIIOBIIIIIIIIIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIOBOBIIIIOBIIIIIIIIIIIIIIIIIIIB <-- string of output IOBs
+BIIIIOBOBIIIIOBIIIIIIIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Anna Politkovskaya a été assassinée.
 golden --> ['Anna_Politkovskaya', 'a', 'été', 'assassinée', '.']  ,['BIIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
-output --> ['Anna_Politkovskaya', 'a', 'été', 'assassinée', '.']  ,['BIIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
+[spacy -->] [Anna] [Politkovskaya] [a] [été] [assassinée] [.]   ,['BIIIO', 'BIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
 BIIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIIB <-- string of output IOBs
+BIIIOBIIIIIIIIIIIIOBOBIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Les yakuza forment la mafia japonaise.
 golden --> ['Les', 'yakuza', 'forment', 'la', 'mafia', 'japonaise', '.']  ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'BIIIIIIII', 'B']
-output --> ['Les', 'yakuza', 'forment', 'la', 'mafia', 'japonaise', '.']  ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'BIIIIIIII', 'B']
+[spacy -->] [Les] [yakuza] [forment] [la] [mafia] [japonaise] [.]   ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'BIIIIIIII', 'B']
 BIIOBIIIIIOBIIIIIIOBIOBIIIIOBIIIIIIIIB <-- string of golden IOBs
-BIIOBIIIIIOBIIIIIIOBIOBIIIIOBIIIIIIIIB <-- string of output IOBs
+BIIOBIIIIIOBIIIIIIOBIOBIIIIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Yunus a fondé la banque Grameen il y a 30 ans.
 golden --> ['Yunus', 'a', 'fondé', 'la', 'banque', 'Grameen', 'il_y_a', '30', 'ans', '.']  ,['BIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIIO', 'BIIIIIO', 'BIO', 'BII', 'B']
-output --> ['Yunus', 'a', 'fondé', 'la', 'banque', 'Grameen', 'il_y_a', '30', 'ans', '.']  ,['BIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIIO', 'BIIIIIO', 'BIO', 'BII', 'B']
+[spacy -->] [Yunus] [a] [fondé] [la] [banque] [Grameen] [il] [y] [a] [30] [ans] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIIO', 'BIO', 'BO', 'BO', 'BIO', 'BII', 'B']
 BIIIIOBOBIIIIOBIOBIIIIIOBIIIIIIOBIIIIIOBIOBIIB <-- string of golden IOBs
-BIIIIOBOBIIIIOBIOBIIIIIOBIIIIIIOBIIIIIOBIOBIIB <-- string of output IOBs
+BIIIIOBOBIIIIOBIOBIIIIIOBIIIIIIOBIOBOBOBIOBIIB <-- string of spaCy IOBs
 
 Maria a les cheveux longs.
 golden --> ['Maria', 'a', 'les', 'cheveux', 'longs', '.']  ,['BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIII', 'B']
-output --> ['Maria', 'a', 'les', 'cheveux', 'longs', '.']  ,['BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIII', 'B']
+[spacy -->] [Maria] [a] [les] [cheveux] [longs] [.]   ,['BIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIII', 'B']
 BIIIIOBOBIIOBIIIIIIOBIIIIB <-- string of golden IOBs
-BIIIIOBOBIIOBIIIIIIOBIIIIB <-- string of output IOBs
+BIIIIOBOBIIOBIIIIIIOBIIIIB <-- string of spaCy IOBs
 
 Bob est populaire à l'école.
 golden --> ['Bob', 'est', 'populaire', 'à', "l'", 'école', '.']  ,['BIIO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BI', 'BIIII', 'B']
-output --> ['Bob', 'est', 'populaire', 'à', "l'", 'école', '.']  ,['BIIO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BI', 'BIIII', 'B']
+[spacy -->] [Bob] [est] [populaire] [à] [l'] [école] [.]   ,['BIIO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BI', 'BIIII', 'B']
 BIIOBIIOBIIIIIIIIOBOBIBIIIIB <-- string of golden IOBs
-BIIOBIIOBIIIIIIIIOBOBIBIIIIB <-- string of output IOBs
+BIIOBIIOBIIIIIIIIOBOBIBIIIIB <-- string of spaCy IOBs
 
 Joli costume.
 golden --> ['Joli', 'costume', '.']  ,['BIIIO', 'BIIIIII', 'B']
-output --> ['Joli', 'costume', '.']  ,['BIIIO', 'BIIIIII', 'B']
+[spacy -->] [Joli] [costume] [.]   ,['BIIIO', 'BIIIIII', 'B']
 BIIIOBIIIIIIB <-- string of golden IOBs
-BIIIOBIIIIIIB <-- string of output IOBs
+BIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Où sont les parcmètres ?
 golden --> ['Où', 'sont', 'les', 'parcmètres', '?']  ,['BIO', 'BIIIO', 'BIIO', 'BIIIIIIIIIO', 'B']
-output --> ['Où', 'sont', 'les', 'parcmètres', '?']  ,['BIO', 'BIIIO', 'BIIO', 'BIIIIIIIIIO', 'B']
+[spacy -->] [Où] [sont] [les] [parcmètres] [?]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIIIIIIIO', 'B']
 BIOBIIIOBIIOBIIIIIIIIIOB <-- string of golden IOBs
-BIOBIIIOBIIOBIIIIIIIIIOB <-- string of output IOBs
+BIOBIIIOBIIOBIIIIIIIIIOB <-- string of spaCy IOBs
 
 Tom a utilisé un cure-dent.
 golden --> ['Tom', 'a', 'utilisé', 'un', 'cure-dent', '.']  ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
-output --> ['Tom', 'a', 'utilisé', 'un', 'cure-dent', '.']  ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
+[spacy -->] [Tom] [a] [utilisé] [un] [cure] [-] [dent] [.]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIII', 'B', 'BIII', 'B']
 BIIOBOBIIIIIIOBIOBIIIIIIIIB <-- string of golden IOBs
-BIIOBOBIIIIIIOBIOBIIIIIIIIB <-- string of output IOBs
+BIIOBOBIIIIIIOBIOBIIIBBIIIB <-- string of spaCy IOBs
 
 Voici Mademoiselle Curtis.
 golden --> ['Voici', 'Mademoiselle', 'Curtis', '.']  ,['BIIIIO', 'BIIIIIIIIIIIO', 'BIIIII', 'B']
-output --> ['Voici_Mademoiselle_Curtis', '.']  ,['BIIIIIIIIIIIIIIIIIIIIIIII', 'B']
+[spacy -->] [Voici] [Mademoiselle] [Curtis] [.]   ,['BIIIIO', 'BIIIIIIIIIIIO', 'BIIIII', 'B']
 BIIIIOBIIIIIIIIIIIOBIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIIIIIIIIIB <-- string of output IOBs
+BIIIIOBIIIIIIIIIIIOBIIIIIB <-- string of spaCy IOBs
 
 Bob était très content.
 golden --> ['Bob', 'était', 'très', 'content', '.']  ,['BIIO', 'BIIIIO', 'BIIIO', 'BIIIIII', 'B']
-output --> ['Bob', 'était', 'très', 'content', '.']  ,['BIIO', 'BIIIIO', 'BIIIO', 'BIIIIII', 'B']
+[spacy -->] [Bob] [était] [très] [content] [.]   ,['BIIO', 'BIIIIO', 'BIIIO', 'BIIIIII', 'B']
 BIIOBIIIIOBIIIOBIIIIIIB <-- string of golden IOBs
-BIIOBIIIIOBIIIOBIIIIIIB <-- string of output IOBs
+BIIOBIIIIOBIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Salut.
 golden --> ['Salut', '.']  ,['BIIII', 'B']
-output --> ['Salut', '.']  ,['BIIII', 'B']
+[spacy -->] [Salut] [.]   ,['BIIII', 'B']
 BIIIIB <-- string of golden IOBs
-BIIIIB <-- string of output IOBs
+BIIIIB <-- string of spaCy IOBs
 
 Bonjour !
 golden --> ['Bonjour', '!']  ,['BIIIIIIO', 'B']
-output --> ['Bonjour', '!']  ,['BIIIIIIO', 'B']
+[spacy -->] [Bonjour] [!]   ,['BIIIIIIO', 'B']
 BIIIIIIOB <-- string of golden IOBs
-BIIIIIIOB <-- string of output IOBs
+BIIIIIIOB <-- string of spaCy IOBs
 
 Kraft a vendu Celestial Seasonings.
 golden --> ['Kraft', 'a', 'vendu', 'Celestial_Seasonings', '.']  ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIIIIIIIIIIII', 'B']
-output --> ['Kraft', 'a', 'vendu', 'Celestial_Seasonings', '.']  ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIIIIIIIIIIII', 'B']
+[spacy -->] [Kraft] [a] [vendu] [Celestial] [Seasonings] [.]   ,['BIIIIO', 'BO', 'BIIIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
 BIIIIOBOBIIIIOBIIIIIIIIIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIOBOBIIIIOBIIIIIIIIIIIIIIIIIIIB <-- string of output IOBs
+BIIIIOBOBIIIIOBIIIIIIIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Raman Raghav a assassiné 9 personnes.
 golden --> ['Raman_Raghav', 'a', 'assassiné', '9', 'personnes', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BO', 'BIIIIIIII', 'B']
-output --> ['Raman_Raghav', 'a', 'assassiné', '9', 'personnes', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BO', 'BIIIIIIII', 'B']
+[spacy -->] [Raman] [Raghav] [a] [assassiné] [9] [personnes] [.]   ,['BIIIIO', 'BIIIIIO', 'BO', 'BIIIIIIIIO', 'BO', 'BIIIIIIII', 'B']
 BIIIIIIIIIIIOBOBIIIIIIIIOBOBIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIOBOBIIIIIIIIOBOBIIIIIIIIB <-- string of output IOBs
+BIIIIOBIIIIIOBOBIIIIIIIIOBOBIIIIIIIIB <-- string of spaCy IOBs
 
 Alfred Nobel a inventé la dynamite en 1866.
 golden --> ['Alfred_Nobel', 'a', 'inventé', 'la', 'dynamite', 'en', '1866', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIO', 'BIO', 'BIII', 'B']
-output --> ['Alfred_Nobel', 'a', 'inventé', 'la', 'dynamite', 'en', '1866', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIO', 'BIO', 'BIII', 'B']
+[spacy -->] [Alfred] [Nobel] [a] [inventé] [la] [dynamite] [en] [1866] [.]   ,['BIIIIIO', 'BIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIO', 'BIO', 'BIII', 'B']
 BIIIIIIIIIIIOBOBIIIIIIOBIOBIIIIIIIOBIOBIIIB <-- string of golden IOBs
-BIIIIIIIIIIIOBOBIIIIIIOBIOBIIIIIIIOBIOBIIIB <-- string of output IOBs
+BIIIIIOBIIIIOBOBIIIIIIOBIOBIIIIIIIOBIOBIIIB <-- string of spaCy IOBs
 
 Il a brassé de la bière.
 golden --> ['Il', 'a', 'brassé', 'de_la', 'bière', '.']  ,['BIO', 'BO', 'BIIIIIO', 'BIIIIO', 'BIIII', 'B']
-output --> ['Il', 'a', 'brassé', 'de', 'la', 'bière', '.']  ,['BIO', 'BO', 'BIIIIIO', 'BIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Il] [a] [brassé] [de] [la] [bière] [.]   ,['BIO', 'BO', 'BIIIIIO', 'BIO', 'BIO', 'BIIII', 'B']
 BIOBOBIIIIIOBIIIIOBIIIIB <-- string of golden IOBs
-BIOBOBIIIIIOBIOBIOBIIIIB <-- string of output IOBs
+BIOBOBIIIIIOBIOBIOBIIIIB <-- string of spaCy IOBs
 
 Elle a une maladie contagieuse.
 golden --> ['Elle', 'a', 'une', 'maladie', 'contagieuse', '.']  ,['BIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIIIIIIII', 'B']
-output --> ['Elle', 'a', 'une', 'maladie', 'contagieuse', '.']  ,['BIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIIIIIIII', 'B']
+[spacy -->] [Elle] [a] [une] [maladie] [contagieuse] [.]   ,['BIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIIIIIIII', 'B']
 BIIIOBOBIIOBIIIIIIOBIIIIIIIIIIB <-- string of golden IOBs
-BIIIOBOBIIOBIIIIIIOBIIIIIIIIIIB <-- string of output IOBs
+BIIIOBOBIIOBIIIIIIOBIIIIIIIIIIB <-- string of spaCy IOBs
 
 Il y a aussi des touristes français.
 golden --> ['Il', 'y', 'a', 'aussi', 'des', 'touristes', 'français', '.']  ,['BIO', 'BO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIII', 'B']
-output --> ['Il', 'y', 'a', 'aussi', 'des', 'touristes', 'français', '.']  ,['BIO', 'BO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIII', 'B']
+[spacy -->] [Il] [y] [a] [aussi] [des] [touristes] [français] [.]   ,['BIO', 'BO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIII', 'B']
 BIOBOBOBIIIIOBIIOBIIIIIIIIOBIIIIIIIB <-- string of golden IOBs
-BIOBOBOBIIIIOBIIOBIIIIIIIIOBIIIIIIIB <-- string of output IOBs
+BIOBOBOBIIIIOBIIOBIIIIIIIIOBIIIIIIIB <-- string of spaCy IOBs
 
 Le lac est très profond.
 golden --> ['Le', 'lac', 'est', 'très', 'profond', '.']  ,['BIO', 'BIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
-output --> ['Le', 'lac', 'est', 'très', 'profond', '.']  ,['BIO', 'BIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
+[spacy -->] [Le] [lac] [est] [très] [profond] [.]   ,['BIO', 'BIIO', 'BIIO', 'BIIIO', 'BIIIIII', 'B']
 BIOBIIOBIIOBIIIOBIIIIIIB <-- string of golden IOBs
-BIOBIIOBIIOBIIIOBIIIIIIB <-- string of output IOBs
+BIOBIIOBIIOBIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Personne ne peut résoudre ce problème.
 golden --> ['Personne', 'ne', 'peut', 'résoudre', 'ce', 'problème', '.']  ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIIIO', 'BIO', 'BIIIIIII', 'B']
-output --> ['Personne', 'ne', 'peut', 'résoudre', 'ce', 'problème', '.']  ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIIIO', 'BIO', 'BIIIIIII', 'B']
+[spacy -->] [Personne] [ne] [peut] [résoudre] [ce] [problème] [.]   ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIIIO', 'BIO', 'BIIIIIII', 'B']
 BIIIIIIIOBIOBIIIOBIIIIIIIOBIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIIOBIOBIIIOBIIIIIIIOBIOBIIIIIIIB <-- string of output IOBs
+BIIIIIIIOBIOBIIIOBIIIIIIIOBIOBIIIIIIIB <-- string of spaCy IOBs
 
 La jupe rouge est neuve.
 golden --> ['La', 'jupe', 'rouge', 'est', 'neuve', '.']  ,['BIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['La', 'jupe', 'rouge', 'est', 'neuve', '.']  ,['BIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [La] [jupe] [rouge] [est] [neuve] [.]   ,['BIO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
 BIOBIIIOBIIIIOBIIOBIIIIB <-- string of golden IOBs
-BIOBIIIOBIIIIOBIIOBIIIIB <-- string of output IOBs
+BIOBIIIOBIIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Personne n'a résolu le problème.
 golden --> ['Personne', "n'", 'a', 'résolu', 'le', 'problème', '.']  ,['BIIIIIIIO', 'BI', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIII', 'B']
-output --> ['Personne', "n'", 'a', 'résolu', 'le', 'problème', '.']  ,['BIIIIIIIO', 'BI', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIII', 'B']
+[spacy -->] [Personne] [n'] [a] [résolu] [le] [problème] [.]   ,['BIIIIIIIO', 'BI', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIII', 'B']
 BIIIIIIIOBIBOBIIIIIOBIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIIOBIBOBIIIIIOBIOBIIIIIIIB <-- string of output IOBs
+BIIIIIIIOBIBOBIIIIIOBIOBIIIIIIIB <-- string of spaCy IOBs
 
 Je mange une pomme.
 golden --> ['Je', 'mange', 'une', 'pomme', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['Je', 'mange', 'une', 'pomme', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [Je] [mange] [une] [pomme] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
 BIOBIIIIOBIIOBIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
+BIOBIIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Le capitaine Scott a découvert l'île Scott en décembre 1902.
 golden --> ['Le', 'capitaine', 'Scott', 'a', 'découvert', "l'", 'île', 'Scott', 'en', 'décembre', '1902', '.']  ,['BIO', 'BIIIIIIIIO', 'BIIIIO', 'BO', 'BIIIIIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIO', 'BIII', 'B']
-output --> ['Le', 'capitaine', 'Scott', 'a', 'découvert', "l'", 'île', 'Scott', 'en', 'décembre', '1902', '.']  ,['BIO', 'BIIIIIIIIO', 'BIIIIO', 'BO', 'BIIIIIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIO', 'BIII', 'B']
+[spacy -->] [Le] [capitaine] [Scott] [a] [découvert] [l'] [île] [Scott] [en] [décembre] [1902] [.]   ,['BIO', 'BIIIIIIIIO', 'BIIIIO', 'BO', 'BIIIIIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIO', 'BIII', 'B']
 BIOBIIIIIIIIOBIIIIOBOBIIIIIIIIOBIBIIOBIIIIOBIOBIIIIIIIOBIIIB <-- string of golden IOBs
-BIOBIIIIIIIIOBIIIIOBOBIIIIIIIIOBIBIIOBIIIIOBIOBIIIIIIIOBIIIB <-- string of output IOBs
+BIOBIIIIIIIIOBIIIIOBOBIIIIIIIIOBIBIIOBIIIIOBIOBIIIIIIIOBIIIB <-- string of spaCy IOBs
 
 Il a plu pendant cinq jours.
 golden --> ['Il', 'a', 'plu', 'pendant', 'cinq', 'jours', '.']  ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIO', 'BIIII', 'B']
-output --> ['Il', 'a', 'plu', 'pendant', 'cinq', 'jours', '.']  ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIO', 'BIIII', 'B']
+[spacy -->] [Il] [a] [plu] [pendant] [cinq] [jours] [.]   ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIIO', 'BIIII', 'B']
 BIOBOBIIOBIIIIIIOBIIIOBIIIIB <-- string of golden IOBs
-BIOBOBIIOBIIIIIIOBIIIOBIIIIB <-- string of output IOBs
+BIOBOBIIOBIIIIIIOBIIIOBIIIIB <-- string of spaCy IOBs
 
 J'ai deux chats.
 golden --> ["J'", 'ai', 'deux', 'chats', '.']  ,['BI', 'BIO', 'BIIIO', 'BIIII', 'B']
-output --> ["J'", 'ai', 'deux', 'chats', '.']  ,['BI', 'BIO', 'BIIIO', 'BIIII', 'B']
+[spacy -->] [J'] [ai] [deux] [chats] [.]   ,['BI', 'BIO', 'BIIIO', 'BIIII', 'B']
 BIBIOBIIIOBIIIIB <-- string of golden IOBs
-BIBIOBIIIOBIIIIB <-- string of output IOBs
+BIBIOBIIIOBIIIIB <-- string of spaCy IOBs
 
 Carl Smith est mort le 8 août.
 golden --> ['Carl_Smith', 'est', 'mort', 'le', '8', 'août', '.']  ,['BIIIIIIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BO', 'BIII', 'B']
-output --> ['Carl_Smith', 'est', 'mort', 'le', '8', 'août', '.']  ,['BIIIIIIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BO', 'BIII', 'B']
+[spacy -->] [Carl] [Smith] [est] [mort] [le] [8] [août] [.]   ,['BIIIO', 'BIIIIO', 'BIIO', 'BIIIO', 'BIO', 'BO', 'BIII', 'B']
 BIIIIIIIIIOBIIOBIIIOBIOBOBIIIB <-- string of golden IOBs
-BIIIIIIIIIOBIIOBIIIOBIOBOBIIIB <-- string of output IOBs
+BIIIOBIIIIOBIIOBIIIOBIOBOBIIIB <-- string of spaCy IOBs
 
 Cet homme a raison.
 golden --> ['Cet', 'homme', 'a', 'raison', '.']  ,['BIIO', 'BIIIIO', 'BO', 'BIIIII', 'B']
-output --> ['Cet', 'homme', 'a', 'raison', '.']  ,['BIIO', 'BIIIIO', 'BO', 'BIIIII', 'B']
+[spacy -->] [Cet] [homme] [a] [raison] [.]   ,['BIIO', 'BIIIIO', 'BO', 'BIIIII', 'B']
 BIIOBIIIIOBOBIIIIIB <-- string of golden IOBs
-BIIOBIIIIOBOBIIIIIB <-- string of output IOBs
+BIIOBIIIIOBOBIIIIIB <-- string of spaCy IOBs
 
 Il y a un biscuit sous la table.
 golden --> ['Il', 'y', 'a', 'un', 'biscuit', 'sous', 'la', 'table', '.']  ,['BIO', 'BO', 'BO', 'BIO', 'BIIIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Il', 'y', 'a', 'un', 'biscuit', 'sous', 'la', 'table', '.']  ,['BIO', 'BO', 'BO', 'BIO', 'BIIIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Il] [y] [a] [un] [biscuit] [sous] [la] [table] [.]   ,['BIO', 'BO', 'BO', 'BIO', 'BIIIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
 BIOBOBOBIOBIIIIIIOBIIIOBIOBIIIIB <-- string of golden IOBs
-BIOBOBOBIOBIIIIIIOBIIIOBIOBIIIIB <-- string of output IOBs
+BIOBOBOBIOBIIIIIIOBIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 Ma mère a fait cuire dix œufs.
 golden --> ['Ma', 'mère', 'a', 'fait', 'cuire', 'dix', 'œufs', '.']  ,['BIO', 'BIIIO', 'BO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
-output --> ['Ma', 'mère', 'a', 'fait', 'cuire', 'dix', 'œufs', '.']  ,['BIO', 'BIIIO', 'BO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
+[spacy -->] [Ma] [mère] [a] [fait] [cuire] [dix] [œufs] [.]   ,['BIO', 'BIIIO', 'BO', 'BIIIO', 'BIIIIO', 'BIIO', 'BIII', 'B']
 BIOBIIIOBOBIIIOBIIIIOBIIOBIIIB <-- string of golden IOBs
-BIOBIIIOBOBIIIOBIIIIOBIIOBIIIB <-- string of output IOBs
+BIOBIIIOBOBIIIOBIIIIOBIIOBIIIB <-- string of spaCy IOBs
 
 Je conduis une décapotable.
 golden --> ['Je', 'conduis', 'une', 'décapotable', '.']  ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
-output --> ['Je', 'conduis', 'une', 'décapotable', '.']  ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
+[spacy -->] [Je] [conduis] [une] [décapotable] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
 BIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of golden IOBs
-BIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of output IOBs
+BIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of spaCy IOBs
 
 La Roumanie a envoyé 730 soldats en Irak.
 golden --> ['La', 'Roumanie', 'a', 'envoyé', '730', 'soldats', 'en', 'Irak', '.']  ,['BIO', 'BIIIIIIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIIIO', 'BIO', 'BIII', 'B']
-output --> ['La', 'Roumanie', 'a', 'envoyé', '730', 'soldats', 'en', 'Irak', '.']  ,['BIO', 'BIIIIIIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIIIO', 'BIO', 'BIII', 'B']
+[spacy -->] [La] [Roumanie] [a] [envoyé] [730] [soldats] [en] [Irak] [.]   ,['BIO', 'BIIIIIIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIIIO', 'BIO', 'BIII', 'B']
 BIOBIIIIIIIOBOBIIIIIOBIIOBIIIIIIOBIOBIIIB <-- string of golden IOBs
-BIOBIIIIIIIOBOBIIIIIOBIIOBIIIIIIOBIOBIIIB <-- string of output IOBs
+BIOBIIIIIIIOBOBIIIIIOBIIOBIIIIIIOBIOBIIIB <-- string of spaCy IOBs
 
 Bill n'a pas commis ce crime.
 golden --> ['Bill', "n'", 'a', 'pas', 'commis', 'ce', 'crime', '.']  ,['BIIIO', 'BI', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Bill', "n'", 'a', 'pas', 'commis', 'ce', 'crime', '.']  ,['BIIIO', 'BI', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Bill] [n'] [a] [pas] [commis] [ce] [crime] [.]   ,['BIIIO', 'BI', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
 BIIIOBIBOBIIOBIIIIIOBIOBIIIIB <-- string of golden IOBs
-BIIIOBIBOBIIOBIIIIIOBIOBIIIIB <-- string of output IOBs
+BIIIOBIBOBIIOBIIIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 Ce livre coûte 4 dollars.
 golden --> ['Ce', 'livre', 'coûte', '4', 'dollars', '.']  ,['BIO', 'BIIIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
-output --> ['Ce', 'livre', 'coûte', '4', 'dollars', '.']  ,['BIO', 'BIIIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
+[spacy -->] [Ce] [livre] [coûte] [4] [dollars] [.]   ,['BIO', 'BIIIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
 BIOBIIIIOBIIIIOBOBIIIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIIIOBOBIIIIIIB <-- string of output IOBs
+BIOBIIIIOBIIIIOBOBIIIIIIB <-- string of spaCy IOBs
 
 Où est né le réalisateur Michelangelo Antonioni ?
 golden --> ['Où', 'est', 'né', 'le', 'réalisateur', 'Michelangelo_Antonioni', '?']  ,['BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIIIIIO', 'BIIIIIIIIIIIIIIIIIIIIIO', 'B']
-output --> ['Où', 'est', 'né', 'le', 'réalisateur', 'Michelangelo_Antonioni', '?']  ,['BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIIIIIO', 'BIIIIIIIIIIIIIIIIIIIIIO', 'B']
+[spacy -->] [Où] [est] [né] [le] [réalisateur] [Michelangelo] [Antonioni] [?]   ,['BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIIIIIO', 'BIIIIIIIIIIIO', 'BIIIIIIIIO', 'B']
 BIOBIIOBIOBIOBIIIIIIIIIIOBIIIIIIIIIIIIIIIIIIIIIOB <-- string of golden IOBs
-BIOBIIOBIOBIOBIIIIIIIIIIOBIIIIIIIIIIIIIIIIIIIIIOB <-- string of output IOBs
+BIOBIIOBIOBIOBIIIIIIIIIIOBIIIIIIIIIIIOBIIIIIIIIOB <-- string of spaCy IOBs
 
 J'ai commandé une pizza.
 golden --> ["J'", 'ai', 'commandé', 'une', 'pizza', '.']  ,['BI', 'BIO', 'BIIIIIIIO', 'BIIO', 'BIIII', 'B']
-output --> ["J'", 'ai', 'commandé', 'une', 'pizza', '.']  ,['BI', 'BIO', 'BIIIIIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [J'] [ai] [commandé] [une] [pizza] [.]   ,['BI', 'BIO', 'BIIIIIIIO', 'BIIO', 'BIIII', 'B']
 BIBIOBIIIIIIIOBIIOBIIIIB <-- string of golden IOBs
-BIBIOBIIIIIIIOBIIOBIIIIB <-- string of output IOBs
+BIBIOBIIIIIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Baena Soares a été arrêté par l'armée.
 golden --> ['Baena_Soares', 'a', 'été', 'arrêté', 'par', "l'", 'armée', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BI', 'BIIII', 'B']
-output --> ['Baena_Soares', 'a', 'été', 'arrêté', 'par', "l'", 'armée', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BI', 'BIIII', 'B']
+[spacy -->] [Baena] [Soares] [a] [été] [arrêté] [par] [l'] [armée] [.]   ,['BIIIIO', 'BIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BI', 'BIIII', 'B']
 BIIIIIIIIIIIOBOBIIOBIIIIIOBIIOBIBIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIOBOBIIOBIIIIIOBIIOBIBIIIIB <-- string of output IOBs
+BIIIIOBIIIIIOBOBIIOBIIIIIOBIIOBIBIIIIB <-- string of spaCy IOBs
 
 John vit à New York.
 golden --> ['John', 'vit', 'à', 'New_York', '.']  ,['BIIIO', 'BIIO', 'BO', 'BIIIIIII', 'B']
-output --> ['John', 'vit', 'à', 'New_York', '.']  ,['BIIIO', 'BIIO', 'BO', 'BIIIIIII', 'B']
+[spacy -->] [John] [vit] [à] [New] [York] [.]   ,['BIIIO', 'BIIO', 'BO', 'BIIO', 'BIII', 'B']
 BIIIOBIIOBOBIIIIIIIB <-- string of golden IOBs
-BIIIOBIIOBOBIIIIIIIB <-- string of output IOBs
+BIIIOBIIOBOBIIOBIIIB <-- string of spaCy IOBs
 
 Où est le journal ?
 golden --> ['Où', 'est', 'le', 'journal', '?']  ,['BIO', 'BIIO', 'BIO', 'BIIIIIIO', 'B']
-output --> ['Où', 'est', 'le', 'journal', '?']  ,['BIO', 'BIIO', 'BIO', 'BIIIIIIO', 'B']
+[spacy -->] [Où] [est] [le] [journal] [?]   ,['BIO', 'BIIO', 'BIO', 'BIIIIIIO', 'B']
 BIOBIIOBIOBIIIIIIOB <-- string of golden IOBs
-BIOBIIOBIOBIIIIIIOB <-- string of output IOBs
+BIOBIIOBIOBIIIIIIOB <-- string of spaCy IOBs
 
 Il avait une fille.
 golden --> ['Il', 'avait', 'une', 'fille', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['Il', 'avait', 'une', 'fille', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [Il] [avait] [une] [fille] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
 BIOBIIIIOBIIOBIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
+BIOBIIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Le chien est blanc.
 golden --> ['Le', 'chien', 'est', 'blanc', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['Le', 'chien', 'est', 'blanc', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [Le] [chien] [est] [blanc] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
 BIOBIIIIOBIIOBIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
+BIOBIIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Cette maison est connue.
 golden --> ['Cette', 'maison', 'est', 'connue', '.']  ,['BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIII', 'B']
-output --> ['Cette', 'maison', 'est', 'connue', '.']  ,['BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIII', 'B']
+[spacy -->] [Cette] [maison] [est] [connue] [.]   ,['BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIII', 'B']
 BIIIIOBIIIIIOBIIOBIIIIIB <-- string of golden IOBs
-BIIIIOBIIIIIOBIIOBIIIIIB <-- string of output IOBs
+BIIIIOBIIIIIOBIIOBIIIIIB <-- string of spaCy IOBs
 
 Qui chante cette chanson ?
 golden --> ['Qui', 'chante', 'cette', 'chanson', '?']  ,['BIIO', 'BIIIIIO', 'BIIIIO', 'BIIIIIIO', 'B']
-output --> ['Qui', 'chante', 'cette', 'chanson', '?']  ,['BIIO', 'BIIIIIO', 'BIIIIO', 'BIIIIIIO', 'B']
+[spacy -->] [Qui] [chante] [cette] [chanson] [?]   ,['BIIO', 'BIIIIIO', 'BIIIIO', 'BIIIIIIO', 'B']
 BIIOBIIIIIOBIIIIOBIIIIIIOB <-- string of golden IOBs
-BIIOBIIIIIOBIIIIOBIIIIIIOB <-- string of output IOBs
+BIIOBIIIIIOBIIIIOBIIIIIIOB <-- string of spaCy IOBs
 
 La tour fait quinze mètres de haut.
 golden --> ['La', 'tour', 'fait', 'quinze', 'mètres', 'de', 'haut', '.']  ,['BIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
-output --> ['La', 'tour', 'fait', 'quinze', 'mètres', 'de', 'haut', '.']  ,['BIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
+[spacy -->] [La] [tour] [fait] [quinze] [mètres] [de] [haut] [.]   ,['BIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
 BIOBIIIOBIIIOBIIIIIOBIIIIIOBIOBIIIB <-- string of golden IOBs
-BIOBIIIOBIIIOBIIIIIOBIIIIIOBIOBIIIB <-- string of output IOBs
+BIOBIIIOBIIIOBIIIIIOBIIIIIOBIOBIIIB <-- string of spaCy IOBs
 
 Le Canada a battu les Etats-Unis.
 golden --> ['Le', 'Canada', 'a', 'battu', 'les', 'Etats-Unis', '.']  ,['BIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-output --> ['Le', 'Canada', 'a', 'battu', 'les', 'Etats-Unis', '.']  ,['BIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
+[spacy -->] [Le] [Canada] [a] [battu] [les] [Etats-Unis] [.]   ,['BIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
 BIOBIIIIIOBOBIIIIOBIIOBIIIIIIIIIB <-- string of golden IOBs
-BIOBIIIIIOBOBIIIIOBIIOBIIIIIIIIIB <-- string of output IOBs
+BIOBIIIIIOBOBIIIIOBIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 L'Italie a battu le Kazakhstan.
 golden --> ["L'", 'Italie', 'a', 'battu', 'le', 'Kazakhstan', '.']  ,['BI', 'BIIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIIIII', 'B']
-output --> ["L'", 'Italie', 'a', 'battu', 'le', 'Kazakhstan', '.']  ,['BI', 'BIIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIIIII', 'B']
+[spacy -->] [L'] [Italie] [a] [battu] [le] [Kazakhstan] [.]   ,['BI', 'BIIIIIO', 'BO', 'BIIIIO', 'BIO', 'BIIIIIIIII', 'B']
 BIBIIIIIOBOBIIIIOBIOBIIIIIIIIIB <-- string of golden IOBs
-BIBIIIIIOBOBIIIIOBIOBIIIIIIIIIB <-- string of output IOBs
+BIBIIIIIOBOBIIIIOBIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Vladislav Listyev a été assassiné à Moscou.
 golden --> ['Vladislav_Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
-output --> ['Vladislav_Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
+[spacy -->] [Vladislav] [Listyev] [a] [été] [assassiné] [à] [Moscou] [.]   ,['BIIIIIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
 BIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of output IOBs
+BIIIIIIIIOBIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of spaCy IOBs
 
 Personne n'aime la guerre.
 golden --> ['Personne', "n'", 'aime', 'la', 'guerre', '.']  ,['BIIIIIIIO', 'BI', 'BIIIO', 'BIO', 'BIIIII', 'B']
-output --> ['Personne', "n'", 'aime', 'la', 'guerre', '.']  ,['BIIIIIIIO', 'BI', 'BIIIO', 'BIO', 'BIIIII', 'B']
+[spacy -->] [Personne] [n'] [aime] [la] [guerre] [.]   ,['BIIIIIIIO', 'BI', 'BIIIO', 'BIO', 'BIIIII', 'B']
 BIIIIIIIOBIBIIIOBIOBIIIIIB <-- string of golden IOBs
-BIIIIIIIOBIBIIIOBIOBIIIIIB <-- string of output IOBs
+BIIIIIIIOBIBIIIOBIOBIIIIIB <-- string of spaCy IOBs
 
 Vladislav Listyev a été assassiné à Moscou.
 golden --> ['Vladislav_Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
-output --> ['Vladislav_Listyev', 'a', 'été', 'assassiné', 'à', 'Moscou', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
+[spacy -->] [Vladislav] [Listyev] [a] [été] [assassiné] [à] [Moscou] [.]   ,['BIIIIIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BO', 'BIIIII', 'B']
 BIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of output IOBs
+BIIIIIIIIOBIIIIIIOBOBIIOBIIIIIIIIOBOBIIIIIB <-- string of spaCy IOBs
 
 Ma soeur est célèbre.
 golden --> ['Ma', 'soeur', 'est', 'célèbre', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIII', 'B']
-output --> ['Ma', 'soeur', 'est', 'célèbre', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIII', 'B']
+[spacy -->] [Ma] [soeur] [est] [célèbre] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIII', 'B']
 BIOBIIIIOBIIOBIIIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIOBIIIIIIB <-- string of output IOBs
+BIOBIIIIOBIIOBIIIIIIB <-- string of spaCy IOBs
 
 La porte est fermée.
 golden --> ['La', 'porte', 'est', 'fermée', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
-output --> ['La', 'porte', 'est', 'fermée', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
+[spacy -->] [La] [porte] [est] [fermée] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
 BIOBIIIIOBIIOBIIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIOBIIIIIB <-- string of output IOBs
+BIOBIIIIOBIIOBIIIIIB <-- string of spaCy IOBs
 
 La viande est congelée.
 golden --> ['La', 'viande', 'est', 'congelée', '.']  ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIIIII', 'B']
-output --> ['La', 'viande', 'est', 'congelée', '.']  ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIIIII', 'B']
+[spacy -->] [La] [viande] [est] [congelée] [.]   ,['BIO', 'BIIIIIO', 'BIIO', 'BIIIIIII', 'B']
 BIOBIIIIIOBIIOBIIIIIIIB <-- string of golden IOBs
-BIOBIIIIIOBIIOBIIIIIIIB <-- string of output IOBs
+BIOBIIIIIOBIIOBIIIIIIIB <-- string of spaCy IOBs
 
 Saddam Hussein fuit aux États-Unis.
 golden --> ['Saddam', 'Hussein', 'fuit', 'aux', 'États-Unis', '.']  ,['BIIIIIO', 'BIIIIIIO', 'BIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-output --> ['Saddam_Hussein', 'fuit', 'aux', 'États-Unis', '.']  ,['BIIIIIIIIIIIIIO', 'BIIIO', 'BIIO', 'BIIIIIIIII', 'B']
+[spacy -->] [Saddam] [Hussein] [fuit] [aux] [États-Unis] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BIIIO', 'BIIO', 'BIIIIIIIII', 'B']
 BIIIIIOBIIIIIIOBIIIOBIIOBIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIOBIIIOBIIOBIIIIIIIIIB <-- string of output IOBs
+BIIIIIOBIIIIIIOBIIIOBIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Auckland est une ville de Nouvelle-Zélande.
 golden --> ['Auckland', 'est', 'une', 'ville', 'de', 'Nouvelle-Zélande', '.']  ,['BIIIIIIIO', 'BIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIIIIIIIII', 'B']
-output --> ['Auckland', 'est', 'une', 'ville', 'de', 'Nouvelle-Zélande', '.']  ,['BIIIIIIIO', 'BIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIIIIIIIIIII', 'B']
+[spacy -->] [Auckland] [est] [une] [ville] [de] [Nouvelle] [-] [Zélande] [.]   ,['BIIIIIIIO', 'BIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIIIIIII', 'B', 'BIIIIII', 'B']
 BIIIIIIIOBIIOBIIOBIIIIOBIOBIIIIIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIOBIIOBIIOBIIIIOBIOBIIIIIIIIIIIIIIIB <-- string of output IOBs
+BIIIIIIIOBIIOBIIOBIIIIOBIOBIIIIIIIBBIIIIIIB <-- string of spaCy IOBs
 
 Mon père est grand.
 golden --> ['Mon', 'père', 'est', 'grand', '.']  ,['BIIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['Mon', 'père', 'est', 'grand', '.']  ,['BIIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [Mon] [père] [est] [grand] [.]   ,['BIIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
 BIIOBIIIOBIIOBIIIIB <-- string of golden IOBs
-BIIOBIIIOBIIOBIIIIB <-- string of output IOBs
+BIIOBIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Aurore Paquiss est marié à Chabrol.
 golden --> ['Aurore_Paquiss', 'est', 'marié', 'à', 'Chabrol', '.']  ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
-output --> ['Aurore_Paquiss', 'est', 'marié', 'à', 'Chabrol', '.']  ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
+[spacy -->] [Aurore] [Paquiss] [est] [marié] [à] [Chabrol] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIIIII', 'B']
 BIIIIIIIIIIIIIOBIIOBIIIIOBOBIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIOBIIOBIIIIOBOBIIIIIIB <-- string of output IOBs
+BIIIIIOBIIIIIIOBIIOBIIIIOBOBIIIIIIB <-- string of spaCy IOBs
 
 Henri Ford a fondé l'entreprise Ford.
 golden --> ['Henri_Ford', 'a', 'fondé', "l'", 'entreprise', 'Ford', '.']  ,['BIIIIIIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIIIIIIIIO', 'BIII', 'B']
-output --> ['Henri_Ford', 'a', 'fondé', "l'", 'entreprise', 'Ford', '.']  ,['BIIIIIIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIIIIIIIIO', 'BIII', 'B']
+[spacy -->] [Henri] [Ford] [a] [fondé] [l'] [entreprise] [Ford] [.]   ,['BIIIIO', 'BIIIO', 'BO', 'BIIIIO', 'BI', 'BIIIIIIIIIO', 'BIII', 'B']
 BIIIIIIIIIOBOBIIIIOBIBIIIIIIIIIOBIIIB <-- string of golden IOBs
-BIIIIIIIIIOBOBIIIIOBIBIIIIIIIIIOBIIIB <-- string of output IOBs
+BIIIIOBIIIOBOBIIIIOBIBIIIIIIIIIOBIIIB <-- string of spaCy IOBs
 
 La frontière est fermée.
 golden --> ['La', 'frontière', 'est', 'fermée', '.']  ,['BIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
-output --> ['La', 'frontière', 'est', 'fermée', '.']  ,['BIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
+[spacy -->] [La] [frontière] [est] [fermée] [.]   ,['BIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
 BIOBIIIIIIIIOBIIOBIIIIIB <-- string of golden IOBs
-BIOBIIIIIIIIOBIIOBIIIIIB <-- string of output IOBs
+BIOBIIIIIIIIOBIIOBIIIIIB <-- string of spaCy IOBs
 
 Tom est mon cousin.
 golden --> ['Tom', 'est', 'mon', 'cousin', '.']  ,['BIIO', 'BIIO', 'BIIO', 'BIIIII', 'B']
-output --> ['Tom', 'est', 'mon', 'cousin', '.']  ,['BIIO', 'BIIO', 'BIIO', 'BIIIII', 'B']
+[spacy -->] [Tom] [est] [mon] [cousin] [.]   ,['BIIO', 'BIIO', 'BIIO', 'BIIIII', 'B']
 BIIOBIIOBIIOBIIIIIB <-- string of golden IOBs
-BIIOBIIOBIIOBIIIIIB <-- string of output IOBs
+BIIOBIIOBIIOBIIIIIB <-- string of spaCy IOBs
 
 Senecal habite le Manoir Cortland.
 golden --> ['Senecal', 'habite', 'le', 'Manoir', 'Cortland', '.']  ,['BIIIIIIO', 'BIIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIII', 'B']
-output --> ['Senecal', 'habite', 'le', 'Manoir_Cortland', '.']  ,['BIIIIIIO', 'BIIIIIO', 'BIO', 'BIIIIIIIIIIIIII', 'B']
+[spacy -->] [Senecal] [habite] [le] [Manoir] [Cortland] [.]   ,['BIIIIIIO', 'BIIIIIO', 'BIO', 'BIIIIIO', 'BIIIIIII', 'B']
 BIIIIIIOBIIIIIOBIOBIIIIIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIOBIIIIIOBIOBIIIIIIIIIIIIIIB <-- string of output IOBs
+BIIIIIIOBIIIIIOBIOBIIIIIOBIIIIIIIB <-- string of spaCy IOBs
 
 Picasso est un artiste célèbre.
 golden --> ['Picasso', 'est', 'un', 'artiste', 'célèbre', '.']  ,['BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIII', 'B']
-output --> ['Picasso', 'est', 'un', 'artiste', 'célèbre', '.']  ,['BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIII', 'B']
+[spacy -->] [Picasso] [est] [un] [artiste] [célèbre] [.]   ,['BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIII', 'B']
 BIIIIIIOBIIOBIOBIIIIIIOBIIIIIIB <-- string of golden IOBs
-BIIIIIIOBIIOBIOBIIIIIIOBIIIIIIB <-- string of output IOBs
+BIIIIIIOBIIOBIOBIIIIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Le vent souffle.
 golden --> ['Le', 'vent', 'souffle', '.']  ,['BIO', 'BIIIO', 'BIIIIII', 'B']
-output --> ['Le', 'vent', 'souffle', '.']  ,['BIO', 'BIIIO', 'BIIIIII', 'B']
+[spacy -->] [Le] [vent] [souffle] [.]   ,['BIO', 'BIIIO', 'BIIIIII', 'B']
 BIOBIIIOBIIIIIIB <-- string of golden IOBs
-BIOBIIIOBIIIIIIB <-- string of output IOBs
+BIOBIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Sumatra est une île.
 golden --> ['Sumatra', 'est', 'une', 'île', '.']  ,['BIIIIIIO', 'BIIO', 'BIIO', 'BII', 'B']
-output --> ['Sumatra', 'est', 'une', 'île', '.']  ,['BIIIIIIO', 'BIIO', 'BIIO', 'BII', 'B']
+[spacy -->] [Sumatra] [est] [une] [île] [.]   ,['BIIIIIIO', 'BIIO', 'BIIO', 'BII', 'B']
 BIIIIIIOBIIOBIIOBIIB <-- string of golden IOBs
-BIIIIIIOBIIOBIIOBIIB <-- string of output IOBs
+BIIIIIIOBIIOBIIOBIIB <-- string of spaCy IOBs
 
 Deux plus deux égale quatre.
 golden --> ['Deux', 'plus', 'deux', 'égale', 'quatre', '.']  ,['BIIIO', 'BIIIO', 'BIIIO', 'BIIIIO', 'BIIIII', 'B']
-output --> ['Deux', 'plus', 'deux', 'égale', 'quatre', '.']  ,['BIIIO', 'BIIIO', 'BIIIO', 'BIIIIO', 'BIIIII', 'B']
+[spacy -->] [Deux] [plus] [deux] [égale] [quatre] [.]   ,['BIIIO', 'BIIIO', 'BIIIO', 'BIIIIO', 'BIIIII', 'B']
 BIIIOBIIIOBIIIOBIIIIOBIIIIIB <-- string of golden IOBs
-BIIIOBIIIOBIIIOBIIIIOBIIIIIB <-- string of output IOBs
+BIIIOBIIIOBIIIOBIIIIOBIIIIIB <-- string of spaCy IOBs
 
 Marilyn Monroe est morte il y a 33 ans.
 golden --> ['Marilyn_Monroe', 'est', 'morte', 'il_y_a', '33', 'ans', '.']  ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIIIIIO', 'BIO', 'BII', 'B']
-output --> ['Marilyn_Monroe', 'est', 'morte', 'il_y_a', '33', 'ans', '.']  ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIIIIIO', 'BIO', 'BII', 'B']
+[spacy -->] [Marilyn] [Monroe] [est] [morte] [il] [y] [a] [33] [ans] [.]   ,['BIIIIIIO', 'BIIIIIO', 'BIIO', 'BIIIIO', 'BIO', 'BO', 'BO', 'BIO', 'BII', 'B']
 BIIIIIIIIIIIIIOBIIOBIIIIOBIIIIIOBIOBIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIOBIIOBIIIIOBIIIIIOBIOBIIB <-- string of output IOBs
+BIIIIIIOBIIIIIOBIIOBIIIIOBIOBOBOBIOBIIB <-- string of spaCy IOBs
 
 Beaucoup de gens admire Nikklo.
 golden --> ['Beaucoup', 'de', 'gens', 'admire', 'Nikklo', '.']  ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIO', 'BIIIII', 'B']
-output --> ['Beaucoup', 'de', 'gens', 'admire', 'Nikklo', '.']  ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIO', 'BIIIII', 'B']
+[spacy -->] [Beaucoup] [de] [gens] [admire] [Nikklo] [.]   ,['BIIIIIIIO', 'BIO', 'BIIIO', 'BIIIIIO', 'BIIIII', 'B']
 BIIIIIIIOBIOBIIIOBIIIIIOBIIIIIB <-- string of golden IOBs
-BIIIIIIIOBIOBIIIOBIIIIIOBIIIIIB <-- string of output IOBs
+BIIIIIIIOBIOBIIIOBIIIIIOBIIIIIB <-- string of spaCy IOBs
 
 Sandra Goudie a perdu contre Max Purnell.
 golden --> ['Sandra_Goudie', 'a', 'perdu', 'contre', 'Max_Purnell.']  ,['BIIIIIIIIIIIIO', 'BO', 'BIIIIO', 'BIIIIIO', 'BIIIIIIIIII']
-output --> ['Sandra_Goudie', 'a', 'perdu', 'contre', 'Max_Purnell', '.']  ,['BIIIIIIIIIIIIO', 'BO', 'BIIIIO', 'BIIIIIO', 'BIIIIIIIIII', 'B']
+[spacy -->] [Sandra] [Goudie] [a] [perdu] [contre] [Max] [Purnell] [.]   ,['BIIIIIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
 BIIIIIIIIIIIIOBOBIIIIOBIIIIIOBIIIIIIIIII <-- string of golden IOBs
-BIIIIIIIIIIIIOBOBIIIIOBIIIIIOBIIIIIIIIIIB <-- string of output IOBs
+BIIIIIOBIIIIIOBOBIIIIOBIIIIIOBIIOBIIIIIIB <-- string of spaCy IOBs
 
 Le chat est sous la table.
 golden --> ['Le', 'chat', 'est', 'sous', 'la', 'table', '.']  ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Le', 'chat', 'est', 'sous', 'la', 'table', '.']  ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Le] [chat] [est] [sous] [la] [table] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
 BIOBIIIOBIIOBIIIOBIOBIIIIB <-- string of golden IOBs
-BIOBIIIOBIIOBIIIOBIOBIIIIB <-- string of output IOBs
+BIOBIIIOBIIOBIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 Les inondations ravagent l'Europe.
 golden --> ['Les', 'inondations', 'ravagent', "l'", 'Europe', '.']  ,['BIIO', 'BIIIIIIIIIIO', 'BIIIIIIIO', 'BI', 'BIIIII', 'B']
-output --> ['Les', 'inondations', 'ravagent', "l'", 'Europe', '.']  ,['BIIO', 'BIIIIIIIIIIO', 'BIIIIIIIO', 'BI', 'BIIIII', 'B']
+[spacy -->] [Les] [inondations] [ravagent] [l'] [Europe] [.]   ,['BIIO', 'BIIIIIIIIIIO', 'BIIIIIIIO', 'BI', 'BIIIII', 'B']
 BIIOBIIIIIIIIIIOBIIIIIIIOBIBIIIIIB <-- string of golden IOBs
-BIIOBIIIIIIIIIIOBIIIIIIIOBIBIIIIIB <-- string of output IOBs
+BIIOBIIIIIIIIIIOBIIIIIIIOBIBIIIIIB <-- string of spaCy IOBs
 
 Edison a inventé le Kinétoscope.
 golden --> ['Edison', 'a', 'inventé', 'le', 'Kinétoscope', '.']  ,['BIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIIII', 'B']
-output --> ['Edison', 'a', 'inventé', 'le', 'Kinétoscope', '.']  ,['BIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIIII', 'B']
+[spacy -->] [Edison] [a] [inventé] [le] [Kinétoscope] [.]   ,['BIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIIIIII', 'B']
 BIIIIIOBOBIIIIIIOBIOBIIIIIIIIIIB <-- string of golden IOBs
-BIIIIIOBOBIIIIIIOBIOBIIIIIIIIIIB <-- string of output IOBs
+BIIIIIOBOBIIIIIIOBIOBIIIIIIIIIIB <-- string of spaCy IOBs
 
 Mon chien est blanc.
 golden --> ['Mon', 'chien', 'est', 'blanc', '.']  ,['BIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['Mon', 'chien', 'est', 'blanc', '.']  ,['BIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [Mon] [chien] [est] [blanc] [.]   ,['BIIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
 BIIOBIIIIOBIIOBIIIIB <-- string of golden IOBs
-BIIOBIIIIOBIIOBIIIIB <-- string of output IOBs
+BIIOBIIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Leloir est né en Argentine.
 golden --> ['Leloir', 'est', 'né', 'en', 'Argentine', '.']  ,['BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
-output --> ['Leloir', 'est', 'né', 'en', 'Argentine', '.']  ,['BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
+[spacy -->] [Leloir] [est] [né] [en] [Argentine] [.]   ,['BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
 BIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of golden IOBs
-BIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of output IOBs
+BIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of spaCy IOBs
 
 El-Nashar a été arrêté en Egypte.
 golden --> ['El-Nashar', 'a', 'été', 'arrêté', 'en', 'Egypte', '.']  ,['BIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIII', 'B']
-output --> ['El-Nashar', 'a', 'été', 'arrêté', 'en', 'Egypte', '.']  ,['BIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIII', 'B']
+[spacy -->] [El] [-] [Nashar] [a] [été] [arrêté] [en] [Egypte] [.]   ,['BI', 'B', 'BIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIII', 'B']
 BIIIIIIIIOBOBIIOBIIIIIOBIOBIIIIIB <-- string of golden IOBs
-BIIIIIIIIOBOBIIOBIIIIIOBIOBIIIIIB <-- string of output IOBs
+BIBBIIIIIOBOBIIOBIIIIIOBIOBIIIIIB <-- string of spaCy IOBs
 
 Sylvia Costas est la femme d'Andy Sipowicz.
 golden --> ['Sylvia_Costas', 'est', 'la', 'femme', "d'", 'Andy_Sipowicz', '.']  ,['BIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BI', 'BIIIIIIIIIIII', 'B']
-output --> ['Sylvia_Costas', 'est', 'la', 'femme', "d'", 'Andy', 'Sipowicz', '.']  ,['BIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BI', 'BIIIO', 'BIIIIIII', 'B']
+[spacy -->] [Sylvia] [Costas] [est] [la] [femme] [d'] [Andy] [Sipowicz] [.]   ,['BIIIIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BI', 'BIIIO', 'BIIIIIII', 'B']
 BIIIIIIIIIIIIOBIIOBIOBIIIIOBIBIIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIOBIIOBIOBIIIIOBIBIIIOBIIIIIIIB <-- string of output IOBs
+BIIIIIOBIIIIIOBIIOBIOBIIIIOBIBIIIOBIIIIIIIB <-- string of spaCy IOBs
 
 PM a acheté trois usines russes.
 golden --> ['PM', 'a', 'acheté', 'trois', 'usines', 'russes', '.']  ,['BIO', 'BO', 'BIIIIIO', 'BIIIIO', 'BIIIIIO', 'BIIIII', 'B']
-output --> ['PM', 'a', 'acheté', 'trois', 'usines', 'russes', '.']  ,['BIO', 'BO', 'BIIIIIO', 'BIIIIO', 'BIIIIIO', 'BIIIII', 'B']
+[spacy -->] [PM] [a] [acheté] [trois] [usines] [russes] [.]   ,['BIO', 'BO', 'BIIIIIO', 'BIIIIO', 'BIIIIIO', 'BIIIII', 'B']
 BIOBOBIIIIIOBIIIIOBIIIIIOBIIIIIB <-- string of golden IOBs
-BIOBOBIIIIIOBIIIIOBIIIIIOBIIIIIB <-- string of output IOBs
+BIOBOBIIIIIOBIIIIOBIIIIIOBIIIIIB <-- string of spaCy IOBs
 
 Le chien a mordu l'homme.
 golden --> ['Le', 'chien', 'a', 'mordu', "l'", 'homme', '.']  ,['BIO', 'BIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIII', 'B']
-output --> ['Le', 'chien', 'a', 'mordu', "l'", 'homme', '.']  ,['BIO', 'BIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIII', 'B']
+[spacy -->] [Le] [chien] [a] [mordu] [l'] [homme] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIIIO', 'BI', 'BIIII', 'B']
 BIOBIIIIOBOBIIIIOBIBIIIIB <-- string of golden IOBs
-BIOBIIIIOBOBIIIIOBIBIIIIB <-- string of output IOBs
+BIOBIIIIOBOBIIIIOBIBIIIIB <-- string of spaCy IOBs
 
 Tu es saoul !
 golden --> ['Tu', 'es', 'saoul\u202f!']  ,['BIO', 'BIO', 'BIIIII']
-output --> ['Tu', 'es', 'saoul\u202f!']  ,['BIO', 'BIO', 'BIIIIII']
+[spacy -->] [Tu] [es] [saoul] [ ] [!]   ,['BIO', 'BIO', 'BIIII', 'B', 'B']
 BIOBIOBIIIII <-- string of golden IOBs
-BIOBIOBIIIIII <-- string of output IOBs
+BIOBIOBIIIIBB <-- string of spaCy IOBs
 
 Accardo a composé 24 Caprices.
 golden --> ['Accardo', 'a', 'composé', '24', 'Caprices', '.']  ,['BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIII', 'B']
-output --> ['Accardo', 'a', 'composé', '24', 'Caprices', '.']  ,['BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIII', 'B']
+[spacy -->] [Accardo] [a] [composé] [24] [Caprices] [.]   ,['BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIIII', 'B']
 BIIIIIIOBOBIIIIIIOBIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIOBOBIIIIIIOBIOBIIIIIIIB <-- string of output IOBs
+BIIIIIIOBOBIIIIIIOBIOBIIIIIIIB <-- string of spaCy IOBs
 
 La fille est seule.
 golden --> ['La', 'fille', 'est', 'seule', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['La', 'fille', 'est', 'seule', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [La] [fille] [est] [seule] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIII', 'B']
 BIOBIIIIOBIIOBIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIOBIIIIB <-- string of output IOBs
+BIOBIIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Pourquoi Jane est-elle allée à la gare ? 
 golden --> ['Pourquoi', 'Jane', 'est', '-elle', 'allée', 'à', 'la', 'gare', '?']  ,['BIIIIIIIO', 'BIIIO', 'BII', 'BIIIIO', 'BIIIIO', 'BO', 'BIO', 'BIIIO', 'B']
-output --> ['Pourquoi_Jane', 'est', '-elle', 'allée', 'à', 'la', 'gare', '?']  ,['BIIIIIIIIIIIIO', 'BII', 'BIIIIO', 'BIIIIO', 'BO', 'BIO', 'BIIIO', 'B']
+[spacy -->] [Pourquoi] [Jane] [est-elle] [allée] [à] [la] [gare] [?]   ,['BIIIIIIIO', 'BIIIO', 'BIIIIIIIO', 'BIIIIO', 'BO', 'BIO', 'BIIIO', 'B']
 BIIIIIIIOBIIIOBIIBIIIIOBIIIIOBOBIOBIIIOB <-- string of golden IOBs
-BIIIIIIIIIIIIOBIIBIIIIOBIIIIOBOBIOBIIIOB <-- string of output IOBs
+BIIIIIIIOBIIIOBIIIIIIIOBIIIIOBOBIOBIIIOB <-- string of spaCy IOBs
 
 Texas Instruments produit des téléphones portables.
 golden --> ['Texas_Instruments', 'produit', 'des', 'téléphones', 'portables', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIIO', 'BIIIIIIII', 'B']
-output --> ['Texas_Instruments', 'produit', 'des', 'téléphones', 'portables', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIIO', 'BIIIIIIII', 'B']
+[spacy -->] [Texas] [Instruments] [produit] [des] [téléphones] [portables] [.]   ,['BIIIIO', 'BIIIIIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIIO', 'BIIIIIIII', 'B']
 BIIIIIIIIIIIIIIIIOBIIIIIIOBIIOBIIIIIIIIIOBIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIOBIIIIIIOBIIOBIIIIIIIIIOBIIIIIIIIB <-- string of output IOBs
+BIIIIOBIIIIIIIIIIOBIIIIIIOBIIOBIIIIIIIIIOBIIIIIIIIB <-- string of spaCy IOBs
 
 C'est un scientifique.
 golden --> ["C'", 'est', 'un', 'scientifique', '.']  ,['BI', 'BIIO', 'BIO', 'BIIIIIIIIIII', 'B']
-output --> ["C'", 'est', 'un', 'scientifique', '.']  ,['BI', 'BIIO', 'BIO', 'BIIIIIIIIIII', 'B']
+[spacy -->] [C'] [est] [un] [scientifique] [.]   ,['BI', 'BIIO', 'BIO', 'BIIIIIIIIIII', 'B']
 BIBIIOBIOBIIIIIIIIIIIB <-- string of golden IOBs
-BIBIIOBIOBIIIIIIIIIIIB <-- string of output IOBs
+BIBIIOBIOBIIIIIIIIIIIB <-- string of spaCy IOBs
 
 Ce drapeau est très joli.
 golden --> ['Ce', 'drapeau', 'est', 'très', 'joli', '.']  ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIO', 'BIII', 'B']
-output --> ['Ce', 'drapeau', 'est', 'très', 'joli', '.']  ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIO', 'BIII', 'B']
+[spacy -->] [Ce] [drapeau] [est] [très] [joli] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIIIO', 'BIII', 'B']
 BIOBIIIIIIOBIIOBIIIOBIIIB <-- string of golden IOBs
-BIOBIIIIIIOBIIOBIIIOBIIIB <-- string of output IOBs
+BIOBIIIIIIOBIIOBIIIOBIIIB <-- string of spaCy IOBs
 
 Les blessés ont été transportés en ambulance.
 golden --> ['Les', 'blessés', 'ont', 'été', 'transportés', 'en', 'ambulance', '.']  ,['BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
-output --> ['Les', 'blessés', 'ont', 'été', 'transportés', 'en', 'ambulance', '.']  ,['BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
+[spacy -->] [Les] [blessés] [ont] [été] [transportés] [en] [ambulance] [.]   ,['BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIIIO', 'BIO', 'BIIIIIIII', 'B']
 BIIOBIIIIIIOBIIOBIIOBIIIIIIIIIIOBIOBIIIIIIIIB <-- string of golden IOBs
-BIIOBIIIIIIOBIIOBIIOBIIIIIIIIIIOBIOBIIIIIIIIB <-- string of output IOBs
+BIIOBIIIIIIOBIIOBIIOBIIIIIIIIIIOBIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Tom a une voiture.
 golden --> ['Tom', 'a', 'une', 'voiture', '.']  ,['BIIO', 'BO', 'BIIO', 'BIIIIII', 'B']
-output --> ['Tom', 'a', 'une', 'voiture', '.']  ,['BIIO', 'BO', 'BIIO', 'BIIIIII', 'B']
+[spacy -->] [Tom] [a] [une] [voiture] [.]   ,['BIIO', 'BO', 'BIIO', 'BIIIIII', 'B']
 BIIOBOBIIOBIIIIIIB <-- string of golden IOBs
-BIIOBOBIIOBIIIIIIB <-- string of output IOBs
+BIIOBOBIIOBIIIIIIB <-- string of spaCy IOBs
 
 Le film 'speed' a été réalisé par Jan De Bont.
 golden --> ['Le', 'film', "'speed'", 'a', 'été', 'réalisé', 'par', 'Jan_De_Bont', '.']  ,['BIO', 'BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
-output --> ['Le', 'film', "'speed'", 'a', 'été', 'réalisé', 'par', 'Jan_De_Bont', '.']  ,['BIO', 'BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
+[spacy -->] [Le] [film] ['] [speed] ['] [a] [été] [réalisé] [par] [Jan] [De] [Bont] [.]   ,['BIO', 'BIIIO', 'B', 'BIIII', 'BO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIII', 'B']
 BIOBIIIOBIIIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of golden IOBs
-BIOBIIIOBIIIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of output IOBs
+BIOBIIIOBBIIIIBOBOBIIOBIIIIIIOBIIOBIIOBIOBIIIB <-- string of spaCy IOBs
 
 Le groupe de rock Spock's Beard vient du Japon.
 golden --> ['Le', 'groupe', 'de', 'rock', "Spock's_Beard", 'vient', 'du', 'Japon', '.']  ,['BIO', 'BIIIIIO', 'BIO', 'BIIIO', 'BIIIIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Le', 'groupe', 'de', 'rock', "Spock'", 's', 'Beard', 'vient', 'du', 'Japon', '.']  ,['BIO', 'BIIIIIO', 'BIO', 'BIIIO', 'BIIIII', 'BO', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Le] [groupe] [de] [rock] [Spock'] [s] [Beard] [vient] [du] [Japon] [.]   ,['BIO', 'BIIIIIO', 'BIO', 'BIIIO', 'BIIIII', 'BO', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIII', 'B']
 BIOBIIIIIOBIOBIIIOBIIIIIIIIIIIIOBIIIIOBIOBIIIIB <-- string of golden IOBs
-BIOBIIIIIOBIOBIIIOBIIIIIBOBIIIIOBIIIIOBIOBIIIIB <-- string of output IOBs
+BIOBIIIIIOBIOBIIIOBIIIIIBOBIIIIOBIIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 Le film 'speed' a été réalisé par Jan De Bont.
 golden --> ['Le', 'film', "'speed'", 'a', 'été', 'réalisé', 'par', 'Jan_De_Bont', '.']  ,['BIO', 'BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
-output --> ['Le', 'film', "'speed'", 'a', 'été', 'réalisé', 'par', 'Jan_De_Bont', '.']  ,['BIO', 'BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIIIIIIIII', 'B']
+[spacy -->] [Le] [film] ['] [speed] ['] [a] [été] [réalisé] [par] [Jan] [De] [Bont] [.]   ,['BIO', 'BIIIO', 'B', 'BIIII', 'BO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIII', 'B']
 BIOBIIIOBIIIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of golden IOBs
-BIOBIIIOBIIIIIIOBOBIIOBIIIIIIOBIIOBIIIIIIIIIIB <-- string of output IOBs
+BIOBIIIOBBIIIIBOBOBIIOBIIIIIIOBIIOBIIOBIOBIIIB <-- string of spaCy IOBs
 
 Une éponge absorbe l'eau.
 golden --> ['Une', 'éponge', 'absorbe', "l'", 'eau', '.']  ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BI', 'BII', 'B']
-output --> ['Une', 'éponge', 'absorbe', "l'", 'eau', '.']  ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BI', 'BII', 'B']
+[spacy -->] [Une] [éponge] [absorbe] [l'] [eau] [.]   ,['BIIO', 'BIIIIIO', 'BIIIIIIO', 'BI', 'BII', 'B']
 BIIOBIIIIIOBIIIIIIOBIBIIB <-- string of golden IOBs
-BIIOBIIIIIOBIIIIIIOBIBIIB <-- string of output IOBs
+BIIOBIIIIIOBIIIIIIOBIBIIB <-- string of spaCy IOBs
 
 L'eau n'est pas potable.
 golden --> ["L'", 'eau', "n'", 'est', 'pas', 'potable', '.']  ,['BI', 'BIIO', 'BI', 'BIIO', 'BIIO', 'BIIIIII', 'B']
-output --> ["L'", 'eau', "n'", 'est', 'pas', 'potable', '.']  ,['BI', 'BIIO', 'BI', 'BIIO', 'BIIO', 'BIIIIII', 'B']
+[spacy -->] [L'] [eau] [n'] [est] [pas] [potable] [.]   ,['BI', 'BIIO', 'BI', 'BIIO', 'BIIO', 'BIIIIII', 'B']
 BIBIIOBIBIIOBIIOBIIIIIIB <-- string of golden IOBs
-BIBIIOBIBIIOBIIOBIIIIIIB <-- string of output IOBs
+BIBIIOBIBIIOBIIOBIIIIIIB <-- string of spaCy IOBs
 
 Personne n'est parfait.
 golden --> ['Personne', "n'", 'est', 'parfait', '.']  ,['BIIIIIIIO', 'BI', 'BIIO', 'BIIIIII', 'B']
-output --> ['Personne', "n'", 'est', 'parfait', '.']  ,['BIIIIIIIO', 'BI', 'BIIO', 'BIIIIII', 'B']
+[spacy -->] [Personne] [n'] [est] [parfait] [.]   ,['BIIIIIIIO', 'BI', 'BIIO', 'BIIIIII', 'B']
 BIIIIIIIOBIBIIOBIIIIIIB <-- string of golden IOBs
-BIIIIIIIOBIBIIOBIIIIIIB <-- string of output IOBs
+BIIIIIIIOBIBIIOBIIIIIIB <-- string of spaCy IOBs
 
 Tout le monde s'est moqué de lui.
 golden --> ['Tout', 'le', 'monde', "s'", 'est', 'moqué', 'de', 'lui', '.']  ,['BIIIO', 'BIO', 'BIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BII', 'B']
-output --> ['Tout', 'le', 'monde', "s'", 'est', 'moqué', 'de', 'lui', '.']  ,['BIIIO', 'BIO', 'BIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BII', 'B']
+[spacy -->] [Tout] [le] [monde] [s'] [est] [moqué] [de] [lui] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BI', 'BIIO', 'BIIIIO', 'BIO', 'BII', 'B']
 BIIIOBIOBIIIIOBIBIIOBIIIIOBIOBIIB <-- string of golden IOBs
-BIIIOBIOBIIIIOBIBIIOBIIIIOBIOBIIB <-- string of output IOBs
+BIIIOBIOBIIIIOBIBIIOBIIIIOBIOBIIB <-- string of spaCy IOBs
 
 J'ai 18 ans.
 golden --> ["J'", 'ai', '18', 'ans', '.']  ,['BI', 'BIO', 'BIO', 'BII', 'B']
-output --> ["J'", 'ai', '18', 'ans', '.']  ,['BI', 'BIO', 'BIO', 'BII', 'B']
+[spacy -->] [J'] [ai] [18] [ans] [.]   ,['BI', 'BIO', 'BIO', 'BII', 'B']
 BIBIOBIOBIIB <-- string of golden IOBs
-BIBIOBIOBIIB <-- string of output IOBs
+BIBIOBIOBIIB <-- string of spaCy IOBs
 
 Tout le monde a ri.
 golden --> ['Tout', 'le', 'monde', 'a', 'ri', '.']  ,['BIIIO', 'BIO', 'BIIIIO', 'BO', 'BI', 'B']
-output --> ['Tout', 'le', 'monde', 'a', 'ri', '.']  ,['BIIIO', 'BIO', 'BIIIIO', 'BO', 'BI', 'B']
+[spacy -->] [Tout] [le] [monde] [a] [ri] [.]   ,['BIIIO', 'BIO', 'BIIIIO', 'BO', 'BI', 'B']
 BIIIOBIOBIIIIOBOBIB <-- string of golden IOBs
-BIIIOBIOBIIIIOBOBIB <-- string of output IOBs
+BIIIOBIOBIIIIOBOBIB <-- string of spaCy IOBs
 
 GUS a vendu Wehkamp.
 golden --> ['GUS', 'a', 'vendu', 'Wehkamp', '.']  ,['BIIO', 'BO', 'BIIIIO', 'BIIIIII', 'B']
-output --> ['GUS', 'a', 'vendu', 'Wehkamp', '.']  ,['BIIO', 'BO', 'BIIIIO', 'BIIIIII', 'B']
+[spacy -->] [GUS] [a] [vendu] [Wehkamp] [.]   ,['BIIO', 'BO', 'BIIIIO', 'BIIIIII', 'B']
 BIIOBOBIIIIOBIIIIIIB <-- string of golden IOBs
-BIIOBOBIIIIOBIIIIIIB <-- string of output IOBs
+BIIOBOBIIIIOBIIIIIIB <-- string of spaCy IOBs
 
 André Henri Constant van Hasselt a fait ces études à Maastricht.
 golden --> ['André_Henri_Constant_van_Hasselt', 'a', 'fait', 'ces', 'études', 'à', 'Maastricht', '.']  ,['BIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIO', 'BO', 'BIIIO', 'BIIO', 'BIIIIIO', 'BO', 'BIIIIIIIII', 'B']
-output --> ['André_Henri_Constant', 'van', 'Hasselt', 'a', 'fait', 'ces', 'études', 'à', 'Maastricht', '.']  ,['BIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIIIIIIO', 'BO', 'BIIIO', 'BIIO', 'BIIIIIO', 'BO', 'BIIIIIIIII', 'B']
+[spacy -->] [André] [Henri] [Constant] [van] [Hasselt] [a] [fait] [ces] [études] [à] [Maastricht] [.]   ,['BIIIIO', 'BIIIIO', 'BIIIIIIIO', 'BIIO', 'BIIIIIIO', 'BO', 'BIIIO', 'BIIO', 'BIIIIIO', 'BO', 'BIIIIIIIII', 'B']
 BIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOBOBIIIOBIIOBIIIIIOBOBIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIIIIOBIIOBIIIIIIOBOBIIIOBIIOBIIIIIOBOBIIIIIIIIIB <-- string of output IOBs
+BIIIIOBIIIIOBIIIIIIIOBIIOBIIIIIIOBOBIIIOBIIOBIIIIIOBOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Wolfgang Amadeus Mozart est né à Salzbourg.
 golden --> ['Wolfgang_Amadeus_Mozart', 'est', 'né', 'à', 'Salzbourg', '.']  ,['BIIIIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BO', 'BIIIIIIII', 'B']
-output --> ['Wolfgang_Amadeus_Mozart', 'est', 'né', 'à', 'Salzbourg', '.']  ,['BIIIIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BO', 'BIIIIIIII', 'B']
+[spacy -->] [Wolfgang] [Amadeus] [Mozart] [est] [né] [à] [Salzbourg] [.]   ,['BIIIIIIIO', 'BIIIIIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BO', 'BIIIIIIII', 'B']
 BIIIIIIIIIIIIIIIIIIIIIIOBIIOBIOBOBIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIIIIIIIOBIIOBIOBOBIIIIIIIIB <-- string of output IOBs
+BIIIIIIIOBIIIIIIOBIIIIIOBIIOBIOBOBIIIIIIIIB <-- string of spaCy IOBs
 
 Il faudrait repasser cette chemise.
 golden --> ['Il', 'faudrait', 'repasser', 'cette', 'chemise', '.']  ,['BIO', 'BIIIIIIIO', 'BIIIIIIIO', 'BIIIIO', 'BIIIIII', 'B']
-output --> ['Il', 'faudrait', 'repasser', 'cette', 'chemise', '.']  ,['BIO', 'BIIIIIIIO', 'BIIIIIIIO', 'BIIIIO', 'BIIIIII', 'B']
+[spacy -->] [Il] [faudrait] [repasser] [cette] [chemise] [.]   ,['BIO', 'BIIIIIIIO', 'BIIIIIIIO', 'BIIIIO', 'BIIIIII', 'B']
 BIOBIIIIIIIOBIIIIIIIOBIIIIOBIIIIIIB <-- string of golden IOBs
-BIOBIIIIIIIOBIIIIIIIOBIIIIOBIIIIIIB <-- string of output IOBs
+BIOBIIIIIIIOBIIIIIIIOBIIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Le thé coûte deux euros.
 golden --> ['Le', 'thé', 'coûte', 'deux', 'euros', '.']  ,['BIO', 'BIIO', 'BIIIIO', 'BIIIO', 'BIIII', 'B']
-output --> ['Le', 'thé', 'coûte', 'deux', 'euros', '.']  ,['BIO', 'BIIO', 'BIIIIO', 'BIIIO', 'BIIII', 'B']
+[spacy -->] [Le] [thé] [coûte] [deux] [euros] [.]   ,['BIO', 'BIIO', 'BIIIIO', 'BIIIO', 'BIIII', 'B']
 BIOBIIOBIIIIOBIIIOBIIIIB <-- string of golden IOBs
-BIOBIIOBIIIIOBIIIOBIIIIB <-- string of output IOBs
+BIOBIIOBIIIIOBIIIOBIIIIB <-- string of spaCy IOBs
 
 Ibrahim Sofu a été assassiné par Metin Kaplan.
 golden --> ['Ibrahim_Sofu', 'a', 'été', 'assassiné', 'par', 'Metin_Kaplan', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIIIIIIIII', 'B']
-output --> ['Ibrahim_Sofu', 'a', 'été', 'assassiné', 'par', 'Metin_Kaplan', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIIIIIIIII', 'B']
+[spacy -->] [Ibrahim] [Sofu] [a] [été] [assassiné] [par] [Metin] [Kaplan] [.]   ,['BIIIIIIO', 'BIIIO', 'BO', 'BIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIIIII', 'B']
 BIIIIIIIIIIIOBOBIIOBIIIIIIIIOBIIOBIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIOBOBIIOBIIIIIIIIOBIIOBIIIIIIIIIIIB <-- string of output IOBs
+BIIIIIIOBIIIOBOBIIOBIIIIIIIIOBIIOBIIIIOBIIIIIB <-- string of spaCy IOBs
 
 Le garçon parle à son grand-père.
 golden --> ['Le', 'garçon', 'parle', 'à', 'son', 'grand-père', '.']  ,['BIO', 'BIIIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
-output --> ['Le', 'garçon', 'parle', 'à', 'son', 'grand-père', '.']  ,['BIO', 'BIIIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
+[spacy -->] [Le] [garçon] [parle] [à] [son] [grand-père] [.]   ,['BIO', 'BIIIIIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIIII', 'B']
 BIOBIIIIIOBIIIIOBOBIIOBIIIIIIIIIB <-- string of golden IOBs
-BIOBIIIIIOBIIIIOBOBIIOBIIIIIIIIIB <-- string of output IOBs
+BIOBIIIIIOBIIIIOBOBIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Le Kanchenjunga fait 8586 mètres de haut.
 golden --> ['Le', 'Kanchenjunga', 'fait', '8586', 'mètres', 'de', 'haut', '.']  ,['BIO', 'BIIIIIIIIIIIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
-output --> ['Le', 'Kanchenjunga', 'fait', '8586', 'mètres', 'de', 'haut', '.']  ,['BIO', 'BIIIIIIIIIIIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
+[spacy -->] [Le] [Kanchenjunga] [fait] [8586] [mètres] [de] [haut] [.]   ,['BIO', 'BIIIIIIIIIIIO', 'BIIIO', 'BIIIO', 'BIIIIIO', 'BIO', 'BIII', 'B']
 BIOBIIIIIIIIIIIOBIIIOBIIIOBIIIIIOBIOBIIIB <-- string of golden IOBs
-BIOBIIIIIIIIIIIOBIIIOBIIIOBIIIIIOBIOBIIIB <-- string of output IOBs
+BIOBIIIIIIIIIIIOBIIIOBIIIOBIIIIIOBIOBIIIB <-- string of spaCy IOBs
 
 Le policier porte un masque à gaz.
 golden --> ['Le', 'policier', 'porte', 'un', 'masque', 'à', 'gaz', '.']  ,['BIO', 'BIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BO', 'BII', 'B']
-output --> ['Le', 'policier', 'porte', 'un', 'masque', 'à', 'gaz', '.']  ,['BIO', 'BIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BO', 'BII', 'B']
+[spacy -->] [Le] [policier] [porte] [un] [masque] [à] [gaz] [.]   ,['BIO', 'BIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BO', 'BII', 'B']
 BIOBIIIIIIIOBIIIIOBIOBIIIIIOBOBIIB <-- string of golden IOBs
-BIOBIIIIIIIOBIIIIOBIOBIIIIIOBOBIIB <-- string of output IOBs
+BIOBIIIIIIIOBIIIIOBIOBIIIIIOBOBIIB <-- string of spaCy IOBs
 
 O.J. Simpson a été accusé de meurtre.
 golden --> ['O.J._Simpson', 'a', 'été', 'accusé', 'de', 'meurtre', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIIII', 'B']
-output --> ['O.J._Simpson', 'a', 'été', 'accusé', 'de', 'meurtre', '.']  ,['BIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIIII', 'B']
+[spacy -->] [O.J.] [Simpson] [a] [été] [accusé] [de] [meurtre] [.]   ,['BIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIIIII', 'B']
 BIIIIIIIIIIIOBOBIIOBIIIIIOBIOBIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIOBOBIIOBIIIIIOBIOBIIIIIIB <-- string of output IOBs
+BIIIOBIIIIIIOBOBIIOBIIIIIOBIOBIIIIIIB <-- string of spaCy IOBs
 
 Betty est une tueuse en série.
 golden --> ['Betty', 'est', 'une', 'tueuse', 'en', 'série', '.']  ,['BIIIIO', 'BIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Betty', 'est', 'une', 'tueuse', 'en', 'série', '.']  ,['BIIIIO', 'BIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Betty] [est] [une] [tueuse] [en] [série] [.]   ,['BIIIIO', 'BIIO', 'BIIO', 'BIIIIIO', 'BIO', 'BIIII', 'B']
 BIIIIOBIIOBIIOBIIIIIOBIOBIIIIB <-- string of golden IOBs
-BIIIIOBIIOBIIOBIIIIIOBIOBIIIIB <-- string of output IOBs
+BIIIIOBIIOBIIOBIIIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 Je comprends.
 golden --> ['Je', 'comprends', '.']  ,['BIO', 'BIIIIIIII', 'B']
-output --> ['Je', 'comprends', '.']  ,['BIO', 'BIIIIIIII', 'B']
+[spacy -->] [Je] [comprends] [.]   ,['BIO', 'BIIIIIIII', 'B']
 BIOBIIIIIIIIB <-- string of golden IOBs
-BIOBIIIIIIIIB <-- string of output IOBs
+BIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Jerry Reinsdorf a remporté 7 championnats.
 golden --> ['Jerry_Reinsdorf', 'a', 'remporté', '7', 'championnats', '.']  ,['BIIIIIIIIIIIIIIO', 'BO', 'BIIIIIIIO', 'BO', 'BIIIIIIIIIII', 'B']
-output --> ['Jerry_Reinsdorf', 'a', 'remporté', '7', 'championnats', '.']  ,['BIIIIIIIIIIIIIIO', 'BO', 'BIIIIIIIO', 'BO', 'BIIIIIIIIIII', 'B']
+[spacy -->] [Jerry] [Reinsdorf] [a] [remporté] [7] [championnats] [.]   ,['BIIIIO', 'BIIIIIIIIO', 'BO', 'BIIIIIIIO', 'BO', 'BIIIIIIIIIII', 'B']
 BIIIIIIIIIIIIIIOBOBIIIIIIIOBOBIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIOBOBIIIIIIIOBOBIIIIIIIIIIIB <-- string of output IOBs
+BIIIIOBIIIIIIIIOBOBIIIIIIIOBOBIIIIIIIIIIIB <-- string of spaCy IOBs
 
 La porte n'était pas fermée.
 golden --> ['La', 'porte', "n'", 'était', 'pas', 'fermée', '.']  ,['BIO', 'BIIIIO', 'BI', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
-output --> ['La', 'porte', "n'", 'était', 'pas', 'fermée', '.']  ,['BIO', 'BIIIIO', 'BI', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
+[spacy -->] [La] [porte] [n'] [était] [pas] [fermée] [.]   ,['BIO', 'BIIIIO', 'BI', 'BIIIIO', 'BIIO', 'BIIIII', 'B']
 BIOBIIIIOBIBIIIIOBIIOBIIIIIB <-- string of golden IOBs
-BIOBIIIIOBIBIIIIOBIIOBIIIIIB <-- string of output IOBs
+BIOBIIIIOBIBIIIIOBIIOBIIIIIB <-- string of spaCy IOBs
 
 Spartan Air Lines a racheté United Airways.
 golden --> ['Spartan_Air_Lines', 'a', 'racheté', 'United_Airways', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIIIIIIIIIIIII', 'B']
-output --> ['Spartan_Air_Lines', 'a', 'racheté', 'United_Airways', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIIIIIO', 'BIIIIIIIIIIIII', 'B']
+[spacy -->] [Spartan] [Air] [Lines] [a] [racheté] [United] [Airways] [.]   ,['BIIIIIIO', 'BIIO', 'BIIIIO', 'BO', 'BIIIIIIO', 'BIIIIIO', 'BIIIIII', 'B']
 BIIIIIIIIIIIIIIIIOBOBIIIIIIOBIIIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIOBOBIIIIIIOBIIIIIIIIIIIIIB <-- string of output IOBs
+BIIIIIIOBIIOBIIIIOBOBIIIIIIOBIIIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Vladislav Listyev a été tué à Moscou.
 golden --> ['Vladislav_Listyev', 'a', 'été', 'tué', 'à', 'Moscou', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIO', 'BO', 'BIIIII', 'B']
-output --> ['Vladislav_Listyev', 'a', 'été', 'tué', 'à', 'Moscou', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIO', 'BO', 'BIIIII', 'B']
+[spacy -->] [Vladislav] [Listyev] [a] [été] [tué] [à] [Moscou] [.]   ,['BIIIIIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIO', 'BO', 'BIIIII', 'B']
 BIIIIIIIIIIIIIIIIOBOBIIOBIIOBOBIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIOBOBIIOBIIOBOBIIIIIB <-- string of output IOBs
+BIIIIIIIIOBIIIIIIOBOBIIOBIIOBOBIIIIIB <-- string of spaCy IOBs
 
 Le docteur a examiné les patients.
 golden --> ['Le', 'docteur', 'a', 'examiné', 'les', 'patients', '.']  ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIIO', 'BIIIIIII', 'B']
-output --> ['Le', 'docteur', 'a', 'examiné', 'les', 'patients', '.']  ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIIO', 'BIIIIIII', 'B']
+[spacy -->] [Le] [docteur] [a] [examiné] [les] [patients] [.]   ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIIO', 'BIIIIIII', 'B']
 BIOBIIIIIIOBOBIIIIIIOBIIOBIIIIIIIB <-- string of golden IOBs
-BIOBIIIIIIOBOBIIIIIIOBIIOBIIIIIIIB <-- string of output IOBs
+BIOBIIIIIIOBOBIIIIIIOBIIOBIIIIIIIB <-- string of spaCy IOBs
 
 Un éléphant a un long nez.
 golden --> ['Un', 'éléphant', 'a', 'un', 'long', 'nez', '.']  ,['BIO', 'BIIIIIIIO', 'BO', 'BIO', 'BIIIO', 'BII', 'B']
-output --> ['Un', 'éléphant', 'a', 'un', 'long', 'nez', '.']  ,['BIO', 'BIIIIIIIO', 'BO', 'BIO', 'BIIIO', 'BII', 'B']
+[spacy -->] [Un] [éléphant] [a] [un] [long] [nez] [.]   ,['BIO', 'BIIIIIIIO', 'BO', 'BIO', 'BIIIO', 'BII', 'B']
 BIOBIIIIIIIOBOBIOBIIIOBIIB <-- string of golden IOBs
-BIOBIIIIIIIOBOBIOBIIIOBIIB <-- string of output IOBs
+BIOBIIIIIIIOBOBIOBIIIOBIIB <-- string of spaCy IOBs
 
 L'argent est sur la table.
 golden --> ["L'", 'argent', 'est', 'sur', 'la', 'table', '.']  ,['BI', 'BIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIII', 'B']
-output --> ["L'", 'argent', 'est', 'sur', 'la', 'table', '.']  ,['BI', 'BIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [L'] [argent] [est] [sur] [la] [table] [.]   ,['BI', 'BIIIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIII', 'B']
 BIBIIIIIOBIIOBIIOBIOBIIIIB <-- string of golden IOBs
-BIBIIIIIOBIIOBIIOBIOBIIIIB <-- string of output IOBs
+BIBIIIIIOBIIOBIIOBIOBIIIIB <-- string of spaCy IOBs
 
 Un dollar vaut cent cents.
 golden --> ['Un', 'dollar', 'vaut', 'cent', 'cents', '.']  ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIIO', 'BIIII', 'B']
-output --> ['Un', 'dollar', 'vaut', 'cent', 'cents', '.']  ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIIO', 'BIIII', 'B']
+[spacy -->] [Un] [dollar] [vaut] [cent] [cents] [.]   ,['BIO', 'BIIIIIO', 'BIIIO', 'BIIIO', 'BIIII', 'B']
 BIOBIIIIIOBIIIOBIIIOBIIIIB <-- string of golden IOBs
-BIOBIIIIIOBIIIOBIIIOBIIIIB <-- string of output IOBs
+BIOBIIIIIOBIIIOBIIIOBIIIIB <-- string of spaCy IOBs
 
 Bervely travaillait pour WEDCOR.
 golden --> ['Bervely', 'travaillait', 'pour', 'WEDCOR', '.']  ,['BIIIIIIO', 'BIIIIIIIIIIO', 'BIIIO', 'BIIIII', 'B']
-output --> ['Bervely', 'travaillait', 'pour', 'WEDCOR.']  ,['BIIIIIIO', 'BIIIIIIIIIIO', 'BIIIO', 'BIIIIII']
+[spacy -->] [Bervely] [travaillait] [pour] [WEDCOR] [.]   ,['BIIIIIIO', 'BIIIIIIIIIIO', 'BIIIO', 'BIIIII', 'B']
 BIIIIIIOBIIIIIIIIIIOBIIIOBIIIIIB <-- string of golden IOBs
-BIIIIIIOBIIIIIIIIIIOBIIIOBIIIIII <-- string of output IOBs
+BIIIIIIOBIIIIIIIIIIOBIIIOBIIIIIB <-- string of spaCy IOBs
 
 Ma femme a une pneumonie.
 golden --> ['Ma', 'femme', 'a', 'une', 'pneumonie', '.']  ,['BIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIII', 'B']
-output --> ['Ma', 'femme', 'a', 'une', 'pneumonie', '.']  ,['BIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIII', 'B']
+[spacy -->] [Ma] [femme] [a] [une] [pneumonie] [.]   ,['BIO', 'BIIIIO', 'BO', 'BIIO', 'BIIIIIIII', 'B']
 BIOBIIIIOBOBIIOBIIIIIIIIB <-- string of golden IOBs
-BIOBIIIIOBOBIIOBIIIIIIIIB <-- string of output IOBs
+BIOBIIIIOBOBIIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Nikos Kourkoulos était un acteur grec.
 golden --> ['Nikos_Kourkoulos', 'était', 'un', 'acteur', 'grec', '.']  ,['BIIIIIIIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIII', 'B']
-output --> ['Nikos_Kourkoulos', 'était', 'un', 'acteur', 'grec', '.']  ,['BIIIIIIIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIII', 'B']
+[spacy -->] [Nikos] [Kourkoulos] [était] [un] [acteur] [grec] [.]   ,['BIIIIO', 'BIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIO', 'BIII', 'B']
 BIIIIIIIIIIIIIIIOBIIIIOBIOBIIIIIOBIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIOBIIIIOBIOBIIIIIOBIIIB <-- string of output IOBs
+BIIIIOBIIIIIIIIIOBIIIIOBIOBIIIIIOBIIIB <-- string of spaCy IOBs
 
 Klaus Pohl est un dramaturge allemand.
 golden --> ['Klaus_Pohl', 'est', 'un', 'dramaturge', 'allemand', '.']  ,['BIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIIIIO', 'BIIIIIII', 'B']
-output --> ['Klaus_Pohl', 'est', 'un', 'dramaturge', 'allemand', '.']  ,['BIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIIIIO', 'BIIIIIII', 'B']
+[spacy -->] [Klaus] [Pohl] [est] [un] [dramaturge] [allemand] [.]   ,['BIIIIO', 'BIIIO', 'BIIO', 'BIO', 'BIIIIIIIIIO', 'BIIIIIII', 'B']
 BIIIIIIIIIOBIIOBIOBIIIIIIIIIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIOBIIOBIOBIIIIIIIIIOBIIIIIIIB <-- string of output IOBs
+BIIIIOBIIIOBIIOBIOBIIIIIIIIIOBIIIIIIIB <-- string of spaCy IOBs
 
 Ken est content.
 golden --> ['Ken', 'est', 'content', '.']  ,['BIIO', 'BIIO', 'BIIIIII', 'B']
-output --> ['Ken', 'est', 'content', '.']  ,['BIIO', 'BIIO', 'BIIIIII', 'B']
+[spacy -->] [Ken] [est] [content] [.]   ,['BIIO', 'BIIO', 'BIIIIII', 'B']
 BIIOBIIOBIIIIIIB <-- string of golden IOBs
-BIIOBIIOBIIIIIIB <-- string of output IOBs
+BIIOBIIOBIIIIIIB <-- string of spaCy IOBs
 
 J'ai soif.
 golden --> ["J'", 'ai', 'soif', '.']  ,['BI', 'BIO', 'BIII', 'B']
-output --> ["J'", 'ai', 'soif', '.']  ,['BI', 'BIO', 'BIII', 'B']
+[spacy -->] [J'] [ai] [soif] [.]   ,['BI', 'BIO', 'BIII', 'B']
 BIBIOBIIIB <-- string of golden IOBs
-BIBIOBIIIB <-- string of output IOBs
+BIBIOBIIIB <-- string of spaCy IOBs
 
 Mary a giflé Tom.
 golden --> ['Mary', 'a', 'giflé', 'Tom', '.']  ,['BIIIO', 'BO', 'BIIIIO', 'BII', 'B']
-output --> ['Mary', 'a', 'giflé', 'Tom', '.']  ,['BIIIO', 'BO', 'BIIIIO', 'BII', 'B']
+[spacy -->] [Mary] [a] [giflé] [Tom] [.]   ,['BIIIO', 'BO', 'BIIIIO', 'BII', 'B']
 BIIIOBOBIIIIOBIIB <-- string of golden IOBs
-BIIIOBOBIIIIOBIIB <-- string of output IOBs
+BIIIOBOBIIIIOBIIB <-- string of spaCy IOBs
 
 J'ai mangé du caviar.
 golden --> ["J'", 'ai', 'mangé', 'du', 'caviar', '.']  ,['BI', 'BIO', 'BIIIIO', 'BIO', 'BIIIII', 'B']
-output --> ["J'", 'ai', 'mangé', 'du', 'caviar', '.']  ,['BI', 'BIO', 'BIIIIO', 'BIO', 'BIIIII', 'B']
+[spacy -->] [J'] [ai] [mangé] [du] [caviar] [.]   ,['BI', 'BIO', 'BIIIIO', 'BIO', 'BIIIII', 'B']
 BIBIOBIIIIOBIOBIIIIIB <-- string of golden IOBs
-BIBIOBIIIIOBIOBIIIIIB <-- string of output IOBs
+BIBIOBIIIIOBIOBIIIIIB <-- string of spaCy IOBs
 
 Il neige.
 golden --> ['Il', 'neige', '.']  ,['BIO', 'BIIII', 'B']
-output --> ['Il', 'neige', '.']  ,['BIO', 'BIIII', 'B']
+[spacy -->] [Il] [neige] [.]   ,['BIO', 'BIIII', 'B']
 BIOBIIIIB <-- string of golden IOBs
-BIOBIIIIB <-- string of output IOBs
+BIOBIIIIB <-- string of spaCy IOBs
 
 L'oiseau vole.
 golden --> ["L'", 'oiseau', 'vole', '.']  ,['BI', 'BIIIIIO', 'BIII', 'B']
-output --> ["L'", 'oiseau', 'vole', '.']  ,['BI', 'BIIIIIO', 'BIII', 'B']
+[spacy -->] [L'] [oiseau] [vole] [.]   ,['BI', 'BIIIIIO', 'BIII', 'B']
 BIBIIIIIOBIIIB <-- string of golden IOBs
-BIBIIIIIOBIIIB <-- string of output IOBs
+BIBIIIIIOBIIIB <-- string of spaCy IOBs
 
 Louis Riel a assassiné Scott.
 golden --> ['Louis_Riel', 'a', 'assassiné', 'Scott', '.']  ,['BIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIII', 'B']
-output --> ['Louis_Riel', 'a', 'assassiné', 'Scott', '.']  ,['BIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIII', 'B']
+[spacy -->] [Louis] [Riel] [a] [assassiné] [Scott] [.]   ,['BIIIIO', 'BIIIO', 'BO', 'BIIIIIIIIO', 'BIIII', 'B']
 BIIIIIIIIIOBOBIIIIIIIIOBIIIIB <-- string of golden IOBs
-BIIIIIIIIIOBOBIIIIIIIIOBIIIIB <-- string of output IOBs
+BIIIIOBIIIOBOBIIIIIIIIOBIIIIB <-- string of spaCy IOBs
 
 Ce seau fuit.
 golden --> ['Ce', 'seau', 'fuit', '.']  ,['BIO', 'BIIIO', 'BIII', 'B']
-output --> ['Ce', 'seau', 'fuit', '.']  ,['BIO', 'BIIIO', 'BIII', 'B']
+[spacy -->] [Ce] [seau] [fuit] [.]   ,['BIO', 'BIIIO', 'BIII', 'B']
 BIOBIIIOBIIIB <-- string of golden IOBs
-BIOBIIIOBIIIB <-- string of output IOBs
+BIOBIIIOBIIIB <-- string of spaCy IOBs
 
 Le pape Jean-Paul II est né en Pologne.
 golden --> ['Le', 'pape', 'Jean-Paul_II', 'est', 'né', 'en', 'Pologne', '.']  ,['BIO', 'BIIIO', 'BIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIII', 'B']
-output --> ['Le', 'pape', 'Jean-Paul', 'II', 'est', 'né', 'en', 'Pologne', '.']  ,['BIO', 'BIIIO', 'BIIIIIIIIO', 'BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIII', 'B']
+[spacy -->] [Le] [pape] [Jean-Paul] [II] [est] [né] [en] [Pologne] [.]   ,['BIO', 'BIIIO', 'BIIIIIIIIO', 'BIO', 'BIIO', 'BIO', 'BIO', 'BIIIIII', 'B']
 BIOBIIIOBIIIIIIIIIIIOBIIOBIOBIOBIIIIIIB <-- string of golden IOBs
-BIOBIIIOBIIIIIIIIOBIOBIIOBIOBIOBIIIIIIB <-- string of output IOBs
+BIOBIIIOBIIIIIIIIOBIOBIIOBIOBIOBIIIIIIB <-- string of spaCy IOBs
 
 Je suis boulanger.
 golden --> ['Je', 'suis', 'boulanger', '.']  ,['BIO', 'BIIIO', 'BIIIIIIII', 'B']
-output --> ['Je', 'suis', 'boulanger', '.']  ,['BIO', 'BIIIO', 'BIIIIIIII', 'B']
+[spacy -->] [Je] [suis] [boulanger] [.]   ,['BIO', 'BIIIO', 'BIIIIIIII', 'B']
 BIOBIIIOBIIIIIIIIB <-- string of golden IOBs
-BIOBIIIOBIIIIIIIIB <-- string of output IOBs
+BIOBIIIOBIIIIIIIIB <-- string of spaCy IOBs
 
 La reine Elizabeth I est morte en 1603.
 golden --> ['La', 'reine', 'Elizabeth_I', 'est', 'morte', 'en', '1603', '.']  ,['BIO', 'BIIIIO', 'BIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIII', 'B']
-output --> ['La', 'reine', 'Elizabeth_I', 'est', 'morte', 'en', '1603', '.']  ,['BIO', 'BIIIIO', 'BIIIIIIIIIIO', 'BIIO', 'BIIIIO', 'BIO', 'BIII', 'B']
+[spacy -->] [La] [reine] [Elizabeth] [I] [est] [morte] [en] [1603] [.]   ,['BIO', 'BIIIIO', 'BIIIIIIIIO', 'BO', 'BIIO', 'BIIIIO', 'BIO', 'BIII', 'B']
 BIOBIIIIOBIIIIIIIIIIOBIIOBIIIIOBIOBIIIB <-- string of golden IOBs
-BIOBIIIIOBIIIIIIIIIIOBIIOBIIIIOBIOBIIIB <-- string of output IOBs
+BIOBIIIIOBIIIIIIIIOBOBIIOBIIIIOBIOBIIIB <-- string of spaCy IOBs
 
 Marlowe a été arrêté par les autorités italiennes.
 golden --> ['Marlowe', 'a', 'été', 'arrêté', 'par', 'les', 'autorités', 'italiennes', '.']  ,['BIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
-output --> ['Marlowe', 'a', 'été', 'arrêté', 'par', 'les', 'autorités', 'italiennes', '.']  ,['BIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
+[spacy -->] [Marlowe] [a] [été] [arrêté] [par] [les] [autorités] [italiennes] [.]   ,['BIIIIIIO', 'BO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIIO', 'BIIIIIIIIO', 'BIIIIIIIII', 'B']
 BIIIIIIOBOBIIOBIIIIIOBIIOBIIOBIIIIIIIIOBIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIOBOBIIOBIIIIIOBIIOBIIOBIIIIIIIIOBIIIIIIIIIB <-- string of output IOBs
+BIIIIIIOBOBIIOBIIIIIOBIIOBIIOBIIIIIIIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Gianni Versace est un styliste.
 golden --> ['Gianni_Versace', 'est', 'un', 'styliste', '.']  ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
-output --> ['Gianni_Versace', 'est', 'un', 'styliste', '.']  ,['BIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
+[spacy -->] [Gianni] [Versace] [est] [un] [styliste] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
 BIIIIIIIIIIIIIOBIIOBIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIOBIIOBIOBIIIIIIIB <-- string of output IOBs
+BIIIIIOBIIIIIIOBIIOBIOBIIIIIIIB <-- string of spaCy IOBs
 
 Personne ne me comprend.
 golden --> ['Personne', 'ne', 'me', 'comprend', '.']  ,['BIIIIIIIO', 'BIO', 'BIO', 'BIIIIIII', 'B']
-output --> ['Personne', 'ne', 'me', 'comprend', '.']  ,['BIIIIIIIO', 'BIO', 'BIO', 'BIIIIIII', 'B']
+[spacy -->] [Personne] [ne] [me] [comprend] [.]   ,['BIIIIIIIO', 'BIO', 'BIO', 'BIIIIIII', 'B']
 BIIIIIIIOBIOBIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIIOBIOBIOBIIIIIIIB <-- string of output IOBs
+BIIIIIIIOBIOBIOBIIIIIIIB <-- string of spaCy IOBs
 
 Reinventing Comics est un livre de Scott McCloud.
 golden --> ['Reinventing_Comics', 'est', 'un', 'livre', 'de', 'Scott_McCloud', '.']  ,['BIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BIO', 'BIIIIIIIIIIII', 'B']
-output --> ['Reinventing_Comics', 'est', 'un', 'livre', 'de', 'Scott', 'McCloud', '.']  ,['BIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BIO', 'BIIIIO', 'BIIIIII', 'B']
+[spacy -->] [Reinventing] [Comics] [est] [un] [livre] [de] [Scott] [McCloud] [.]   ,['BIIIIIIIIIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIIIIO', 'BIO', 'BIIIIO', 'BIIIIII', 'B']
 BIIIIIIIIIIIIIIIIIOBIIOBIOBIIIIOBIOBIIIIIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIIOBIIOBIOBIIIIOBIOBIIIIOBIIIIIIB <-- string of output IOBs
+BIIIIIIIIIIOBIIIIIOBIIOBIOBIIIIOBIOBIIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Johann Wolfgang von Goethe est né en Allemagne.
 golden --> ['Johann_Wolfgang_von_Goethe', 'est', 'né', 'en', 'Allemagne', '.']  ,['BIIIIIIIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
-output --> ['Johann_Wolfgang', 'von', 'Goethe', 'est', 'né', 'en', 'Allemagne', '.']  ,['BIIIIIIIIIIIIIIO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
+[spacy -->] [Johann] [Wolfgang] [von] [Goethe] [est] [né] [en] [Allemagne] [.]   ,['BIIIIIO', 'BIIIIIIIO', 'BIIO', 'BIIIIIO', 'BIIO', 'BIO', 'BIO', 'BIIIIIIII', 'B']
 BIIIIIIIIIIIIIIIIIIIIIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIOBIIOBIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of output IOBs
+BIIIIIOBIIIIIIIOBIIOBIIIIIOBIIOBIOBIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Le chirurgien a amputé la mauvaise jambe.
 golden --> ['Le', 'chirurgien', 'a', 'amputé', 'la', 'mauvaise', 'jambe', '.']  ,['BIO', 'BIIIIIIIIIO', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIIIO', 'BIIII', 'B']
-output --> ['Le', 'chirurgien', 'a', 'amputé', 'la', 'mauvaise', 'jambe', '.']  ,['BIO', 'BIIIIIIIIIO', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIIIO', 'BIIII', 'B']
+[spacy -->] [Le] [chirurgien] [a] [amputé] [la] [mauvaise] [jambe] [.]   ,['BIO', 'BIIIIIIIIIO', 'BO', 'BIIIIIO', 'BIO', 'BIIIIIIIO', 'BIIII', 'B']
 BIOBIIIIIIIIIOBOBIIIIIOBIOBIIIIIIIOBIIIIB <-- string of golden IOBs
-BIOBIIIIIIIIIOBOBIIIIIOBIOBIIIIIIIOBIIIIB <-- string of output IOBs
+BIOBIIIIIIIIIOBOBIIIIIOBIOBIIIIIIIOBIIIIB <-- string of spaCy IOBs
 
 Le vin était excellent.
 golden --> ['Le', 'vin', 'était', 'excellent', '.']  ,['BIO', 'BIIO', 'BIIIIO', 'BIIIIIIII', 'B']
-output --> ['Le', 'vin', 'était', 'excellent', '.']  ,['BIO', 'BIIO', 'BIIIIO', 'BIIIIIIII', 'B']
+[spacy -->] [Le] [vin] [était] [excellent] [.]   ,['BIO', 'BIIO', 'BIIIIO', 'BIIIIIIII', 'B']
 BIOBIIOBIIIIOBIIIIIIIIB <-- string of golden IOBs
-BIOBIIOBIIIIOBIIIIIIIIB <-- string of output IOBs
+BIOBIIOBIIIIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Ma mère est belle.
 golden --> ['Ma', 'mère', 'est', 'belle', '.']  ,['BIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
-output --> ['Ma', 'mère', 'est', 'belle', '.']  ,['BIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [Ma] [mère] [est] [belle] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIII', 'B']
 BIOBIIIOBIIOBIIIIB <-- string of golden IOBs
-BIOBIIIOBIIOBIIIIB <-- string of output IOBs
+BIOBIIIOBIIOBIIIIB <-- string of spaCy IOBs
 
 Nous comprenons.
 golden --> ['Nous', 'comprenons', '.']  ,['BIIIO', 'BIIIIIIIII', 'B']
-output --> ['Nous', 'comprenons', '.']  ,['BIIIO', 'BIIIIIIIII', 'B']
+[spacy -->] [Nous] [comprenons] [.]   ,['BIIIO', 'BIIIIIIIII', 'B']
 BIIIOBIIIIIIIIIB <-- string of golden IOBs
-BIIIOBIIIIIIIIIB <-- string of output IOBs
+BIIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Manchester United a battu Fulham.
 golden --> ['Manchester_United', 'a', 'battu', 'Fulham', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIIIO', 'BIIIII', 'B']
-output --> ['Manchester_United', 'a', 'battu', 'Fulham', '.']  ,['BIIIIIIIIIIIIIIIIO', 'BO', 'BIIIIO', 'BIIIII', 'B']
+[spacy -->] [Manchester] [United] [a] [battu] [Fulham] [.]   ,['BIIIIIIIIIO', 'BIIIIIO', 'BO', 'BIIIIO', 'BIIIII', 'B']
 BIIIIIIIIIIIIIIIIOBOBIIIIOBIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIOBOBIIIIOBIIIIIB <-- string of output IOBs
+BIIIIIIIIIOBIIIIIOBOBIIIIOBIIIIIB <-- string of spaCy IOBs
 
 L'école commence à 8h30.
 golden --> ["L'", 'école', 'commence', 'à', '8h30', '.']  ,['BI', 'BIIIIO', 'BIIIIIIIO', 'BO', 'BIII', 'B']
-output --> ["L'", 'école', 'commence', 'à', '8h30', '.']  ,['BI', 'BIIIIO', 'BIIIIIIIO', 'BO', 'BIII', 'B']
+[spacy -->] [L'] [école] [commence] [à] [8h30] [.]   ,['BI', 'BIIIIO', 'BIIIIIIIO', 'BO', 'BIII', 'B']
 BIBIIIIOBIIIIIIIOBOBIIIB <-- string of golden IOBs
-BIBIIIIOBIIIIIIIOBOBIIIB <-- string of output IOBs
+BIBIIIIOBIIIIIIIOBOBIIIB <-- string of spaCy IOBs
 
 Je m'appelle Antonio.
 golden --> ['Je', "m'", 'appelle', 'Antonio', '.']  ,['BIO', 'BI', 'BIIIIIIO', 'BIIIIII', 'B']
-output --> ['Je', "m'", 'appelle', 'Antonio', '.']  ,['BIO', 'BI', 'BIIIIIIO', 'BIIIIII', 'B']
+[spacy -->] [Je] [m'] [appelle] [Antonio] [.]   ,['BIO', 'BI', 'BIIIIIIO', 'BIIIIII', 'B']
 BIOBIBIIIIIIOBIIIIIIB <-- string of golden IOBs
-BIOBIBIIIIIIOBIIIIIIB <-- string of output IOBs
+BIOBIBIIIIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Un docteur a examiné M. Brown.
 golden --> ['Un', 'docteur', 'a', 'examiné', 'M.', 'Brown', '.']  ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Un', 'docteur', 'a', 'examiné', 'M._Brown', '.']  ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIIIIIII', 'B']
+[spacy -->] [Un] [docteur] [a] [examiné] [M.] [Brown] [.]   ,['BIO', 'BIIIIIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIII', 'B']
 BIOBIIIIIIOBOBIIIIIIOBIOBIIIIB <-- string of golden IOBs
-BIOBIIIIIIOBOBIIIIIIOBIIIIIIIB <-- string of output IOBs
+BIOBIIIIIIOBOBIIIIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 Tom est fort.
 golden --> ['Tom', 'est', 'fort', '.']  ,['BIIO', 'BIIO', 'BIII', 'B']
-output --> ['Tom', 'est', 'fort', '.']  ,['BIIO', 'BIIO', 'BIII', 'B']
+[spacy -->] [Tom] [est] [fort] [.]   ,['BIIO', 'BIIO', 'BIII', 'B']
 BIIOBIIOBIIIB <-- string of golden IOBs
-BIIOBIIOBIIIB <-- string of output IOBs
+BIIOBIIOBIIIB <-- string of spaCy IOBs
 
 BSN a acheté RJR Nabisco.
 golden --> ['BSN', 'a', 'acheté', 'RJR_Nabisco', '.']  ,['BIIO', 'BO', 'BIIIIIO', 'BIIIIIIIIII', 'B']
-output --> ['BSN', 'a', 'acheté', 'RJR', 'Nabisco', '.']  ,['BIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
+[spacy -->] [BSN] [a] [acheté] [RJR] [Nabisco] [.]   ,['BIIO', 'BO', 'BIIIIIO', 'BIIO', 'BIIIIII', 'B']
 BIIOBOBIIIIIOBIIIIIIIIIIB <-- string of golden IOBs
-BIIOBOBIIIIIOBIIOBIIIIIIB <-- string of output IOBs
+BIIOBOBIIIIIOBIIOBIIIIIIB <-- string of spaCy IOBs
 
 Il a bu une bière.
 golden --> ['Il', 'a', 'bu', 'une', 'bière', '.']  ,['BIO', 'BO', 'BIO', 'BIIO', 'BIIII', 'B']
-output --> ['Il', 'a', 'bu', 'une', 'bière', '.']  ,['BIO', 'BO', 'BIO', 'BIIO', 'BIIII', 'B']
+[spacy -->] [Il] [a] [bu] [une] [bière] [.]   ,['BIO', 'BO', 'BIO', 'BIIO', 'BIIII', 'B']
 BIOBOBIOBIIOBIIIIB <-- string of golden IOBs
-BIOBOBIOBIIOBIIIIB <-- string of output IOBs
+BIOBOBIOBIIOBIIIIB <-- string of spaCy IOBs
 
 La tarte est délicieuse.
 golden --> ['La', 'tarte', 'est', 'délicieuse', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
-output --> ['La', 'tarte', 'est', 'délicieuse', '.']  ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
+[spacy -->] [La] [tarte] [est] [délicieuse] [.]   ,['BIO', 'BIIIIO', 'BIIO', 'BIIIIIIIII', 'B']
 BIOBIIIIOBIIOBIIIIIIIIIB <-- string of golden IOBs
-BIOBIIIIOBIIOBIIIIIIIIIB <-- string of output IOBs
+BIOBIIIIOBIIOBIIIIIIIIIB <-- string of spaCy IOBs
 
 Qin Shi Huang était le premier empereur de Chine.
 golden --> ['Qin_Shi_Huang', 'était', 'le', 'premier', 'empereur', 'de', 'Chine', '.']  ,['BIIIIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Qin_Shi_Huang', 'était', 'le', 'premier', 'empereur', 'de', 'Chine', '.']  ,['BIIIIIIIIIIIIO', 'BIIIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Qin] [Shi] [Huang] [était] [le] [premier] [empereur] [de] [Chine] [.]   ,['BIIO', 'BIIO', 'BIIIIO', 'BIIIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIIO', 'BIO', 'BIIII', 'B']
 BIIIIIIIIIIIIOBIIIIOBIOBIIIIIIOBIIIIIIIOBIOBIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIOBIIIIOBIOBIIIIIIOBIIIIIIIOBIOBIIIIB <-- string of output IOBs
+BIIOBIIOBIIIIOBIIIIOBIOBIIIIIIOBIIIIIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 M. Zhao est mort à Pékin.
 golden --> ['M.', 'Zhao', 'est', 'mort', 'à', 'Pékin', '.']  ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BO', 'BIIII', 'B']
-output --> ['M._Zhao', 'est', 'mort', 'à', 'Pékin', '.']  ,['BIIIIIIO', 'BIIO', 'BIIIO', 'BO', 'BIIII', 'B']
+[spacy -->] [M.] [Zhao] [est] [mort] [à] [Pékin] [.]   ,['BIO', 'BIIIO', 'BIIO', 'BIIIO', 'BO', 'BIIII', 'B']
 BIOBIIIOBIIOBIIIOBOBIIIIB <-- string of golden IOBs
-BIIIIIIOBIIOBIIIOBOBIIIIB <-- string of output IOBs
+BIOBIIIOBIIOBIIIOBOBIIIIB <-- string of spaCy IOBs
 
 Gabriel Garcia Marquez est un écrivain.
 golden --> ['Gabriel_Garcia_Marquez', 'est', 'un', 'écrivain', '.']  ,['BIIIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
-output --> ['Gabriel_Garcia_Marquez', 'est', 'un', 'écrivain', '.']  ,['BIIIIIIIIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
+[spacy -->] [Gabriel] [Garcia] [Marquez] [est] [un] [écrivain] [.]   ,['BIIIIIIO', 'BIIIIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIII', 'B']
 BIIIIIIIIIIIIIIIIIIIIIOBIIOBIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIIIIIIIIOBIIOBIOBIIIIIIIB <-- string of output IOBs
+BIIIIIIOBIIIIIOBIIIIIIOBIIOBIOBIIIIIIIB <-- string of spaCy IOBs
 
 Nancy Ianiero a été tuée à Mexico.
 golden --> ['Nancy_Ianiero', 'a', 'été', 'tuée', 'à', 'Mexico', '.']  ,['BIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIO', 'BO', 'BIIIII', 'B']
-output --> ['Nancy_Ianiero', 'a', 'été', 'tuée', 'à', 'Mexico', '.']  ,['BIIIIIIIIIIIIO', 'BO', 'BIIO', 'BIIIO', 'BO', 'BIIIII', 'B']
+[spacy -->] [Nancy] [Ianiero] [a] [été] [tuée] [à] [Mexico] [.]   ,['BIIIIO', 'BIIIIIIO', 'BO', 'BIIO', 'BIIIO', 'BO', 'BIIIII', 'B']
 BIIIIIIIIIIIIOBOBIIOBIIIOBOBIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIOBOBIIOBIIIOBOBIIIIIB <-- string of output IOBs
+BIIIIOBIIIIIIOBOBIIOBIIIOBOBIIIIIB <-- string of spaCy IOBs
 
 Verdens Gang est un journal norvégien.
 golden --> ['Verdens_Gang', 'est', 'un', 'journal', 'norvégien', '.']  ,['BIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
-output --> ['Verdens_Gang', 'est', 'un', 'journal', 'norvégien', '.']  ,['BIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
+[spacy -->] [Verdens] [Gang] [est] [un] [journal] [norvégien] [.]   ,['BIIIIIIO', 'BIIIO', 'BIIO', 'BIO', 'BIIIIIIO', 'BIIIIIIII', 'B']
 BIIIIIIIIIIIOBIIOBIOBIIIIIIOBIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIOBIIOBIOBIIIIIIOBIIIIIIIIB <-- string of output IOBs
+BIIIIIIOBIIIOBIIOBIOBIIIIIIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Qui a inventé la radio ?
 golden --> ['Qui', 'a', 'inventé', 'la', 'radio', '?']  ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'B']
-output --> ['Qui', 'a', 'inventé', 'la', 'radio', '?']  ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'B']
+[spacy -->] [Qui] [a] [inventé] [la] [radio] [?]   ,['BIIO', 'BO', 'BIIIIIIO', 'BIO', 'BIIIIO', 'B']
 BIIOBOBIIIIIIOBIOBIIIIOB <-- string of golden IOBs
-BIIOBOBIIIIIIOBIOBIIIIOB <-- string of output IOBs
+BIIOBOBIIIIIIOBIOBIIIIOB <-- string of spaCy IOBs
 
 Nelson Beavers a travaillé pour Eurofins.
 golden --> ['Nelson_Beavers', 'a', 'travaillé', 'pour', 'Eurofins', '.']  ,['BIIIIIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIIIIIII', 'B']
-output --> ['Nelson_Beavers', 'a', 'travaillé', 'pour', 'Eurofins', '.']  ,['BIIIIIIIIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIIIIIII', 'B']
+[spacy -->] [Nelson] [Beavers] [a] [travaillé] [pour] [Eurofins] [.]   ,['BIIIIIO', 'BIIIIIIO', 'BO', 'BIIIIIIIIO', 'BIIIO', 'BIIIIIII', 'B']
 BIIIIIIIIIIIIIOBOBIIIIIIIIOBIIIOBIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIOBOBIIIIIIIIOBIIIOBIIIIIIIB <-- string of output IOBs
+BIIIIIOBIIIIIIOBOBIIIIIIIIOBIIIOBIIIIIIIB <-- string of spaCy IOBs
 
 Il a été attaqué par un requin.
 golden --> ['Il', 'a', 'été', 'attaqué', 'par', 'un', 'requin', '.']  ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIII', 'B']
-output --> ['Il', 'a', 'été', 'attaqué', 'par', 'un', 'requin', '.']  ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIII', 'B']
+[spacy -->] [Il] [a] [été] [attaqué] [par] [un] [requin] [.]   ,['BIO', 'BO', 'BIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIII', 'B']
 BIOBOBIIOBIIIIIIOBIIOBIOBIIIIIB <-- string of golden IOBs
-BIOBOBIIOBIIIIIIOBIIOBIOBIIIIIB <-- string of output IOBs
+BIOBOBIIOBIIIIIIOBIIOBIOBIIIIIB <-- string of spaCy IOBs
 
 Les chats attrapent des souris.
 golden --> ['Les', 'chats', 'attrapent', 'des', 'souris', '.']  ,['BIIO', 'BIIIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
-output --> ['Les', 'chats', 'attrapent', 'des', 'souris', '.']  ,['BIIO', 'BIIIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
+[spacy -->] [Les] [chats] [attrapent] [des] [souris] [.]   ,['BIIO', 'BIIIIO', 'BIIIIIIIIO', 'BIIO', 'BIIIII', 'B']
 BIIOBIIIIOBIIIIIIIIOBIIOBIIIIIB <-- string of golden IOBs
-BIIOBIIIIOBIIIIIIIIOBIIOBIIIIIB <-- string of output IOBs
+BIIOBIIIIOBIIIIIIIIOBIIOBIIIIIB <-- string of spaCy IOBs
 
 Un dauphin est un mammifère.
 golden --> ['Un', 'dauphin', 'est', 'un', 'mammifère', '.']  ,['BIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
-output --> ['Un', 'dauphin', 'est', 'un', 'mammifère', '.']  ,['BIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
+[spacy -->] [Un] [dauphin] [est] [un] [mammifère] [.]   ,['BIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
 BIOBIIIIIIOBIIOBIOBIIIIIIIIB <-- string of golden IOBs
-BIOBIIIIIIOBIIOBIOBIIIIIIIIB <-- string of output IOBs
+BIOBIIIIIIOBIIOBIOBIIIIIIIIB <-- string of spaCy IOBs
 
 Elle est heureuse.
 golden --> ['Elle', 'est', 'heureuse', '.']  ,['BIIIO', 'BIIO', 'BIIIIIII', 'B']
-output --> ['Elle', 'est', 'heureuse', '.']  ,['BIIIO', 'BIIO', 'BIIIIIII', 'B']
+[spacy -->] [Elle] [est] [heureuse] [.]   ,['BIIIO', 'BIIO', 'BIIIIIII', 'B']
 BIIIOBIIOBIIIIIIIB <-- string of golden IOBs
-BIIIOBIIOBIIIIIIIB <-- string of output IOBs
+BIIIOBIIOBIIIIIIIB <-- string of spaCy IOBs
 
 John a hérité d'une grosse fortune.
 golden --> ['John', 'a', 'hérité', "d'", 'une', 'grosse', 'fortune', '.']  ,['BIIIO', 'BO', 'BIIIIIO', 'BI', 'BIIO', 'BIIIIIO', 'BIIIIII', 'B']
-output --> ['John', 'a', 'hérité', "d'", 'une', 'grosse', 'fortune', '.']  ,['BIIIO', 'BO', 'BIIIIIO', 'BI', 'BIIO', 'BIIIIIO', 'BIIIIII', 'B']
+[spacy -->] [John] [a] [hérité] [d'] [une] [grosse] [fortune] [.]   ,['BIIIO', 'BO', 'BIIIIIO', 'BI', 'BIIO', 'BIIIIIO', 'BIIIIII', 'B']
 BIIIOBOBIIIIIOBIBIIOBIIIIIOBIIIIIIB <-- string of golden IOBs
-BIIIOBOBIIIIIOBIBIIOBIIIIIOBIIIIIIB <-- string of output IOBs
+BIIIOBOBIIIIIOBIBIIOBIIIIIOBIIIIIIB <-- string of spaCy IOBs
 
 Stephen Hawking est un physicien.
 golden --> ['Stephen_Hawking', 'est', 'un', 'physicien', '.']  ,['BIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
-output --> ['Stephen_Hawking', 'est', 'un', 'physicien', '.']  ,['BIIIIIIIIIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
+[spacy -->] [Stephen] [Hawking] [est] [un] [physicien] [.]   ,['BIIIIIIO', 'BIIIIIIO', 'BIIO', 'BIO', 'BIIIIIIII', 'B']
 BIIIIIIIIIIIIIIOBIIOBIOBIIIIIIIIB <-- string of golden IOBs
-BIIIIIIIIIIIIIIOBIIOBIOBIIIIIIIIB <-- string of output IOBs
+BIIIIIIOBIIIIIIOBIIOBIOBIIIIIIIIB <-- string of spaCy IOBs
 
 John est bon en mathématiques.
 golden --> ['John', 'est', 'bon', 'en', 'mathématiques', '.']  ,['BIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIIIIIIIIIII', 'B']
-output --> ['John', 'est', 'bon', 'en', 'mathématiques', '.']  ,['BIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIIIIIIIIIII', 'B']
+[spacy -->] [John] [est] [bon] [en] [mathématiques] [.]   ,['BIIIO', 'BIIO', 'BIIO', 'BIO', 'BIIIIIIIIIIII', 'B']
 BIIIOBIIOBIIOBIOBIIIIIIIIIIIIB <-- string of golden IOBs
-BIIIOBIIOBIIOBIOBIIIIIIIIIIIIB <-- string of output IOBs
+BIIIOBIIOBIIOBIOBIIIIIIIIIIIIB <-- string of spaCy IOBs
 
 C'est mon ami.
 golden --> ["C'", 'est', 'mon', 'ami', '.']  ,['BI', 'BIIO', 'BIIO', 'BII', 'B']
-output --> ["C'", 'est', 'mon', 'ami', '.']  ,['BI', 'BIIO', 'BIIO', 'BII', 'B']
+[spacy -->] [C'] [est] [mon] [ami] [.]   ,['BI', 'BIIO', 'BIIO', 'BII', 'B']
 BIBIIOBIIOBIIB <-- string of golden IOBs
-BIBIIOBIIOBIIB <-- string of output IOBs
+BIBIIOBIIOBIIB <-- string of spaCy IOBs
 
 Il faisait chaud dans la pièce.
 golden --> ['Il', 'faisait', 'chaud', 'dans', 'la', 'pièce', '.']  ,['BIO', 'BIIIIIIO', 'BIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
-output --> ['Il', 'faisait', 'chaud', 'dans', 'la', 'pièce', '.']  ,['BIO', 'BIIIIIIO', 'BIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
+[spacy -->] [Il] [faisait] [chaud] [dans] [la] [pièce] [.]   ,['BIO', 'BIIIIIIO', 'BIIIIO', 'BIIIO', 'BIO', 'BIIII', 'B']
 BIOBIIIIIIOBIIIIOBIIIOBIOBIIIIB <-- string of golden IOBs
-BIOBIIIIIIOBIIIIOBIIIOBIOBIIIIB <-- string of output IOBs
+BIOBIIIIIIOBIIIIOBIIIOBIOBIIIIB <-- string of spaCy IOBs
 
 992 <-- expected
- 984 <-- correct
- 995 <-- provided
+ 991 <-- correct
+ 1067 <-- provided
  ##########################
 
 ...........Evaluation Results ............
-Precision:  0.9889447236180905
-Recall:  0.9919354838709677
-F1-measure:  0.9904378459989933
+Precision:  0.9287722586691659
+Recall:  0.998991935483871
+F1-measure:  0.9626032054395339

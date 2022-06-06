@@ -50,3 +50,10 @@ Run the command `python agreement.py` with optional argument:
 </ul>
 
 the result will be stored in a text file named `agreement.txt` in the current folder.
+
+## 5. Evaluation of spacy:
+Run the command `python spacy_evaluation.py` with optional argument:
+<ul>
+	<li> --file : should be followed by the name of the file containing extention (.tsv) located in the parent folder </li>
+</ul>
+the result will be stored in a text file named `spaCy_evaluation.txt` in the current folder.

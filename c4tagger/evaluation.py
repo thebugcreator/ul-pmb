@@ -4,6 +4,7 @@ from analysis import get_cooccurrences
 from tagger import manual_tagging
 from sklearn import metrics
 import numpy as np
+import matplotlib.pyplot as plt
 
 # %%
 # Get the language bounded resources
@@ -11,6 +12,7 @@ language = "it"
 rules = get_tagging_rules(language, sample_size=1000)
 indf = get_data_from_tsv(language)
 in_cooc_df = get_cooccurrences(language)
+
 
 # Declare the tags belonging to the EVE (events, not midnights) family
 #   Johan Bos et al. 2017
@@ -35,21 +37,29 @@ for item in in_sem:
             mini_sem_list.append(tag)  # Just pass it
     in_sem_eve.append(mini_sem_list)
 
-
 # Do the tagging
 out_sem = []
 for item in in_pos:
     out_sem.append(manual_tagging(item, rules))
 
 out_acc_scores = dict()
-out_err_doc = 0
+err_docs = []
 for i in range(len(in_sem_eve)):
     if len(in_sem_eve[i]) != len(out_sem[i]):
-        out_err_doc += 1
-        print(in_tok[i], in_pos[i], in_sem_eve[i], out_sem[i], sep="\n")
-        print("-----------------------------")
+        # print(in_tok[i], in_pos[i], in_sem_eve[i], out_sem[i], sep="\n")
+        # print("-----------------------------")
+        err_docs.append(i)
         continue
     out_acc_scores[i] = metrics.accuracy_score(in_sem_eve[i], out_sem[i])
 
 print("Mean accuracy:", np.mean([item for item in out_acc_scores.values()]))
-print("Bad documents:", out_err_doc)
+print("Bad documents: {0}/{1}".format(len(err_docs), len(in_pos)))
+
+# plt.boxplot(out_acc_scores.values())
+# plt.show()
+
+for k, v in out_acc_scores.items():
+    if v < 0.2:
+        print(in_tok[k], in_pos[k], in_sem_eve[k], out_sem[k], sep="\n")
+
+print(rules)
